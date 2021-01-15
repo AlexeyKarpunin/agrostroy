@@ -1,0 +1,2 @@
+export const CITY_ACTION = 'CITY ACTION';
+export const ASK_USER_GEO_ACTION = 'GEOLOCATION ACTION';

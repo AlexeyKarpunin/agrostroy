@@ -5,6 +5,7 @@ import Geo from './components/Geo';
 import Call from './components/Call';
 import Lang from './components/Lang';
 import ModalChooseCities from './components/ModalCooseCities';
+import Navigation from './components/Navigation';
 
 export default function Header () {
   const [modalCityStatus, setModalCityStatus] = useState(false);
@@ -38,7 +39,7 @@ export default function Header () {
         </div>
         <div className='page-header__nav'>
           <div className='page-section__inner'>
-            {/* {% include "menu.twig" with {'items': menu.get_items} %} */}
+            <Navigation />
           </div>
         </div>
       </header>

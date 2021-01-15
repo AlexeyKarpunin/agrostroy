@@ -13,7 +13,7 @@ export default function Company(){
         </div>
       </div>
       <p className='company__subtitle'>
-        Строительство объектов сельхоз назначения
+        Строительство объектов сельхоз назначения&nbsp;
         <q className='text is-q is-primary is-nobr'>Под ключ</q>
         {/* {% if globus.language == 'ru' %}
       Строительство объектов сельхоз назначения <q class="text is-q is-primary is-nobr">Под ключ</q>
