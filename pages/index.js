@@ -7,7 +7,7 @@ import gealocation from '../gealocation/geo';
 import findById from '../gealocation/geoById';
 import Header from '../components/header/Header';
 import '../styles/style.css';
-// import store from '../redux/store';
+
 
 
 export default function Home() {
@@ -21,6 +21,10 @@ export default function Home() {
   //     console.log('store:',store.getState())
   //   }, 5000)
   // });
+
+  useEffect( () => {
+    fetch('/api/ip').then( res => res.json()).then( (data) => console.log(data));
+  })
 
   useEffect( () => {
     router.push(`/?city=${city}`, undefined, { shallow: true })
