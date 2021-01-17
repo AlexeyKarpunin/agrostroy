@@ -7,7 +7,7 @@ import gealocation from '../gealocation/geo';
 import findById from '../gealocation/geoById';
 import Header from '../components/header/Header';
 import '../styles/style.css';
-
+import store from '../redux/store';
 
 
 export default function Home() {
@@ -16,28 +16,31 @@ export default function Home() {
   const {city} = useSelector( (state) => state.city);
   const dispatch = useDispatch();
 
-  // useEffect ( () => {
-  //   setInterval( () => {
-  //     console.log('store:',store.getState())
-  //   }, 5000)
-  // });
+  useEffect ( () => {
+    setInterval( () => {
+      console.log('store:',store.getState())
+    }, 5000)
+  });
 
   useEffect( () => {
-    fetch('/api/ip').then( res => res.json()).then( (data) => console.log(data));
+    fetch('/api/ip').then( res => res.json()).then( (data) => {
+      dispatch(askUserGealocation(data.ip));
+      console.log(data)
+    });
   })
 
   useEffect( () => {
     router.push(`/?city=${city}`, undefined, { shallow: true })
   },[city])
 
-  useEffect( () => {
-    const geo = gealocation();
-    findById().then(response => response.json()).then(result => {
-      console.log('byId',result.location.data.city)
-      return result.location.data.city
-    })
-    // dispatch(askUserGealocation());
-  },[])
+  // useEffect( () => {
+  //   const geo = gealocation();
+  //   findById().then(response => response.json()).then(result => {
+  //     console.log('byId',result.location.data.city)
+  //     return result.location.data.city
+  //   })
+  //   // dispatch(askUserGealocation());
+  // },[])
  
   return (
     <>

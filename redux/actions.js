@@ -1,6 +1,5 @@
-import { func } from 'prop-types'
 import {CITY_ACTION, ASK_USER_GEO_ACTION} from './types';
-
+import findById from '../gealocation/geoById';
 
 export function changeCity(city) {
   return {
@@ -9,9 +8,13 @@ export function changeCity(city) {
   }
 }
 
-
-export function askUserGealocation() {
-  return {
-    type: ASK_USER_GEO_ACTION,
+export function askUserGealocation(ip) {
+  return function (dispatch) {
+    findById(ip).then( (res) => res.json()).then((data) => {
+      dispatch({
+        type: ASK_USER_GEO_ACTION,
+        city: data,
+      })
+    });
   }
 }

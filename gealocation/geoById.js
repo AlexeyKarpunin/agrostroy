@@ -14,7 +14,7 @@ const options = {
 }
 
 
-const findById = () => fetch(url + query, options);
+const findById = (ip) => fetch(url + ip, options);
 
 export default findById;
 
