@@ -1,10 +1,17 @@
 /* eslint-disable no-unused-expressions */
 import { useEffect, useState } from "react";
+import { useDispatch } from "react-redux";
+import {changeLanguageEng, changeLanguageRus} from '../../../redux/actions';
 
 export default function Lang () {
   
  const [ruActive, setRu] = useState(true);
  const [engActive, setEng] = useState(false);
+ const dispatch = useDispatch();
+
+ useEffect( () => {
+   ruActive ? dispatch(changeLanguageRus()) : dispatch(changeLanguageEng())
+ }, [ruActive, engActive]);
 
   function activateBtn (e) {
     e.preventDefault();
@@ -12,7 +19,7 @@ export default function Lang () {
       ruActive ? setRu(false) : setRu(true);
       engActive ? setEng(false) : setEng(true);
     }
-  }
+  } 
   
   return (
     <ul className='lang' aria-label='Меню выбора языка'>

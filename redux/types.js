@@ -1,2 +1,5 @@
 export const CITY_ACTION = 'CITY ACTION';
 export const ASK_USER_GEO_ACTION = 'GEOLOCATION ACTION';
+export const LANGUAGE_RUS = 'RUS LANGUAGE';
+export const LANGUAGE_ENG = 'ENG LANGUAGE';
+export const GIVE_CITY_FOR_USER = 'GIVE CITY FOR USER';

@@ -1,0 +1,23 @@
+{
+    "ru": {
+      "rout": "Astrakhan",
+      "header": {
+        "city": "Астрахань",
+        "cityName": "Ваш город",
+        "compani": ["Агростроитель", "Юг"],
+        "companiDis": ["Строительство объектов сельхоз назначения", "Под ключ"],
+        "freeCall": "Звонок бесплатный"
+      }
+    },
+    
+    "eng": {
+      "rout": "Astrakhan",
+      "header": {
+        "city": "Astrakhan",
+        "cityName": "City",
+        "compani": ["Agrostroitel", "Ug"],
+        "companiDis": ["Construction of agricultural facilities", "Turn key"],
+        "freeCall": "Free call"
+      }
+    }
+}

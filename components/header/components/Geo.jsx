@@ -1,30 +1,27 @@
 import PropTypes from 'prop-types';
 import { useEffect, useState } from 'react';
-import { useSelector } from 'react-redux';
 
 export default function Geo (props) {
- const {openModal} = props;
- const [askCity, setAskCity]= useState('is-hide');
- const {city} = useSelector( (state) => state.city);
+ const {openModal, language, city} = props;
 
+ const [askCity, setAskCity]= useState('is-hide');
+ 
  function closeAskWindow() {setAskCity('is-hide')}
 
- useEffect( () => {
-  setAskCity('is-show')
- }, [])
+ useEffect( () => {setAskCity('is-show')}, [])
 
   return (
-    <a className='geo popup-city' href='#city-popup'>
+    <a className='geo popup-city'>
       <span className='icon is-primary is-geo'>
         <svg>
           <use xlinkHref='/img/iconsprites.svg#geo' />
         </svg>
       </span>
       <span onClick={openModal} className='geo__label'>
-        Ваш город:&nbsp;
+      {city[language].header.cityName}:&nbsp;
       </span>
       <span className='link in-text geo__link'>
-        <span onClick={openModal}>{city}</span>
+        <span onClick={openModal}>{city[language].header.city}</span>
         <div id='modal-geo' className={`geo__modal ${askCity}`}>
           <p>Это ваш город?</p>
           <div className='geo__modal-footer'>
@@ -40,4 +37,6 @@ export default function Geo (props) {
 
 Geo.propTypes = {
   openModal: PropTypes.func,
+  language: PropTypes.string,
+  city: PropTypes.object
 };

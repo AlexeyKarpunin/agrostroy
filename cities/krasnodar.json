@@ -1,0 +1,24 @@
+{
+    "ru": {
+      "rout": "Krasnodar",
+      "header": {
+        "city": "Краснодар",
+        "cityName": "Ваш город",
+        "compani": ["Агростроитель", "Юг"],
+        "companiDis": ["Строительство объектов сельхоз назначения", "Под ключ"],
+        "freeCall": "Звонок бесплатный"
+      }
+    },
+
+    "eng": {
+      "rout": "Krasnodar",
+      "header": {
+        "city": "karasnodar",
+        "cityName": "City",
+        "compani": ["Agrostroitel", "Ug"],
+        "companiDis": ["Construction of agricultural facilities", "Turn key"],
+        "freeCall": "Free call"
+      }
+    }
+}
+

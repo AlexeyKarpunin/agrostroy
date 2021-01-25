@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { useSelector } from 'react-redux';
 import Logo from './components/Logo';
 import Company from './components/Compony';
 import Geo from './components/Geo';
@@ -11,6 +12,9 @@ export default function Header () {
   const [modalCityStatus, setModalCityStatus] = useState(false);
   // eslint-disable-next-line no-unused-expressions
   function toggleModalWindowWithCities () {modalCityStatus ? setModalCityStatus(false) : setModalCityStatus(true)};
+  
+  const city = useSelector( (state) => state.city.city);
+  const language = useSelector( (state) => state.language.language);
 
   return (
     <>
@@ -23,13 +27,23 @@ export default function Header () {
                 <Logo />
               </div>
               <div className='column is-company with-delimiter'>
-                <Company />
+                <Company 
+                  city={city}
+                  language={language}
+                />
               </div>
               <div className='column is-geo with-delimiter'>
-                <Geo openModal={toggleModalWindowWithCities} />
+                <Geo 
+                  openModal={toggleModalWindowWithCities} 
+                  city={city}
+                  language={language}
+                />
               </div>
               <div className='column is-call'>
-                <Call />
+                <Call
+                  city={city}
+                  language={language}
+                />
               </div>
               <div className='column is-lang'>
                 <Lang />

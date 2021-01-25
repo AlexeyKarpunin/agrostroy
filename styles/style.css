@@ -2272,6 +2272,10 @@ video {
 }
 
 .geo:hover {
+    cursor: pointer;
+}
+
+.geo:hover {
     text-decoration: none
 }
 

@@ -1,4 +1,5 @@
 import PropTypes from 'prop-types';
+import Link from 'next/link';
 
 export default function ModalChooseCities (props) {
   const {closeModal} = props;
@@ -40,9 +41,11 @@ export default function ModalChooseCities (props) {
                 </a>
               </li>
               <li className='geo__item'>
-                <a href='https://krasnodar.agrostroitel.ru/?city=krasnodar' data-city='krasnodar'>
-                  Краснодар
-                </a>
+                <Link href='/?city=Krasnodar'>
+                  <a data-city='krasnodar'>
+                    Краснодар
+                  </a>
+                </Link>
               </li>
               <li className='geo__item'>
                 <a href='https://magas.agrostroitel.ru/?city=magas' data-city='magas'>
@@ -106,4 +109,5 @@ export default function ModalChooseCities (props) {
 
 ModalChooseCities.propTypes = {
   openModal: PropTypes.func,
+  closeModal: PropTypes.func,
 };

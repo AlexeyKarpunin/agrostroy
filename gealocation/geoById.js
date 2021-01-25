@@ -17,13 +17,3 @@ const options = {
 const findById = (ip) => fetch(url + ip, options);
 
 export default findById;
-
-// export default function findById () {
-//  fetch(url + query, options)
-// .then(response => response.json())
-// .then(result => {
-//   store.dispatch(changeCity(result.location.data.city))
-//   console.log(result.location.data.city)
-// })
-// .catch(error => console.log('error', error));
-// }

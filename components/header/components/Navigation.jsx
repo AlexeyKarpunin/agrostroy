@@ -1,13 +1,15 @@
+import Link from 'next/link';
+
 export default function Navigation () {
   return (
     <nav className='navigation'>
       <button className='navigation__btn' type='button'>МЕНЮ</button>
       <ul className='navigation__list'>
         <li className='navigation__item'>
-          <a href='https://agrostroitel.ru/about/' className='navigation__link'>О компании</a>
+          <Link href='/aboutComponi'><a className='navigation__link'>О компании</a></Link>
         </li>
         <li className='navigation__item'>
-          <a href='https://agrostroitel.ru/stroitelstvo-hranilish/' className='navigation__link'>Хранилища</a>
+          <Link href='/storage'><a className='navigation__link'>Хранилища</a></Link>
           <ul className='submenu'>
             <li className='submenu__item'>
               <a href='https://agrostroitel.ru/stroitelstvo-hranilish/' className='submenu__link'>Хранилища</a>

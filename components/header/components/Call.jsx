@@ -1,4 +1,6 @@
-export default function Call () {
+/* eslint-disable react/prop-types */
+export default function Call (props) {
+  const {city, language} = props;
   return (
     <a href='tel:88005115060' className='call'>
       <div className='call__value-inner'>
@@ -11,7 +13,7 @@ export default function Call () {
           <span className='call__label'>Наш телефон:</span>
           <span className='call__numbers'>8 800 511 5060</span>
           <span className='call__action in-header'>
-            Звонок бесплатный
+            {city[language].header.freeCall}
             {/* {% if globus.language == 'ru' %}
 		Звонок бесплатный
 	{% elseif globus.language == 'en' %}
