@@ -8,14 +8,11 @@ import Lang from './components/Lang';
 import ModalChooseCities from './components/ModalCooseCities';
 import Navigation from './components/Navigation';
 
-export default function Header () {
+export default function Header ({city, language}) {
   const [modalCityStatus, setModalCityStatus] = useState(false);
   // eslint-disable-next-line no-unused-expressions
   function toggleModalWindowWithCities () {modalCityStatus ? setModalCityStatus(false) : setModalCityStatus(true)};
   
-  const city = useSelector( (state) => state.city.city);
-  const language = useSelector( (state) => state.language.language);
-
   return (
     <>
       {modalCityStatus ? <ModalChooseCities closeModal={toggleModalWindowWithCities} /> : null}
@@ -53,7 +50,10 @@ export default function Header () {
         </div>
         <div className='page-header__nav'>
           <div className='page-section__inner'>
-            <Navigation />
+            <Navigation
+              city={city}
+              language={language}
+            />
           </div>
         </div>
       </header>

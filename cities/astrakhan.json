@@ -6,7 +6,87 @@
         "cityName": "Ваш город",
         "compani": ["Агростроитель", "Юг"],
         "companiDis": ["Строительство объектов сельхоз назначения", "Под ключ"],
-        "freeCall": "Звонок бесплатный"
+        "freeCall": "Звонок бесплатный",
+        "navigation": {
+          "mobile": "Меню",
+          "nav": ["О компании", ["Хранилища", "Фруктохранилища", "Камеры для заморозки и хранения рыбы", "Овощехранилища", "Зернохранилища" ], ["Ангары и склады", "Сборно-разборные ангары", "Холодильные камеры и склады", "Каркасные ангары", "Бескаркасные ангары"], ["Промхолод", "Промышленный холод", "Климатическое оборудование"], ["Металлоконструкции", "Реконструкция зданий"], "Проектирование", "Контакты"]
+        }
+      },
+
+      "mainPage": {
+        "expBilding": {
+          "header": ["Опыт строительства — 10 лет", " по всей стране и СНГ"],
+          "list": ["Бескаркасные ангары", "Каркасные ангары", "Промышленные холодильники", "Овощехранилища", "Зернохранилища", "Фруктохранилища", "Металлоконструкции", "Рыбоперерабатывающие цеха"]
+        },
+        "workWithUs": {
+          "header": ["Работать с нами", " удобно, надёжно и выгодно"],
+          "list": ["Опыт строительства более 10 лет", "Репутация надежного подрядчика", "Более 180 выполненных проектов", "Объекты в городах ЮФО", "Работаем с СНГ", "Консультации и обслуживание после сдачи объекта"] 
+        },
+        "map": {
+          "header": ["Строим по всему", "Южному Федеральному округу России и СНГ"]
+        },
+        "phaseWork": {
+          "header": ["Этапы", "работы"],
+          "list": ["Консультация с менеджером", "Личная встреча", "Согласование и сбор необходимой информации", "Выбор типового проекта", "Согласование проекта, составление сметы, подписание договора", "Фундаментные работы", "Закуп материала и изготовление металлоконструкции на заводе", "Транспортировка готовых металлоконструкций и завершение проекта", "Приём работ", "Консультирование ваших сотрудников"]
+        },
+        "provide": {
+          "header": "Также мы предоставляем",
+          "linkList": ["Расчёт стоимости", "Технологии хранения", "Оформление документов", "Типовые проекты", "Готовые объекты"],
+          "cost": {
+            "header": "Расчёт стоимости",
+            "content": ["Каркасные ангары «под ключ». Любая конфигурация, неограниченный размер, широкое назначение.", "Уже через месяц вы сможете вести бизнес в новом строении."],
+            "btnText": "Расчитать стоимость" 
+          },
+          "storageTechnology": {
+            "header": "Технологии хранения",
+            "content": ["Ваш онлайн помощник по всем аспектам хранения фруктов, ягод и овощей, а также цветов, черенков и саженцев."],
+            "btnText": "Подробнее" 
+          },
+          "documents": {
+            "header": "Оформление документов",
+            "content": ["Вам не стоит беспокоиться о сборе и подготовке документации для получения разрешения на строительство.", "Мы сделаем это для Вас бесплатно!"],
+            "btnText": "оформить"
+          },
+          "standart": {
+            "header": "Типовые проекты",
+            "content": ["Ознакомиться с типовыми проектами и узнать их особенности и различия, а также подобрать для себя нужный проект."],
+            "btnText": "Ознакомиться"
+          },
+          "ready": {
+            "header": "Готовые объекты",
+            "content": ["Список наших готовых реализованных объектов по всему ЮФО России."],
+            "btnText": "Посмотреть"
+          }
+
+        }
+      },
+
+      "aboutComponi": {
+
+        "infoAboutComponi": {
+          "header": ["О компании", "«Агростроитель Юг»"],
+          "content": ["Компания «Агростроитель Юг»", "является самостоятельным обособленным подразделением Группы компаний «Фабрикант», которая с 2009 г. ведет работы по развитию агропромышленного комплекса на всей территории Южного Федерального Округа России.", "10 лет", "Работаем с 2009 года", "180 проектов", "Выполнено нашей компанией", "Работаем по всему Югу России, а также в странах СНГ"],
+          "servisesHeader":  "Спeктp услуг пpeдoстaвляeмых кoмпaниeй в этом нaпpaвлeнии дoстaтoчнo шиpoк:",
+          "servises": ["Проектирование и стpoитeльствo фруктохранилищ, овощехранилищ и зернохранилищ для paзличных типoв хpaнeния (кoнтeйнepнoe или нaвaльнoe)", "Проектирование и стpoитeльствo здaний и сoopужeний для oбъeктoв живoтнoвoдствa", "Проектирование и стpoитeльствo грибных ферм", "Проектирование и стpoитeльствo рыбных перерабатывающих заводов", "Оснaщeниe всeм нeoбхoдимым oбopудoвaниeм oбъeктoв aгpoкoмплeксa: климaтичeскoe oбopудoвaниe, oбopудoвaниe для склaдиpoвaния и хpaнeния пpoдукции, oбopудoвaниe для сoдepжaния живoтных, oбopудoвaниe для тeпличных хoзяйств, oбopудoвaниe для пepвичнoй oбpaбoтки пpoдукции"]
+        },
+
+        "someInfo": {
+          "header": "Нaшa кoмпaния aккpeдитoвaнa в ОАО «Рoссeльхoзбaнк»,«Сбepбaнк», «Астpaгpoлизинг»",
+          "content": "Пoэтoму нaши зaкaзчики, oсущeствляющиe свoю дeятeльнoсть в сфepe сeльскoгo хoзяйствa, мoгут вoспoльзoвaться льгoтными услoвиями кpeдитoвaния пepeчислeнных финaнсoвых учpeждeний."
+        },
+
+        "takeUs": {
+          "header": ["Что вы получаете", "выбрав нас"],
+          "reasonOne": ["Индивидуальный подход", "Мы применяем индивидуальный подход к каждому заказчику. При оптимальных затратах, мы предоставляем разработку проекта, строительство сельскохозяйственных объектов и хранилищ «под ключ». Наши объекты отвечают всем технологическим требованиям с учетом особенностей содержания разного вида живности и хранения овощей, фруктов, зерна и др. с/х продукции. Вы можете быть уверены в точности проектной документации, а также можете получить консультацию относительно согласования и утверждения в госорганах."],
+          "reasonTwo": ["Строительство «под ключ»", "выгодно также тем, что вы сотрудничаете с одним подрядчиком и всю ответственность за все этапы строительства несет одна организация, наша. А это значит, что вы можете быть уверены в надежности проекта, соблюдении сроков и, конечно, в качестве готового объекта."]
+        }
+
+      },
+      "footer": {
+        "logo": ["Агростроитель", "Юг"],
+        "logoText": ["Строительство объектов сельхоз назначения", "Под ключ"],
+        "call": "Звонок бесплатный",
+        "law": "© 2021 Все права защищены."
       }
     },
     
@@ -17,7 +97,86 @@
         "cityName": "City",
         "compani": ["Agrostroitel", "Ug"],
         "companiDis": ["Construction of agricultural facilities", "Turn key"],
-        "freeCall": "Free call"
+        "freeCall": "Free call",
+        "navigation": {
+          "mobile": "Menu",
+          "nav": ["About Company", ["Storage", "Fruit Storage", "Chambers for freezing and storage of fish", "Vegetable Storage", "Grain Storage" ], ["Hangars", "dismountable", "Industrial cold", "Frame hangars", "Frameless hangars"], ["Industrial cold", "Industrial cold", "Climatic equipment"], ["Metalwork", "Reconstruction of buildings"], "Project", "Contacts"]
+        }
+      },
+      "mainPage": {
+        "expBilding": {
+          "header": ["Construction experience — 10 years", " across the country and the CIS"],
+          "list": ["Frameless hangars", "Frame hangars", "industrial refrigerator", "vegetable store", "Granary", "Fruit storage", "Metalwork", "Fish processing plant"]
+        },
+        "workWithUs": {
+          "header": ["Working with us is", " convenient, reliable and profitable"],
+          "list": ["Construction experience more than 10 years", "Reputation as a reliable contractor", "More than 180 completed projects", "Objects in the cities of the SFD", "Working with the CIS", "Consultation and maintenance after the delivery of the object"] 
+        },
+        "map": {
+          "header": ["We are building throughout the", "southern Federal district of Russia and the CIS"]
+        },
+        "phaseWork": {
+          "header": ["Stage of", "work"],
+          "list": ["Consultation with the Manager", "personal meeting", "Coordination and collection of necessary information", "The choice of the project model", "Approval of the project, preparation of estimates, signing of the contract", "Foundation works", "Purchase of material and manufacture of metal structures at the plant", "Transportation of finished metal structures and completion of the project", "Reception of works", "Consulting your employees"]
+        },
+        "provide": {
+          "header": "We also provide",
+          "linkList": ["Cost calculation", "Storage technology", "Registration of papers", "Standard project", "finished objects"],
+          "cost": {
+            "header": "Cost calculation",
+            "content": ["Frame hangars 'turnkey'. Any configuration, unlimited size, wide purpose.", "In a month you will be able to do business in the new building."],
+            "btnText": "Calculate the cost" 
+          },
+          "storageTechnology": {
+            "header": "Storage technology",
+            "content": ["Your online assistant for all aspects of fruit, berry and vegetable storage, as well as flowers, cuttings and seedlings."],
+            "btnText": "More detailed" 
+          },
+          "documents": {
+            "header": "Registration of papers",
+            "content": ["You don't need to worry about collecting and preparing documentation to obtain a construction permit.", "We will do it for you for free!"],
+            "btnText": "Formalize"
+          },
+          "standart": {
+            "header": "Standard project",
+            "content": ["Get acquainted with typical projects and learn their features and differences, and also choose the right project for yourself."],
+            "btnText": "Familiarize"
+          },
+          "ready": {
+            "header": "finished objects",
+            "content": ["A list of our completed projects in the Southern Federal District of Russia."],
+            "btnText": "look"
+          }
+        }
+      },
+
+      "aboutComponi": {
+        "infoAboutComponi": {
+          "header": ["About company", "«Agrostroitel Ug»"],
+          "content": ["The Company «Agrostroitel Ug»", "is an independent separate division of The group of companies 'Fabriсant', which since 2009 has been working on the development of agro-industrial complex on the entire territory of the southern Federal District of Russia.", "10 years", "Working since 2009", "180 projects", "Completed by our company", "We work all over the South of Russia, as well as in the CIS countries"],
+          "servisesHeader":  "The range of services provided by the company in this direction is quite wide:",
+          "servises": ["Design and construction of fruit storage, vegetable storage and grain storage for different types of storage (container or bulk)", "Design and construction of buildings and structures for livestock facilities", "Design and construction of mushroom farms", "Design and construction of fish processing plants", "Equipping with all necessary equipment of agricultural complex objects: climatic equipment, equipment for storage and storage of products, equipment for keeping animals, equipment for greenhouses, equipment for primary processing of products"]
+        },
+
+        "someInfo": {
+          "header": "Our company is accredited in OAO «Russian agricultural Bank», «Sberbank», «Astragrolising» ",
+          "content": "Therefore, our customers who carry out their activities in the field of agriculture, can take advantage of preferential credit conditions of the listed financial institutions."
+        },
+
+        "takeUs": {
+          "header": ["What do you get", "by choosing us"],
+          "reasonOne": ["Individual approach", "We apply an individual approach to each customer. Under optimal conditions costs, we provide project development, construction agricultural facilities and storage facilities 'turnkey'. Our facility meet all technological requirements, taking into account the features maintenance of different types of animals and storage of vegetables, fruits, grains and other agricultural products. You can be sure of the accuracy of the design documentation, and can also get advice on coordination and approval in state agencies."],
+          "reasonTwo": ["Turn-key construction", "It is also advantageous that you cooperate with one contractor and all responsibility for all stages of construction is borne by one the organization is ours. Which means you can be sure in the reliability of the project, compliance with deadlines and, of course, in the quality finished object."]
+        }
+
+      },
+      "footer": {
+        "logo": ["Agrostroitel", "Ug"],
+        "logoText": ["Construction of agricultural facilities", "Turn key"],
+        "call": "Free call",
+        "law": " © 2021 All rights reserved."
       }
+
     }
 }
+

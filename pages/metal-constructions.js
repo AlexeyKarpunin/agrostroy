@@ -1,17 +1,18 @@
-import '../styles/style.css';
-import styled from 'styled-components';
 import { useSelector } from 'react-redux';
 import Header from '../components/header/Header';
 import Footer from '../components/footer/Footer';
-import Storagebanner from '../components/storage/Storagebanner';
+import '../styles/style.css';
+import McBanner from '../components/metal-constractions/McBanner';
 import Advantages from '../components/project/Advantages';
-import RoundBanner from '../components/storage/RoundBanner';
+import CreateMC from '../components/metal-constractions/CreateMC';
+import Manufactuging from '../components/metal-constractions/Manufacturing';
 import ProjectSlaider from '../components/project/ProjectSlaider';
 import ProjectForm from '../components/project/ProjectForm';
 import Map from '../components/mainPage/Map';
 import Provide from '../components/mainPage/Provide/Provide';
 
-export default function Storage () {
+export default function MetalConstructions () {
+
   const city = useSelector( (state) => state.city.city);
   const language = useSelector( (state) => state.language.language);
   
@@ -21,12 +22,13 @@ export default function Storage () {
         city={city}
         language={language}
       />
-      <Storagebanner />
+      <McBanner />
       <Advantages />
-      <RoundBanner />
+      <CreateMC />
+      <Manufactuging />
       {/* <ProjectSlaider /> */}
       <ProjectForm />
-      <Map
+      <Map 
         city={city}
         language={language}
       />
@@ -41,7 +43,3 @@ export default function Storage () {
     </>
   );
 }
-const Div = styled.div`
-     width: 100%;
-     height: 500px;
-`;

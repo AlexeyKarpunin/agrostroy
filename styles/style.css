@@ -1577,6 +1577,14 @@ ul.contact__inner li {
     border-top: 0
 }
 
+.navigation__item:hover  ul {
+    display: block;
+    background-color: white;
+    z-index: 100;
+    position: absolute;
+    top: 150px;
+}
+
 .in-footer .navigation__item {
     border: 0
 }

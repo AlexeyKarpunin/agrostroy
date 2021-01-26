@@ -1,80 +1,81 @@
 import Link from 'next/link';
 
-export default function Navigation () {
+export default function Navigation ({city, language}) {
+  const text = city[language].header.navigation;
   return (
     <nav className='navigation'>
-      <button className='navigation__btn' type='button'>МЕНЮ</button>
+      <button className='navigation__btn' type='button'>{text.mobile}</button>
       <ul className='navigation__list'>
         <li className='navigation__item'>
-          <Link href='/aboutComponi'><a className='navigation__link'>О компании</a></Link>
+          <Link href='/aboutComponi'><a className='navigation__link'>{text.nav[0]}</a></Link>
         </li>
         <li className='navigation__item'>
-          <Link href='/storage'><a className='navigation__link'>Хранилища</a></Link>
+          <Link href='/storage'><a className='navigation__link'>{text.nav[1][0]}</a></Link>
           <ul className='submenu'>
             <li className='submenu__item'>
-              <a href='https://agrostroitel.ru/stroitelstvo-hranilish/' className='submenu__link'>Хранилища</a>
+            <Link href='/storage'><a className='submenu__link'>{text.nav[1][0]}</a></Link>
+            </li>
+            <li className='submenu__item'> 
+            <Link href='/storage/fruit-storage'><a className='submenu__link'>{text.nav[1][1]}</a></Link>
             </li>
             <li className='submenu__item'>
-              <a href='https://agrostroitel.ru/stroitelstvo-hranilish/stroitelstvo-fruktohranilish-pod-kluch/' className='submenu__link'>Фруктохранилища</a>
+            <Link href='/storage/fish-storage'><a  className='submenu__link'>{text.nav[1][2]}</a></Link>
             </li>
             <li className='submenu__item'>
-              <a href='https://agrostroitel.ru/stroitelstvo-hranilish/stroitelstvo-skladov-hraneniye-pererabotka-rybi/' className='submenu__link'>Камеры для заморозки и хранения рыбы</a>
+            <Link href='/storage/vegetables-storage'><a className='submenu__link'>{text.nav[1][3]}</a></Link>
             </li>
             <li className='submenu__item'>
-              <a href='https://agrostroitel.ru/stroitelstvo-hranilish/stroitelstvo-ovoshehranilish-pod-kluch/' className='submenu__link'>Овощехранилища</a>
-            </li>
-            <li className='submenu__item'>
-              <a href='https://agrostroitel.ru/stroitelstvo-hranilish/stroitelstvo-zernohranilish-pod-kluch/' className='submenu__link'>Зернохранилища</a>
+            <Link href='/storage/corn-storage'><a className='submenu__link'>{text.nav[1][4]}</a></Link>
             </li>
           </ul>
         </li>
         <li className='navigation__item'>
-          <a href='https://agrostroitel.ru/stroitelstvo-angarov-i-skladov/' className='navigation__link'>Ангары и склады</a>
+          <Link href='/hangers-and-warehouse'><a className='navigation__link'>{text.nav[2][0]}</a></Link>
           <ul className='submenu'>
             <li className='submenu__item'>
-              <a href='https://agrostroitel.ru/stroitelstvo-angarov-i-skladov/' className='submenu__link'>Ангары и склады</a>
+            <Link href='/hangers-and-warehouse'><a  className='submenu__link'>{text.nav[2][0]}</a></Link>
             </li>
             <li className='submenu__item'>
-              <a href='https://agrostroitel.ru/stroitelstvo-angarov-i-skladov/sborno-razbornye-angary/' className='submenu__link'>Сборно-разборные ангары</a>
+            <Link href='/hangers-and-warehouse/folding-hangar'><a className='submenu__link'>{text.nav[2][1]}</a></Link>
             </li>
             <li className='submenu__item'>
-              <a href='https://agrostroitel.ru/prom-holod/' className='submenu__link'>Холодильные камеры и склады</a>
+            <Link href='/prom-holod'><a  className='submenu__link'>{text.nav[2][2]}</a></Link>
             </li>
             <li className='submenu__item'>
-              <a href='https://agrostroitel.ru/stroitelstvo-angarov-i-skladov/stroitelstvo-karkasnih-angarov/' className='submenu__link'>Каркасные ангары</a>
+            <Link href='/hangers-and-warehouse/frame-hangars'><a  className='submenu__link'>{text.nav[2][3]}</a></Link>
             </li>
             <li className='submenu__item'>
-              <a href='https://agrostroitel.ru/stroitelstvo-angarov-i-skladov/stroitelstvo-bistrovozvodimyh-angarov/' className='submenu__link'>Бескаркасные ангары</a>
+            <Link href='/hangers-and-warehouse/without-frame-hangars'><a  className='submenu__link'>{text.nav[2][4]}</a></Link>
             </li>
           </ul>
         </li>
         <li className='navigation__item'>
-          <a href='https://agrostroitel.ru/prom-holod/' className='navigation__link'>Промхолод</a>
+          <Link href='/prom-holod'><a  className='navigation__link'>{text.nav[3][0]}</a></Link>
           <ul className='submenu'>
             <li className='submenu__item'>
-              <a href='https://agrostroitel.ru/prom-holod/' className='submenu__link'>Промышленный холод</a>
+            <Link href='/prom-holod'><a  className='submenu__link'>{text.nav[3][1]}</a></Link>
             </li>
-            <li className='submenu__item'>
-              <a href='https://agrostroitel.ru/prom-holod/klimaticheskoe-oborudovanie/' className='submenu__link'>Климатическое оборудование</a>
+            <li className='submenu__item'> 
+              <Link href='/prom-holod/climatic-equipment'><a className='submenu__link'>{text.nav[3][2]}</a></Link>
             </li>
           </ul>
         </li>
         <li className='navigation__item'>
-          <a href='https://agrostroitel.ru/metallokonstrukcii/' className='navigation__link'>Металлоконструкции</a>
+          <Link href='/metal-constructions'><a className='navigation__link'>{text.nav[4][0]}</a></Link>
           <ul className='submenu'>
             <li className='submenu__item'>
-              <a href='https://agrostroitel.ru/metallokonstrukcii/' className='submenu__link'>Металлоконструкции</a>
+            <Link href='/metal-constructions'><a className='submenu__link'>{text.nav[4][0]}</a></Link>
             </li>
             <li className='submenu__item'>
-              <a href='https://agrostroitel.ru/metallokonstrukcii/rekonstrukciya-zdaniy/' className='submenu__link'>Реконструкция зданий</a>
+              <Link href='/metal-constructions/reconstruction'><a className='submenu__link'>{text.nav[4][1]}</a></Link>
             </li>
           </ul>
         </li>
         <li className='navigation__item'>
-          <a href='https://agrostroitel.ru/proektirovanie-obyectov-agrocompleksa/' className='navigation__link'>Проектирование</a>
+          <Link href='/project'><a className='navigation__link'>{text.nav[5]}</a></Link>
         </li>
         <li className='navigation__item'>
-          <a href='https://agrostroitel.ru/kontakts/' className='navigation__link'>Контакты</a>
+          <Link href='/contacts'><a className='navigation__link'>{text.nav[6]}</a></Link>
         </li>
       </ul>
     </nav>
