@@ -10,6 +10,7 @@ import ProjectSlaider from '../components/project/ProjectSlaider';
 import ProjectForm from '../components/project/ProjectForm';
 import Map from '../components/mainPage/Map';
 import Provide from '../components/mainPage/Provide/Provide';
+import StorageInfo from '../components/storage/StorageInfo';
 
 export default function Storage () {
   const city = useSelector( (state) => state.city.city);
@@ -24,6 +25,7 @@ export default function Storage () {
       <Storagebanner />
       <Advantages />
       <RoundBanner />
+      <StorageInfo />
       <ProjectSlaider />
       <ProjectForm />
       <Map

@@ -119,13 +119,15 @@ body {
 .slick-dots li button:before {
     content: '';
 }
-.slick-arrow::before {
+
+/* .slick-arrow::before {
     content: '';
-}
-.slick-next,
-.slick-prev,
-.slick-arrow  {
-  display: none;
+} */
+
+/* .slick-next,
+.slick-prev, */
+.main__slaider .slick-arrow  {
+  display: none ;
   opacity: 0;
 }
 
