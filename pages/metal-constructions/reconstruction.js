@@ -26,7 +26,7 @@ export default function Reconstruction () {
       <Advantages />
       <RoundBanner />
       <RecInfo />
-      {/* <ProjectSlaider /> */}
+      <ProjectSlaider />
       <ProjectForm />
       <Map 
         city={city}

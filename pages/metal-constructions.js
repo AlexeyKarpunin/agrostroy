@@ -26,7 +26,7 @@ export default function MetalConstructions () {
       <Advantages />
       <CreateMC />
       <Manufactuging />
-      {/* <ProjectSlaider /> */}
+      <ProjectSlaider />
       <ProjectForm />
       <Map 
         city={city}

@@ -24,7 +24,7 @@ export default function Storage () {
       <Storagebanner />
       <Advantages />
       <RoundBanner />
-      {/* <ProjectSlaider /> */}
+      <ProjectSlaider />
       <ProjectForm />
       <Map
         city={city}

@@ -9,6 +9,7 @@ import Provide from '../../components/mainPage/Provide/Provide';
 import Advantages from '../../components/project/Advantages';
 import ProjectForm from '../../components/project/ProjectForm';
 import ProjectSlaider from '../../components/project/ProjectSlaider';
+import Head from 'next/head';
 import '../../styles/style.css';
 
 export default function FoldingHangar() {
@@ -17,6 +18,7 @@ export default function FoldingHangar() {
 
   return (
     <>
+      
       <Header
         city={city}
         language={language}
@@ -25,7 +27,7 @@ export default function FoldingHangar() {
       <Advantages />
       <RoundBanner />
       <FHinfo />
-      {/* <ProjectSlaider /> */}
+      <ProjectSlaider />
       <ProjectForm />
       <Map
         city={city}

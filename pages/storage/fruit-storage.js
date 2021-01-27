@@ -25,7 +25,7 @@ export default function FruitsStorage() {
       <Advantages />
       <RoundBanner />
       <FruitInfo /> 
-      {/* <ProjectSlaider /> */}
+      <ProjectSlaider />
       <ProjectForm />
       <Map
         city={city}

@@ -10,14 +10,16 @@ import ProjectBanner from '../components/project/projectBanner';
 import ProjectForm from '../components/project/ProjectForm';
 import ProjectSlaider from '../components/project/ProjectSlaider';
 import '../styles/style.css';
+import Head from 'next/head';
 
 export default function project () {
 
   const city = useSelector( (state) => state.city.city);
   const language = useSelector( (state) => state.language.language);
-
+  
   return (
     <>
+  
       <Header 
         city={city}
         language={language}
@@ -26,7 +28,7 @@ export default function project () {
       <Advantages />
       <Design />
       <DesignSchema />
-      {/* <ProjectSlaider /> */}
+      <ProjectSlaider />
       <ProjectForm />
       <Map
         city={city}

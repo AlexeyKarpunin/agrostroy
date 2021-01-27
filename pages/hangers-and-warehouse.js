@@ -24,7 +24,7 @@ export default function HangersAndWarehouse () {
       <Advantages />
       <RoundBanner />
       <HWInfo />
-      {/* <ProjectSlaider /> */}
+      <ProjectSlaider />
       <ProjectForm />
       <Map
         city={city}

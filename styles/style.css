@@ -116,6 +116,23 @@ body {
     }
 }
 
+.slick-dots li button:before {
+    content: '';
+}
+.slick-arrow::before {
+    content: '';
+}
+.slick-next,
+.slick-prev,
+.slick-arrow  {
+  display: none;
+  opacity: 0;
+}
+
+.slick-list {
+    cursor: grab;
+}
+
 .visually-hidden,
 html:not(no-js) .visually-hidden-focusable {
     position: absolute !important;

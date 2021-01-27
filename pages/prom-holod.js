@@ -25,7 +25,7 @@ export default function PromHolod () {
       <Advantages />
       <RoundBanner />
       <PromInfo />
-      {/* <ProjectSlaider /> */}
+      <ProjectSlaider />
       
       <ProjectForm />
       <Map

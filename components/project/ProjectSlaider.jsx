@@ -1,3 +1,5 @@
+// import Fotorama from 'fotorama-react-wrapper';
+
 export default function ProjectSlaider () {
   return (
     <div className='page-section'>

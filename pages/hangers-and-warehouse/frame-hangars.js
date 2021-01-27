@@ -28,7 +28,7 @@ export default function FoldingHangar() {
       <Advantages />
       <RoundBanner />
       <FrameInfo />
-      {/* <ProjectSlaider /> */}
+      <ProjectSlaider />
       <ProjectForm />
       <Map
         city={city}

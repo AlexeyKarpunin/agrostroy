@@ -25,7 +25,7 @@ export default function ClimaticEquipment () {
       <Advantages />
       <RoundBanner />
       <CEInfo />
-      {/* <ProjectSlaider /> */}
+      <ProjectSlaider />
       <ProjectForm />
       <Map
         city={city}
