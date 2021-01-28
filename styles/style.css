@@ -116,6 +116,50 @@ body {
     }
 }
 
+.owl-prev,
+.owl-next {
+    font: inherit;
+    height: 48px;
+    width: 48px;
+    left: -48px;
+    font-size: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    user-select: none;
+    background: 0 0;
+    color: inherit;
+    border: none;
+    padding: 0 !important;
+    transform: translateY(-50%);
+    text-decoration: none;
+    position: absolute;
+    top: 50%;
+    box-shadow: 0 1px 2px 0 #aaa;
+    overflow: visible;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    border-radius: 50%;
+    -webkit-tap-highlight-color: transparent;
+    box-sizing: border-box;
+    outline: 0;
+    margin: 0;
+}
+
+.owl-prev {
+    right: 100% !important;
+    margin-left: -10px !important;
+}
+
+.owl-next {
+    left: 100% !important;
+    margin-right: -10px !important;
+}
+
+.store--modal--close {
+    display: none;
+}
+
 .slick-dots li button:before {
     content: '';
 }
