@@ -145,6 +145,18 @@ body {
     outline: 0;
     margin: 0;
 }
+.owl-next::before,
+.owl-prev::before {
+    
+    position: absolute;
+    font-size: 15px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.owl-next::before {content: '›';}
+.owl-prev::before {content: '‹';}
 
 .owl-prev {
     right: 100% !important;
@@ -4615,7 +4627,8 @@ img.in-super-circle {
     font-size: 0.8em;
     line-height: 1em;
     border-radius: 15px;
-    background-image: url("/images/arrow.svg");
+    background-image: url("/img/arrow.svg");
+    text-transform: uppercase;
     background-size: auto;
     background-position: center right;
     background-repeat: no-repeat;
@@ -4623,7 +4636,7 @@ img.in-super-circle {
 }
 
 .navigation__btn.active {
-    background-image: url("/images/arrow2.svg");
+    background-image: url("/img/arrow2.svg");
 }
 
 .dop-list {

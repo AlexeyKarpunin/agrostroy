@@ -1,7 +1,7 @@
 import { useSelector } from 'react-redux';
 import Footer from '../components/footer/Footer';
 import Header from '../components/header/Header';
-import Map from '../components/Map';
+import YMap from '../components/YMap';
 import '../styles/style.css';
 
 export default function Contacts () {
@@ -13,7 +13,7 @@ export default function Contacts () {
         city={city}
         language={language}
       />
-      <Map />
+      <YMap />
       <Footer
         city={city}
         language={language}

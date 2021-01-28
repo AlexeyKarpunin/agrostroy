@@ -1,4 +1,32 @@
-export default function Map () {
+import { useEffect } from 'react';
+
+export default function YMap () {
+
+  useEffect(() => {
+    
+    const {ymaps} = window;
+
+    function init() {
+      const myMap = new ymaps.Map('map', {
+              center: [46.350146, 48.037410],
+              zoom: 12
+          }, {
+              searchControlProvider: 'yandex#search'
+          });
+          
+      myMap.geoObjects
+          .add(new ymaps.Placemark([46.350146, 48.037410], {
+              balloonContent: 'Россия, Астрахань, улица Кирова, 19' 
+          }, {
+              preset: 'islands#icon',
+              iconColor: '#0095b6'
+          }))
+  }
+  
+
+    ymaps.ready(init);
+  }, [])
+
   return (
     <div className='page-section'>
       <div className='page-section__inner'>
@@ -20,20 +48,23 @@ export default function Map () {
               {' '}
               г. Астрахань, ул. Кирова, 19
             </p>
-            <p>
-             
+            {/* <p>
               <blockquote>
-
-
                 <p style={{paddingLeft: '30px'}}><span style={{color: '#ff6600'}}><strong>Отправьте нам заявку на предварительный рассчет стоимости Вашего будущего строительства!</strong></span></p>
-
-
               </blockquote>
-
-
             </p>
+            
+             */}
+            {/* <YMaps>
+              <Map state={mapData} width={1162} height={417}>
+                {coordinates.map(coordinate => <Placemark geometry={coordinate} />)}
+              </Map>
+            </YMaps> */}
 
+            <div id='map' style={{height: '417px'}} />
+      
           </div>
+          
         </div>
       </div>
     </div>
