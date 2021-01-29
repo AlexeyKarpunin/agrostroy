@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 export default function Documents ({text}) {
   return (
     <div className='tabs__section is-active' id='paperwork'>
@@ -16,7 +18,9 @@ export default function Documents ({text}) {
                 {text.content[1]}
               </p>
             </div>
-            <div className='content__action'><a className='btn is-primary' href='https://agrostroitel.ru/oformlenie-documentov/'>{text.btnText}</a></div>
+            <div className='content__action'>
+              <Link href='/paperwork'><a className='btn is-primary'>{text.btnText}</a></Link>
+            </div>
           </div>
         </div>
 

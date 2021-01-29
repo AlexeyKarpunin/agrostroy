@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function TopProject ({text}) {
   return (
     <div className='tabs__section is-active' id='typical_designs'>
@@ -13,7 +15,9 @@ export default function TopProject ({text}) {
                 {text.content[0]}
               </p>
             </div>
-            <div className='content__action'><a className='btn is-primary' href='https://agrostroitel.ru/tipovye-proekty/'>{text.btnText}</a></div>
+            <div className='content__action'>
+              <Link href='/types-projects'><a className='btn is-primary'>{text.btnText}</a></Link>
+              </div>
           </div>
         </div>
 

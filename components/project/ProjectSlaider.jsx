@@ -1,4 +1,5 @@
 // import Fotorama from 'fotorama-react-wrapper';
+import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import styled from 'styled-components';
@@ -168,9 +169,7 @@ export default function ProjectSlaider () {
             </Slider>
           </SliderWrraper>
           <div className='container centered'>
-            <a className='btn is-secondary' href='/gotovie-obyecti'>
-              Посмотреть все объекты
-            </a>
+            <Link  href='/finished-projects'><a className='btn is-secondary'>Посмотреть все объекты</a></Link>
           </div>
         </div>
       </div>

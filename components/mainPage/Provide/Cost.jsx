@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function Cost ({text}) {
   return (
     <div className='tabs__section is-active' id='calculation_cost'>
@@ -16,7 +18,9 @@ export default function Cost ({text}) {
               {text.content[1]}
               </p>
             </div>
-            <div className='content__action'><a className='btn is-primary' href='https://agrostroitel.ru/raschet-stoimosti/'>{text.btnText}</a></div>
+            <div className='content__action'>
+              <Link href='/cost-calculation'><a className='btn is-primary'>{text.btnText}</a></Link>
+              </div>
           </div>
         </div>
 

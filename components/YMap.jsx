@@ -48,6 +48,7 @@ export default function YMap () {
               {' '}
               г. Астрахань, ул. Кирова, 19
             </p>
+            
             {/* <p>
               <blockquote>
                 <p style={{paddingLeft: '30px'}}><span style={{color: '#ff6600'}}><strong>Отправьте нам заявку на предварительный рассчет стоимости Вашего будущего строительства!</strong></span></p>
@@ -55,11 +56,6 @@ export default function YMap () {
             </p>
             
              */}
-            {/* <YMaps>
-              <Map state={mapData} width={1162} height={417}>
-                {coordinates.map(coordinate => <Placemark geometry={coordinate} />)}
-              </Map>
-            </YMaps> */}
 
             <div id='map' style={{height: '417px'}} />
       

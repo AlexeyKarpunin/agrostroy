@@ -1,3 +1,5 @@
+import InputMask from 'react-input-mask';
+
 export default function ProjectForm () {
   return (
     <div className='page-section is-call' id='call'>
@@ -68,7 +70,7 @@ export default function ProjectForm () {
                           </svg>
                         </span>
                       </span>
-                      <input
+                      {/* <input
                         className='is-text is-tel'
                         type='tel'
                         name='phone'
@@ -77,6 +79,11 @@ export default function ProjectForm () {
         		Телефон
 				'
                         im-insert='true'
+                      /> */}
+                      <InputMask
+                        className='is-text is-tel'
+                        mask='+7 (999) 999-99-99'
+                        placeholder='Телефон'
                       />
                     </label>
                   </div>

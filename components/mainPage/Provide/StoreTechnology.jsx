@@ -1,3 +1,5 @@
+import Link from "next/link";
+
 export default function StoreTechnology({text}) {
   return (
     <div className='tabs__section is-active' id='storage_technology'>
@@ -13,7 +15,9 @@ export default function StoreTechnology({text}) {
                 {text.content[0]}
               </p>
             </div>
-            <div className='content__action'><a className='btn is-primary' href='https://agrostroitel.ru/tehnologii-hraneniya/'>{text.btnText}</a></div>
+            <div className='content__action'>
+              <Link href='/storage-technology'><a className='btn is-primary' >{text.btnText}</a></Link>
+              </div>
           </div>
         </div>
 

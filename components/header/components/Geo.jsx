@@ -6,9 +6,15 @@ export default function Geo (props) {
 
  const [askCity, setAskCity]= useState('is-hide');
  
- function closeAskWindow() {setAskCity('is-hide')}
+ function closeAskWindow() {
+   localStorage.setItem('askAboutCity', true);
+   setAskCity('is-hide')
+  }
 
- useEffect( () => {setAskCity('is-show')}, [])
+ useEffect( () => {
+    const ask = localStorage.getItem('askAboutCity');
+    if (!ask) setAskCity('is-show');
+  }, [])
 
   return (
     <a className='geo popup-city'>
@@ -18,7 +24,8 @@ export default function Geo (props) {
         </svg>
       </span>
       <span onClick={openModal} className='geo__label'>
-      {city[language].header.cityName}:&nbsp;
+        {city[language].header.cityName}
+        :&nbsp;
       </span>
       <span className='link in-text geo__link'>
         <span onClick={openModal}>{city[language].header.city}</span>
