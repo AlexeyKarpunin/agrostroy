@@ -1,8 +1,8 @@
 {
   "ru": {
-    "rout": "Krasnodar",
+    "rout": "SaintPetersburg",
     "header": {
-      "city": "Краснодар",
+      "city": "Санкт-Петербург",
       "cityName": "Ваш город",
       "compani": ["Агростроитель", "Юг"],
       "companiDis": ["Строительство объектов сельхоз назначения", "Под ключ"],
@@ -341,10 +341,10 @@
   },
   
   "eng": {
-    "rout": "krasnodar",
+    "rout": "SaintPetersburg",
 
     "header": {
-      "city": "Krasnodar",
+      "city": "Saint-Petersburg",
       "cityName": "City",
       "compani": ["Agrostroitel", "Ug"],
       "companiDis": ["Construction of agricultural facilities", "Turn key"],

@@ -1,8 +1,8 @@
 {
   "ru": {
-    "rout": "Krasnodar",
+    "rout": "Pyatigorsk",
     "header": {
-      "city": "Краснодар",
+      "city": "Пятигорск",
       "cityName": "Ваш город",
       "compani": ["Агростроитель", "Юг"],
       "companiDis": ["Строительство объектов сельхоз назначения", "Под ключ"],
@@ -341,10 +341,10 @@
   },
   
   "eng": {
-    "rout": "krasnodar",
+    "rout": "Pyatigorsk",
 
     "header": {
-      "city": "Krasnodar",
+      "city": "Pyatigorsk",
       "cityName": "City",
       "compani": ["Agrostroitel", "Ug"],
       "companiDis": ["Construction of agricultural facilities", "Turn key"],

@@ -1,8 +1,8 @@
 {
   "ru": {
-    "rout": "Krasnodar",
+    "rout": "Vladikovkaz",
     "header": {
-      "city": "Краснодар",
+      "city": "Владикавказ",
       "cityName": "Ваш город",
       "compani": ["Агростроитель", "Юг"],
       "companiDis": ["Строительство объектов сельхоз назначения", "Под ключ"],
@@ -341,10 +341,10 @@
   },
   
   "eng": {
-    "rout": "krasnodar",
+    "rout": "Vladikovkaz",
 
     "header": {
-      "city": "Krasnodar",
+      "city": "Vladikovkaz",
       "cityName": "City",
       "compani": ["Agrostroitel", "Ug"],
       "companiDis": ["Construction of agricultural facilities", "Turn key"],

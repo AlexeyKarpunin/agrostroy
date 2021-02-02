@@ -1,8 +1,8 @@
 {
   "ru": {
-    "rout": "Krasnodar",
+    "rout": "cherkessk",
     "header": {
-      "city": "Краснодар",
+      "city": "Черкесск",
       "cityName": "Ваш город",
       "compani": ["Агростроитель", "Юг"],
       "companiDis": ["Строительство объектов сельхоз назначения", "Под ключ"],
@@ -341,10 +341,10 @@
   },
   
   "eng": {
-    "rout": "krasnodar",
+    "rout": "Cherkessk",
 
     "header": {
-      "city": "Krasnodar",
+      "city": "Cherkessk",
       "cityName": "City",
       "compani": ["Agrostroitel", "Ug"],
       "companiDis": ["Construction of agricultural facilities", "Turn key"],

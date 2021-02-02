@@ -1,8 +1,8 @@
 {
   "ru": {
-    "rout": "Krasnodar",
+    "rout": "Nalchik",
     "header": {
-      "city": "Краснодар",
+      "city": "Нальчик",
       "cityName": "Ваш город",
       "compani": ["Агростроитель", "Юг"],
       "companiDis": ["Строительство объектов сельхоз назначения", "Под ключ"],
@@ -341,10 +341,10 @@
   },
   
   "eng": {
-    "rout": "krasnodar",
+    "rout": "Nalchik",
 
     "header": {
-      "city": "Krasnodar",
+      "city": "Nalchik",
       "cityName": "City",
       "compani": ["Agrostroitel", "Ug"],
       "companiDis": ["Construction of agricultural facilities", "Turn key"],

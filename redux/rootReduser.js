@@ -1,3 +1,4 @@
+/* eslint-disable global-require */
 /* eslint-disable no-param-reassign */
 /* eslint-disable no-case-declarations */
 import { combineReducers } from 'redux';
@@ -7,6 +8,7 @@ import {
   ASK_USER_GEO_ACTION,
   LANGUAGE_RUS,
   LANGUAGE_ENG } from './types'
+import cities from '../cities/citiesNames';  
 
 
 const INIT_CITY = {
@@ -15,8 +17,38 @@ const INIT_CITY = {
 
 function checkCity (city) {
   switch(city){
-    case'Krasnodar':
+    case cities.krasnodar:
       return require('../cities/krasnodar.json');
+    case cities.rostov:
+      return require('../cities/rostov.json');
+    case cities.baksan:
+      return require('../cities/baksan.json');
+    case cities.budennovsk:
+      return require('../cities/budennovsk.json');
+    case cities.cherkessk:
+      return require('../cities/cherkessk.json');
+    case cities.elista:
+      return require('../cities/elista.json');
+    case cities.ipatovo:
+      return require('../cities/ipatovo.json');
+    case cities.magas:
+      return require('../cities/magas.json');
+    case cities.moscow:
+      return require('../cities/moscow.json');
+    case cities.nalchik:
+      return require('../cities/nalchik.json');
+    case cities.prokhladnyy:
+      return require('../cities/prokhladnyy.json');
+    case cities.pyatigorsk:
+      return require('../cities/pyatigorsk.json');
+    case cities.saintPetersburg:
+      return require('../cities/saintPetersburg.json');
+    case cities.stavropol:
+      return require('../cities/stavropol.json');
+    case cities.vladikovkaz:
+      return require('../cities/vladikovkaz.json');
+    case cities.volgograd:
+      return require('../cities/volgograd.json');                            
     default:
       return require('../cities/astrakhan.json');
   }

@@ -9,6 +9,16 @@ export default function Lang () {
  const [engActive, setEng] = useState(false);
  const dispatch = useDispatch();
 
+ useEffect(() =>{
+  const lang = localStorage.getItem('lang');
+  if (!lang) {
+    localStorage.setItem('lang', 'ru');
+  } else if (lang === 'eng') {
+    setRu(false);
+    setEng(true);
+  }
+ }, [])
+
  useEffect( () => {
    ruActive ? dispatch(changeLanguageRus()) : dispatch(changeLanguageEng())
  }, [ruActive, engActive]);
@@ -16,8 +26,20 @@ export default function Lang () {
   function activateBtn (e) {
     e.preventDefault();
     if (!e.target.classList.contains('is-active')) {
-      ruActive ? setRu(false) : setRu(true);
-      engActive ? setEng(false) : setEng(true);
+
+      if (ruActive) {
+        setRu(false)
+      } else {
+        setRu(true);
+        localStorage.setItem('lang', 'ru');
+      }
+
+      if (engActive) {
+        setEng(false)
+      } else {
+        setEng(true); 
+        localStorage.setItem('lang', 'eng');
+      }
     }
   } 
   

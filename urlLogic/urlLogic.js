@@ -1,33 +1,47 @@
 import { useDispatch, useSelector} from 'react-redux';
 import { useRouter } from 'next/router';
-import { useEffect} from 'react';
+import { useEffect, useState} from 'react';
 import {askUserGealocation, giveUserCity} from '../redux/actions';
 import findCity from './findCity';
 
-export default function UrlLogistic (props) {
+export default function UrlLogistic () {
   const router = useRouter();
   const city = useSelector( (state) => state.city.city);
   const language = useSelector( (state) => state.language.language)
-  const dispatch = useDispatch();
 
-  useEffect ( () => console.log('WL:', window.location), [])
+  useEffect(()=>{
+     router.push(router.pathname, `/${language}/${city[language].rout}${router.pathname}`, { shallow: true })
+     console.log('routerpath', router.pathname)
+  }, [router.pathname, language, city[language].rout]);
 
-  // useEffect( () => {
-  //   if (!router.asPath.includes('?city=')) {
-  //     fetch('/api/ip').then( res => res.json()).then( (data) => {
-  //       dispatch(askUserGealocation(data.ip));
-  //     });
-  //   } else {
-  //     dispatch(giveUserCity(findCity(router.asPath)));
+  // function test(url) {
+  //   console.log('router.pathname', router);
+  //   if (url === router.pathname) {
+  //     console.log('YES')
   //   }
-  // }, []);
+  // }
 
-  // useEffect( () => {
-  //   // router.push(`${props.link}`, undefined, { shallow: false }) //city[language].rout
-  //   router.push(`${props.link}`, `${props.link}`, { locale: `${language}` });
-  //   console.log('router', router)
-    
-  // },[city])
+  useEffect(() => {
+    const handleRouteChange = (url, { shallow }) => {
+      console.log(
+        `App is changing to ${url} ${
+          shallow ? 'with' : 'without'
+        } shallow routing`
+      )
+      console.log('WL', window.location)
+      console.log('url', url)
+      console.log('---------------------------------')
+      // test(url)
+    }
 
-  return (<script></script>)
+    router.events.on('routeChangeComplete', handleRouteChange)
+
+    // If the component is unmounted, unsubscribe
+    // from the event with the `off` method:
+    return () => {
+      router.events.off('routeChangeComplete', handleRouteChange)
+    }
+  }, [])
+
+  return (<script />)
 }

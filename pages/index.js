@@ -10,8 +10,8 @@ import Footer from '../components/footer/Footer';
 import '../styles/style.css';
 import { useSelector } from 'react-redux';
 
-// import store from '../redux/store';
-// import { useEffect } from 'react';
+import store from '../redux/store';
+import { useEffect } from 'react';
 
 
 export default function Home() {
