@@ -21,6 +21,8 @@ export default function Header ({city, language}) {
     console.log(city)
     if (city) {
       dispatch(giveUserCity(city));
+    } else {
+      dispatch(giveUserCity('default'));
     }
   }, [])
 

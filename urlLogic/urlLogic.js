@@ -17,16 +17,13 @@ export default function UrlLogistic () {
       const [language, city] = router.asPath.split('/').filter( (path) => path !== '' && path !== '_error' && path !== '404').slice(0, 2)
       if (language === 'ru') {
         localStorage.setItem('lang', 'ru');
-        // dispatch(changeLanguageRus());
       }
 
       if (language === 'eng') {
         localStorage.setItem('lang', 'eng');
-        // dispatch(changeLanguageEng());
       }
 
       localStorage.setItem('city', city);
-      // dispatch(giveUserCity(city));
     }
   }, [])
 
