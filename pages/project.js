@@ -6,7 +6,7 @@ import Provide from '../components/mainPage/Provide/Provide';
 import Advantages from '../components/project/Advantages';
 import Design from '../components/project/Design';
 import DesignSchema from '../components/project/DesignSchema';
-import ProjectBanner from '../components/project/projectBanner';
+import ProjectBanner from '../components/project/ProjectBanner';
 import ProjectForm from '../components/project/ProjectForm';
 import ProjectSlaider from '../components/project/ProjectSlaider';
 import '../styles/style.css';
