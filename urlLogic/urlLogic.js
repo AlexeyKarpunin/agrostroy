@@ -1,10 +1,7 @@
 import { useDispatch, useSelector} from 'react-redux';
 import { useRouter } from 'next/router';
-import { useEffect, useState} from 'react';
-import {changeLanguageEng, changeLanguageRus, giveUserCity} from '../redux/actions';
-import findCity from './findCity';
-import Url from 'url-parse';
-import parse from 'url-parse'
+import { useEffect} from 'react';
+
 
 export default function UrlLogistic () {
   const router = useRouter();
