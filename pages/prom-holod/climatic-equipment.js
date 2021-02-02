@@ -21,12 +21,12 @@ export default function ClimaticEquipment () {
         city={city}
         language={language}
       />
-      <CEBanner />
-      <Advantages />
-      <RoundBanner />
-      <CEInfo />
-      <ProjectSlaider />
-      <ProjectForm />
+      <CEBanner text={city[language].climaticEquipment.banner} />
+      <Advantages text={city[language].advantages} />
+      <RoundBanner text={city[language].climaticEquipment.roundBanner} />
+      <CEInfo text={city[language].climaticEquipment.info} />
+      <ProjectSlaider text={city[language].projectSlaider} />
+      <ProjectForm text={city[language].form} />
       <Map
         city={city}
         language={language}

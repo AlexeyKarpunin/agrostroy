@@ -1,6 +1,6 @@
 import { useEffect } from 'react';
 
-export default function YMap () {
+export default function YMap ({text}) {
 
   useEffect(() => {
     
@@ -31,22 +31,22 @@ export default function YMap () {
     <div className='page-section'>
       <div className='page-section__inner'>
         <div className='page-section__title'>
-          <h2 className='is-section'>Контакты компании «АгроСтроитель Юг» в Астрахани</h2>
+          <h2 className='is-section'>{text.header}</h2>
         </div>
         <div className='page-section__body'>
           <div className='container__img is-rounded'>
             <p>
-              <b>Телефон:</b>
+              <b>{text.phone[0]}</b>
               {' '}
-              8 800 511 50 60
+              {text.phone[1]}
               <br />
-              <b>Email:</b>
+              <b>{text.mail[0]}</b>
               {' '}
-              ug@fabricant.ru
+              {text.mail[1]}
               <br />
-              <b>Адрес:</b>
+              <b>{text.address[0]}</b>
               {' '}
-              г. Астрахань, ул. Кирова, 19
+              {text.address[1]}
             </p>
             
             {/* <p>

@@ -21,12 +21,12 @@ export default function FruitsStorage() {
         city={city}
         language={language}
       />
-      <CornBanner />
-      <Advantages />
-      <RoundBanner />
+      <CornBanner text={city[language].grainStorage.banner} />
+      <Advantages text={city[language].advantages} />
+      <RoundBanner text={city[language].grainStorage.roundBanner} />
       <CornInfo />
-      <ProjectSlaider />
-      <ProjectForm />
+      <ProjectSlaider text={city[language].projectSlaider} />
+      <ProjectForm text={city[language].form} />
       <Map
         city={city}
         language={language}

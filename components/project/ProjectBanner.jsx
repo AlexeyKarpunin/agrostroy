@@ -1,4 +1,4 @@
-export default function ProjectBanner () {
+export default function ProjectBanner ({text}) {
   return (
     <div className='page-section is-main-banner'>
       <div className='banner'>
@@ -8,28 +8,28 @@ export default function ProjectBanner () {
             <div className='banner__title'>
               <h1 className='in-banner'>
                 <p>
-                  <em className='text is-primary'>Проектирование</em>
+                  <em className='text is-primary'>{text.header[0]}</em>
                   <br />
-                  <em className='text is-block'>Любых строений агрокомплекса</em>
-                  <em className='text is-block'>в Астрахани и области</em>
+                  <em className='text is-block'>{text.header[1]}</em>
+                  <em className='text is-block'>{text.header[2]}</em>
                 </p>
               </h1>
             </div>
             <div className='banner__content'>
               <p />
               <p>
-                <q className='text is-q is-nobr'>Строительство</q> 
-                <em className='text is-secondary is-bold'>Под ключ</em>
+                <q className='text is-q is-nobr'>{text.bannerContent[0]}</q> 
+                <em className='text is-secondary is-bold'>{text.bannerContent[1]}</em>
                 <br />
-                дизайн-проект 
+                {text.bannerContent[2]} 
                 {' '}
-                <strong className='text is-uppercase is-secondary is-bold'>бесплатно</strong>
+                <strong className='text is-uppercase is-secondary is-bold'>{text.bannerContent[3]}</strong>
               </p>
               <p />
             </div>
             <div className='banner__action'>
               <a className='btn is-primary is-large' href='#call'>
-                Расчитать стоимость
+              {text.btn}
               </a>
             </div>
           </div>

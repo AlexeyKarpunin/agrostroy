@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import Slider from 'react-slick';
 import styled from 'styled-components';
 
-export default function ProjectSlaider () {
+export default function ProjectSlaider ({text}) {
 
   const settings = {
     dots: true,
@@ -94,7 +94,7 @@ export default function ProjectSlaider () {
       <div className='page-section__inner'>
         <div className='page-section__title'>
           <h2 className='is-section'>
-            Выполненные нами проекты
+            {text.header}
           </h2>
         </div>
         <div className='page-section__body'>
@@ -105,8 +105,8 @@ export default function ProjectSlaider () {
                 <div className='fotorama__caption'>
                   <div className='fotorama__caption__wrap'>
                     <div className='fotorama__block-content'>
-                      <h3 className='is-slide'>ОПТОВО-РОЗНИЧНАЯ БАЗА «ДИЭЛ», с. Солянка, Астраханская область</h3>
-                      <p className='fotorama__slide-description'>Проектирование и строительство, кровельные и фасадные работы. Оснащение вентиляционным оборудованием. Установка камер для хранения продовольственной продукции — площадью 1700 кв.м.</p>
+                      <h3 className='is-slide'>{text.slide1.header}</h3>
+                      <p className='fotorama__slide-description'>{text.slide1.content}</p>
                     </div>
                   </div>
                 </div>
@@ -116,8 +116,8 @@ export default function ProjectSlaider () {
                 <div className='fotorama__caption'>
                   <div className='fotorama__caption__wrap'>
                     <div className='fotorama__block-content'>
-                      <h3 className='is-slide'>ОВОЩЕХРАНИЛИЩЕ — 20 х 73,8 м. «ИРРИКО», Ставропольский край, Ипатовский район, поселок Винодельненский</h3>
-                      <p className='fotorama__slide-description'>Проектирование и строительство овощехранилища навального типа.</p>
+                      <h3 className='is-slide'>{text.slide2.header}</h3>
+                      <p className='fotorama__slide-description'>{text.slide2.content}</p>
                     </div>
                   </div>
                 </div>
@@ -127,8 +127,8 @@ export default function ProjectSlaider () {
                 <div className='fotorama__caption'>
                   <div className='fotorama__caption__wrap'>
                     <div className='fotorama__block-content'>
-                      <h3 className='is-slide'>РЫБОПЕРЕРАБАТЫВАЮЩИЙ КОМПЛЕКС, с. Цветное</h3>
-                      <p className='fotorama__slide-description'>Проектирование. Изготовление и монтаж металлоконструкций и сэндвич панелей. Оснащение промышленным холодильным оборудованием. Установка топинговых полов. Общая площадь здания 1400 м2</p>
+                      <h3 className='is-slide'>{text.slide3.header}</h3>
+                      <p className='fotorama__slide-description'>{text.slide3.content}</p>
                     </div>
                   </div>
                 </div>
@@ -138,8 +138,8 @@ export default function ProjectSlaider () {
                 <div className='fotorama__caption'>
                   <div className='fotorama__caption__wrap'>
                     <div className='fotorama__block-content'>
-                      <h3 className='is-slide'>СКЛАД ПО ХРАНЕНИЮ ЗАМОРОЖЕННОЙ ПРОДУКЦИИ, ИП ДЖУМАТОВ Ш.У., г. Астрахань, Приволжский р-он, Началовское шоссе</h3>
-                      <p className='fotorama__slide-description'>Проектирование и строительство объекта. Оснащение промышленным холодильным оборудованием: установлены низкотемпературные морозильные камеры (- 18°C), общей площадью 600 кв.м.</p>
+                      <h3 className='is-slide'>{text.slide4.header}</h3>
+                      <p className='fotorama__slide-description'>{text.slide4.content}</p>
                     </div>
                   </div>
                 </div>
@@ -149,8 +149,8 @@ export default function ProjectSlaider () {
                 <div className='fotorama__caption'>
                   <div className='fotorama__caption__wrap'>
                     <div className='fotorama__block-content'>
-                      <h3 className='is-slide'>ЛОГИСТИЧЕСКИЙ ЦЕНТР ООО «ЗАВЕТНОЕ», Ставропольский край, с. Новозаведенное</h3>
-                      <p className='fotorama__slide-description'>Проектирование и строительство трех овощехранилищ навального и контейнерного типа, технологического корпуса с навесами по переработке овощей, АБК, тарного цеха, КПП, весовой и прочих технических помещений. Поставка и монтаж всей необходимой сельскохозяйственной техники. Установка холодильного оборудования объем 5000 т.</p>
+                      <h3 className='is-slide'>{text.slide5.header}</h3>
+                      <p className='fotorama__slide-description'>{text.slide5.content}</p>
                     </div>
                   </div>
                 </div>
@@ -160,8 +160,8 @@ export default function ProjectSlaider () {
                 <div className='fotorama__caption'>
                   <div className='fotorama__caption__wrap'>
                     <div className='fotorama__block-content'>
-                      <h3 className='is-slide'>АДМИНИСТРАТИВНО-СКЛАДСКОЙ КОМПЛЕКС ЛОГИСТИЧЕСКИЙ ЦЕНТР «ДЕЛОВЫЕ ЛИНИИ», г. Астрахань</h3>
-                      <p className='fotorama__slide-description'>Проектирование и строительство. Площадь почти 4000 кв.м.. Из них складские помещения площадью 3200 кв.м. и офисные помещения площадью – 694 кв.м. Нашей компанией был проведен полный цикл работ от проектирования и возведения здания, проведения отделочных работ и оснащения всем необходимым оборудованием.</p>
+                      <h3 className='is-slide'>{text.slide6.header}</h3>
+                      <p className='fotorama__slide-description'>{text.slide6.content}</p>
                     </div>
                   </div>
                 </div>
@@ -169,7 +169,7 @@ export default function ProjectSlaider () {
             </Slider>
           </SliderWrraper>
           <div className='container centered'>
-            <Link  href='/finished-projects'><a className='btn is-secondary'>Посмотреть все объекты</a></Link>
+            <Link  href='/finished-projects'><a className='btn is-secondary'>{text.btn}</a></Link>
           </div>
         </div>
       </div>

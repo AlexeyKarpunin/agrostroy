@@ -19,17 +19,16 @@ export default function project () {
   
   return (
     <>
-  
       <Header 
         city={city}
         language={language}
       />
-      <ProjectBanner />
-      <Advantages />
-      <Design />
+      <ProjectBanner text={city[language].project} />
+      <Advantages text={city[language].advantages} />
+      <Design text={city[language].project.roundBanner} />
       <DesignSchema />
-      <ProjectSlaider />
-      <ProjectForm />
+      <ProjectSlaider text={city[language].projectSlaider} />
+      <ProjectForm text={city[language].form} />
       <Map
         city={city}
         language={language}

@@ -1,13 +1,13 @@
-export default function Advantages () {
+export default function Advantages ({text}) {
   return (
     <div className='page-section'>
       <div className='page-section__inner'>
         <div className='page-section__title'>
 
           <h2 className='is-section'>
-            <span className='text is-primary'>Преимущества</span>
+            <span className='text is-primary'>{text.header[0]}</span>
             {' '}
-            работы с нами
+            {text.header[1]}
           </h2>
 	        
         </div>
@@ -16,7 +16,7 @@ export default function Advantages () {
             <li className='grid__item grid__item-a'>
               <div className='card card-1'>
                 <div className='card__title'>
-                  <h3 className='in-card'>Собственное производство</h3>
+                  <h3 className='in-card'>{text.production[0]}</h3>
                 </div>
                 <div className='card__header'>
                   <div className='card__image-wrapper'>
@@ -30,11 +30,7 @@ export default function Advantages () {
                 </div>
                 <div className='card__body'>
                   <div className='card__content'>
-                    <p>
-                      У нас собственное производство, мы работаем только с теми поставщиками,
-                      которые зарекомендовали себя как надежные партнеры. Все материалы
-                      выполнены по ГОСТу.
-                    </p>
+                    <p>{text.production[1]}</p>
                   </div>
                 </div>
               </div>
@@ -42,7 +38,7 @@ export default function Advantages () {
             <li className='grid__item grid__item-b'>
               <div className='card card-2'>
                 <div className='card__title'>
-                  <h3 className='in-card'>Репутация</h3>
+                  <h3 className='in-card'>{text.reputation[0]}</h3>
                 </div>
                 <div className='card__header'>
                   <div className='card__image-wrapper'>
@@ -57,7 +53,7 @@ export default function Advantages () {
                 <div className='card__body'>
                   <div className='card__content'>
                     <p>
-                      Более чем 10 лет мы дорожим своей репутацией. За это время было выполнено около 200 объектов по всему ЮФО и странам СНГ
+                    {text.reputation[1]}
                     </p>
                   </div>
                 </div>
@@ -66,7 +62,7 @@ export default function Advantages () {
             <li className='grid__item grid__item-c'>
               <div className='card card-3'>
                 <div className='card__title'>
-                  <h3 className='in-card'>Срок службы 70 лет</h3>
+                  <h3 className='in-card'>{text.service[0]}</h3>
                 </div>
                 <div className='card__header'>
                   <div className='card__image-wrapper'>
@@ -80,10 +76,7 @@ export default function Advantages () {
                 </div>
                 <div className='card__body'>
                   <div className='card__content'>
-                    <p>
-                      Cрок службы всех сооружений, которые мы строим, при условии
-                      правильной эксплуатации — от 70 лет.
-                    </p>
+                    <p>{text.service[1]}</p>
                   </div>
                 </div>
               </div>
@@ -91,7 +84,7 @@ export default function Advantages () {
             <li className='grid__item grid__item-d'>
               <div className='card card-4'>
                 <div className='card__title'>
-                  <h3 className='in-card'>Поможем сэкономить</h3>
+                  <h3 className='in-card'>{text.help[0]}</h3>
                 </div>
                 <div className='card__header'>
                   <div className='card__image-wrapper'>
@@ -105,13 +98,7 @@ export default function Advantages () {
                 </div>
                 <div className='card__body'>
                   <div className='card__content'>
-                    <p>
-                      Мы готовы проконсультировать вас 
-                      по оборудованию, коммуникациям, которые будем устанавливать. 
-                      Расскажем, как выгодно распределить 
-                      ресурсы при строительстве, 
-                      на чем можно сэкономить.
-                    </p>
+                    <p>{text.help[1]}</p>
                   </div>
                 </div>
               </div>
@@ -119,7 +106,7 @@ export default function Advantages () {
             <li className='grid__item grid__item-e'>
               <div className='card card-5'>
                 <div className='card__title'>
-                  <h3 className='in-card'>Обучение и консультация</h3>
+                  <h3 className='in-card'>{text.training[0]}</h3>
                 </div>
                 <div className='card__header'>
                   <div className='card__image-wrapper'>
@@ -131,13 +118,7 @@ export default function Advantages () {
                 </div>
                 <div className='card__body'>
                   <div className='card__content'>
-                    <p>
-                      Мы готовы дать подробнейшую консультацию по эксплуатации любого установленного 
-                      нами оборудования 
-                      и оказать техническую 
-                      поддержку в течение всего 
-                      гарантийного срока.
-                    </p>
+                    <p>{text.training[1]}</p>
                   </div>
                 </div>
               </div>

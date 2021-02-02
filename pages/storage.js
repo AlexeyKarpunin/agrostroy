@@ -22,12 +22,12 @@ export default function Storage () {
         city={city}
         language={language}
       />
-      <Storagebanner />
-      <Advantages />
-      <RoundBanner />
-      <StorageInfo />
-      <ProjectSlaider />
-      <ProjectForm />
+      <Storagebanner text={city[language].storage.banner} />
+      <Advantages text={city[language].advantages} />
+      <RoundBanner text={city[language].storage.roundBanner} />
+      <StorageInfo text={city[language].storage.info} />
+      <ProjectSlaider text={city[language].projectSlaider} />
+      <ProjectForm text={city[language].form} />
       <Map
         city={city}
         language={language}

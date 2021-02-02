@@ -13,7 +13,7 @@ export default function Contacts () {
         city={city}
         language={language}
       />
-      <YMap />
+      <YMap text={city[language].contacts} />
       <Footer
         city={city}
         language={language}

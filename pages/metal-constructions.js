@@ -22,12 +22,12 @@ export default function MetalConstructions () {
         city={city}
         language={language}
       />
-      <McBanner />
-      <Advantages />
-      <CreateMC />
+      <McBanner text={city[language].metallWork.banner} />
+      <Advantages text={city[language].advantages} />
+      <CreateMC text={city[language].metallWork.roundBanner} />
       <Manufactuging />
-      <ProjectSlaider />
-      <ProjectForm />
+      <ProjectSlaider text={city[language].projectSlaider} />
+      <ProjectForm text={city[language].form} />
       <Map 
         city={city}
         language={language}

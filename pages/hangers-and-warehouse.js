@@ -20,12 +20,12 @@ export default function HangersAndWarehouse () {
         city={city}
         language={language}
       />
-      <HWBanner />
-      <Advantages />
-      <RoundBanner />
+      <HWBanner text={city[language].hangars.banner} />
+      <Advantages text={city[language].advantages} />
+      <RoundBanner text={city[language].hangars.roundBanner} />
       <HWInfo />
-      <ProjectSlaider />
-      <ProjectForm />
+      <ProjectSlaider text={city[language].projectSlaider} />
+      <ProjectForm text={city[language].form} />
       <Map
         city={city}
         language={language}

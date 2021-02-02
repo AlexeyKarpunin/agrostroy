@@ -23,12 +23,12 @@ export default function FoldingHangar() {
         city={city}
         language={language}
       />
-      <WFHBanner />
-      <Advantages />
-      <RoundBanner />
-      <WFHInfo />
-      <ProjectSlaider />
-      <ProjectForm />
+      <WFHBanner text={city[language].framelessHangars.banner} />
+      <Advantages text={city[language].advantages} />
+      <RoundBanner text={city[language].framelessHangars.roundBanner} />
+      <WFHInfo text={city[language].framelessHangars.info} />
+      <ProjectSlaider text={city[language].projectSlaider} />
+      <ProjectForm text={city[language].form} />
       <Map
         city={city}
         language={language}

@@ -1,4 +1,4 @@
-export default function RecBanner() {
+export default function RecBanner({text}) {
   return (
     <div className='page-section is-main-banner'>
       <div className='banner'>
@@ -8,30 +8,30 @@ export default function RecBanner() {
             <div className='banner__title'>
               <h1 className='in-banner'>
                 <p>
-                  <span className='text is-primary'>Реконструкция</span>
+                  <span className='text is-primary'>{text.header[0]}</span>
                   <br />
-                  <span className='text is-block'>Зданий</span> 
+                  <span className='text is-block'>{text.header[1]}</span> 
                 </p>
               </h1>
             </div>
             <div className='banner__content'>
               <p />
               <p>
-                <q className='text is-q is-nobr'>Под ключ</q>
+                <q className='text is-q is-nobr'>{text.content[0]}</q>
                 {' '}
-                от 
+                {text.content[1]} 
                 {' '}
-                <em className='text is-secondary is-bold'>30 дней</em>
+                <em className='text is-secondary is-bold'>{text.content[2]}</em>
                 <br />
-                дизайн-проект 
+                {text.content[3]} 
                 {' '}
-                <strong className='text is-uppercase is-secondary is-bold'>бесплатно</strong>
+                <strong className='text is-uppercase is-secondary is-bold'>{text.content[4]}</strong>
               </p>
               <p />
             </div>
             <div className='banner__action'>
               <a className='btn is-primary is-large' href='#call'>
-                Расчитать стоимость
+              {text.btn}
               </a>
             </div>
           </div>

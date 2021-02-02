@@ -24,12 +24,12 @@ export default function FoldingHangar() {
         city={city}
         language={language}
       />
-      <FrameBanner />
-      <Advantages />
-      <RoundBanner />
-      <FrameInfo />
-      <ProjectSlaider />
-      <ProjectForm />
+      <FrameBanner text={city[language].frameHangars.banner} />
+      <Advantages text={city[language].advantages} />
+      <RoundBanner text={city[language].frameHangars.roundBanner} />
+      <FrameInfo text={city[language].frameHangars.info} />
+      <ProjectSlaider text={city[language].projectSlaider} />
+      <ProjectForm text={city[language].form} />
       <Map
         city={city}
         language={language}

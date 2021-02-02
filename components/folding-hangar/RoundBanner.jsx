@@ -1,14 +1,14 @@
-export default function RoundBanner() {
+export default function RoundBanner({text}) {
   return (
     <div className='page-section'>
       <div className='page-section__inner'>
         <div className='page-section__title'>
           <h2 className='is-section'>
-            Производство и монтаж 
+            {text.header[0]} 
             {' '}
-            <span className='text is-secondary'>Сборно-разборных ангаров</span>
+            <span className='text is-secondary'>{text.header[1]}</span>
             {' '}
-            в Астрахани
+            {text.header[2]}
           </h2>
         </div>
         <div className='page-section__body'>
@@ -18,7 +18,7 @@ export default function RoundBanner() {
                 <div className='label is-label-2' style={{left: '50%', top: '0%'}}>
                   <div className='label__point' />
                   <div className='label__value'>
-                    <div className='label__value-inner'>Легкость и быстрота монтажа</div>
+                    <div className='label__value-inner'>{text.content[0]}</div>
                     <div className='label__value-line'>
                       <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
                         <line x1='0' y1='0' x2='100' y2='100' vectorEffect='non-scaling-stroke' />
@@ -29,7 +29,7 @@ export default function RoundBanner() {
                 <div className='label is-label-3' style={{left: '89.4%', top: '19.22%'}}>
                   <div className='label__point' />
                   <div className='label__value'>
-                    <div className='label__value-inner'>Без капитального строительства</div>
+                    <div className='label__value-inner'>{text.content[1]}</div>
                     <div className='label__value-line'>
                       <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
                         <line x1='0' y1='0' x2='100' y2='100' vectorEffect='non-scaling-stroke' />
@@ -40,7 +40,7 @@ export default function RoundBanner() {
                 <div className='label is-label-9' style={{left: '98.91%', top: '60.4%'}}>
                   <div className='label__point' />
                   <div className='label__value'>
-                    <div className='label__value-inner'>Возможность транспортировки</div>
+                    <div className='label__value-inner'>{text.content[2]}</div>
                     <div className='label__value-line'>
                       <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
                         <line x1='0' y1='0' x2='100' y2='100' vectorEffect='non-scaling-stroke' />
@@ -51,7 +51,7 @@ export default function RoundBanner() {
                 <div className='label is-label-9' style={{left: '71.92%', top: '94.94%'}}>
                   <div className='label__point' />
                   <div className='label__value'>
-                    <div className='label__value-inner'>Возможность доукомплектовывать конструкцию</div>
+                    <div className='label__value-inner'>{text.content[3]}</div>
                     <div className='label__value-line'>
                       <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
                         <line x1='0' y1='0' x2='100' y2='100' vectorEffect='non-scaling-stroke' />
@@ -62,7 +62,7 @@ export default function RoundBanner() {
                 <div className='label is-label-7' style={{left: '28.87%', top: '95.32%'}}>
                   <div className='label__point' />
                   <div className='label__value'>
-                    <div className='label__value-inner'>Экономия на проектных работах</div>
+                    <div className='label__value-inner'>{text.content[4]}</div>
                     <div className='label__value-line'>
                       <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
                         <line x1='0' y1='0' x2='100' y2='100' vectorEffect='non-scaling-stroke' />
@@ -73,7 +73,7 @@ export default function RoundBanner() {
                 <div className='label is-label-7' style={{left: '1.28%', top: '61.25%'}}>
                   <div className='label__point' />
                   <div className='label__value'>
-                    <div className='label__value-inner'>Облегченный фундамент</div>
+                    <div className='label__value-inner'>{text.content[5]}</div>
                     <div className='label__value-line'>
                       <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
                         <line x1='0' y1='0' x2='100' y2='100' vectorEffect='non-scaling-stroke' />
@@ -84,7 +84,7 @@ export default function RoundBanner() {
                 <div className='label is-label-1' style={{left: '10.6%', top: '19.22%'}}>
                   <div className='label__point' />
                   <div className='label__value'>
-                    <div className='label__value-inner'>Не требуется тяжелая техника</div>
+                    <div className='label__value-inner'>{text.content[6]}</div>
                     <div className='label__value-line'>
                       <svg viewBox='0 0 100 100' preserveAspectRatio='none'>
                         <line x1='0' y1='0' x2='100' y2='100' vectorEffect='non-scaling-stroke' />

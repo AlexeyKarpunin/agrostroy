@@ -1,16 +1,15 @@
 import InputMask from 'react-input-mask';
 
-export default function ProjectForm () {
+export default function ProjectForm ({text}) {
   return (
     <div className='page-section is-call' id='call'>
       <div className='page-section__inner'>
         <div className='page-section__title'>
           <h2 className='is-section'>
-            Остались вопросы?
-	
+            {text.header[0]}
           </h2>
           <p className='title is-section text is-primary'>
-            Оставьте заявку и мы свяжемся с вами
+            {text.header[1]}
           </p>
         </div>
         <div className='page-section__body'>
@@ -22,7 +21,7 @@ export default function ProjectForm () {
               <form action='/send.php' method='post'>
                 <div className='form__header'>
                   <h3 className='is-form'>
-                    Форма заявки
+                    {text.formhead}
                   </h3>
                 </div>
                 <div className='form__body'>
@@ -31,9 +30,7 @@ export default function ProjectForm () {
                       <span className='form__label'>
                         <span
                           className='icon in-label-form'
-                          aria-label='
-        		Ваше имя
-					'
+                          aria-label={`${text.name}`}
                         >
                           <svg>
                             <use xlinkHref='https://agrostroitel.ru/wp-content/themes/timber-starter-theme/assets/images/iconsprites.svg#user' />
@@ -47,9 +44,7 @@ export default function ProjectForm () {
                         className='is-text'
                         type='text'
                         name='name'
-                        placeholder='
-        		Ваше имя
-				'
+                        placeholder={`${text.name}`}
                       />
                     </label>
                   </div>
@@ -58,9 +53,7 @@ export default function ProjectForm () {
                       <span className='form__label'>
                         <span
                           className='icon in-label-form'
-                          aria-label='
-        		Телефон
-				'
+                          aria-label={`${text.phone}`}
                         >
                           <svg>
                             <use xlinkHref='https://agrostroitel.ru/wp-content/themes/timber-starter-theme/assets/images/iconsprites.svg#phone' />
@@ -83,7 +76,7 @@ export default function ProjectForm () {
                       <InputMask
                         className='is-text is-tel'
                         mask='+7 (999) 999-99-99'
-                        placeholder='Телефон'
+                        placeholder={`${text.phone}`}
                       />
                     </label>
                   </div>
@@ -92,10 +85,7 @@ export default function ProjectForm () {
                       <span className='form__label'>
                         <span
                           className='icon in-label-form'
-                          aria-label='
-
-        		Тип строения
-				'
+                          aria-label={`${text.structure}`}
                         >
                           <svg>
                             <use xlinkHref='https://agrostroitel.ru/wp-content/themes/timber-starter-theme/assets/images/iconsprites.svg#hangar' />
@@ -110,10 +100,7 @@ export default function ProjectForm () {
                         className='is-text'
                         type='text'
                         name='type_build'
-                        placeholder='
-
-        		Тип строения
-				'
+                        placeholder={`${text.structure}`}
                       />
                     </label>
                   </div>
@@ -122,9 +109,7 @@ export default function ProjectForm () {
                       <span className='form__label'>
                         <span
                           className='icon in-label-form'
-                          aria-label='
-        		Назначение
-				'
+                          aria-label={`${text.appointment}`}
                         >
                           <svg>
                             <use xlinkHref='https://agrostroitel.ru/wp-content/themes/timber-starter-theme/assets/images/iconsprites.svg#contain' />
@@ -138,17 +123,14 @@ export default function ProjectForm () {
                         className='is-text'
                         type='text'
                         name='target_build'
-                        placeholder='
-
-        		Назначение
-				'
+                        placeholder={`${text.appointment}`}
                       />
                     </label>
                   </div>
                 </div>
                 <div className='form__footer'>
                   <button className='is-primary is-large is-fit' type='submit'>
-                    Отправить
+                    {text.btn}
                   </button>
                 </div>
               </form>

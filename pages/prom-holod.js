@@ -21,13 +21,13 @@ export default function PromHolod () {
         city={city}
         language={language}
       />
-      <ColdBanner />
-      <Advantages />
-      <RoundBanner />
+      <ColdBanner text={city[language].industrialCold.banner} />
+      <Advantages text={city[language].advantages} /> 
+      <RoundBanner text={city[language].industrialCold.roundBanner} />
       <PromInfo />
-      <ProjectSlaider />
+      <ProjectSlaider text={city[language].projectSlaider}/>
       
-      <ProjectForm />
+      <ProjectForm text={city[language].form} />
       <Map
         city={city}
         language={language}
