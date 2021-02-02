@@ -7,7 +7,7 @@ import Advantages from '../components/project/Advantages';
 import ProjectForm from '../components/project/ProjectForm';
 import ProjectSlaider from '../components/project/ProjectSlaider';
 import ColdBanner from '../components/prom-holod/ColdBanner';
-import PromInfo from '../components/prom-holod/promInfo';
+import PromInfo from '../components/prom-holod/PromInfo';
 import RoundBanner from '../components/prom-holod/RoundBanner';
 import '../styles/style.css';
 
