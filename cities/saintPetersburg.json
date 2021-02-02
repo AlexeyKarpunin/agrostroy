@@ -1,6 +1,6 @@
 {
   "ru": {
-    "rout": "SaintPetersburg",
+    "rout": "Saint-Petersburg",
     "header": {
       "city": "Санкт-Петербург",
       "cityName": "Ваш город",
@@ -341,7 +341,7 @@
   },
   
   "eng": {
-    "rout": "SaintPetersburg",
+    "rout": "Saint-Petersburg",
 
     "header": {
       "city": "Saint-Petersburg",

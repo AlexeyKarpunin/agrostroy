@@ -1,6 +1,6 @@
 {
     "ru": {
-      "rout": "astrakhan",
+      "rout": "Astrakhan",
       "header": {
         "city": "Астрахань",
         "cityName": "Ваш город",
@@ -341,7 +341,7 @@
     },
     
     "eng": {
-      "rout": "astrakhan",
+      "rout": "Astrakhan",
 
       "header": {
         "city": "Astrakhan",

@@ -4,16 +4,17 @@ import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
 import {giveUserCity} from '../../../redux/actions'
 import cities from '../../../cities/citiesNames';
+import { useEffect } from 'react';
 
 export default function ModalChooseCities (props) {
   const {closeModal} = props;
   const dispatch = useDispatch();
 
-
   function changeCity(e) {
     e.preventDefault();
     const city = e.target.getAttribute('data-city');
-    dispatch(giveUserCity(city))
+    dispatch(giveUserCity(city));
+    localStorage.setItem('city', city);
     closeModal();
   }
 

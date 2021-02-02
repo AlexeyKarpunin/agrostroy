@@ -4,7 +4,7 @@ export default {
   rostov: 'Rostov',
   baksan: 'Baksan',
   magas: 'Magas',
-  saintPetersburg: 'Saint Petersburg',
+  saintPetersburg: 'Saint-Petersburg',
   budennovsk: 'Budennovsk',
   moscow: 'Moscow',
   stavropol: 'Stavropol',
