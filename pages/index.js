@@ -20,7 +20,6 @@ export default function Home() {
     // setInterval( () => {
     //   console.log('store:', store.getState())
     // }, 5000)
-    console.log(JSON.parse(require('../cities/astrakhan.json')))
   });
 
   const city = useSelector( (state) => state.city.city);

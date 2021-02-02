@@ -1,5 +1,5 @@
 import { useState,  useEffect} from 'react';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch} from 'react-redux';
 import Logo from './components/Logo';
 import Company from './components/Compony';
 import Geo from './components/Geo';
@@ -21,9 +21,7 @@ export default function Header ({city, language}) {
     console.log(city)
     if (city) {
       dispatch(giveUserCity(city));
-    } else {
-      dispatch(giveUserCity('default'));
-    }
+    } 
   }, [])
 
   return (
