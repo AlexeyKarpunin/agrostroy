@@ -18,7 +18,6 @@ export default function Header ({city, language}) {
 
   useEffect(() => {
     const city = localStorage.getItem('city');
-    console.log(city)
     if (city) {
       dispatch(giveUserCity(city));
     } 
