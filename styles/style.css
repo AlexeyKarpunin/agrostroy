@@ -4732,6 +4732,12 @@ img.in-super-circle {
         text-align: center;
     }
 }
+@media screen and (max-width: 520px) {
+    .banner__notice {
+        text-align: inherit;
+        width: auto;
+    }
+}
 
 @media screen and (max-width: 425px) {
     p.fotorama__slide-description {
@@ -4748,11 +4754,6 @@ img.in-super-circle {
     h3.is-slide {
         font-size: 0.8em;
     }
-}
-
-.banner__notice {
-    width: 52%;
-    margin: 2rem 0;
 }
 
 .banner__image {
