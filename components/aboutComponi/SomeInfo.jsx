@@ -5,7 +5,7 @@ export default function SomeInfo ({text}) {
         <div className='column__wrapper is-valign-center align-left'>
           <div className='column md-4'>
             <div className='img-circle'>
-              <div className='img-circle__inner'><img src='https://agrostroitel.ru/wp-content/themes/timber-starter-theme/assets/images/someimg.png' alt='' /></div>
+              <div className='img-circle__inner'><img src='/img/someimg.png' alt='' /></div>
             </div>
           </div>
           <div className='column md-5'>

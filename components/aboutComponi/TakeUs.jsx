@@ -24,7 +24,7 @@ export default function TakeUs({text}) {
 	                    
             </div>
             <div className='column'>
-              <div className='container__img is-rounded'><img src='https://agrostroitel.ru/wp-content/themes/timber-starter-theme/assets/images/section-pict.jpg' alt='' /></div>
+              <div className='container__img is-rounded'><img src='/img/section-pict.jpg' alt='' /></div>
             </div>
           </div>
         </div>

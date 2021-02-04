@@ -45,7 +45,7 @@ export default function CEBanner({text}) {
         </div>
         <div className='banner__image'>
           <div className='banner__image-inner'>
-            <img src='https://agrostroitel.ru/wp-content/uploads/2019/08/Климатическое-оборудование.png' alt='Климатическое-оборудование' />
+            <img src='/img/2019/08/Климатическое-оборудование.png' alt='Климатическое-оборудование' />
           </div>
           <div className='banner__shape' />
         </div>

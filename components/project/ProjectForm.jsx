@@ -15,7 +15,7 @@ export default function ProjectForm ({text}) {
         <div className='page-section__body'>
           <div className='column__wrapper is-form is-valign-center'>
             <div className='column is-form-image'>
-              <img className='form__image' src='https://agrostroitel.ru/wp-content/uploads/2019/08/call.png' alt='Строитель' />
+              <img className='form__image' src='/img/2019/08/call.png' alt='Строитель' />
             </div>
             <div className='column'>
               <form action='/send.php' method='post'>

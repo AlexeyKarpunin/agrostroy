@@ -51,7 +51,7 @@ export default function InfoAboutComponi ({text}) {
 
                   </p>
                 </div>
-                <div className='column' style={{flex: 'none'}}><img src='https://agrostroitel.ru/wp-content/themes/timber-starter-theme/assets/images/zalupa.png' alt='part of map' /></div>
+                <div className='column' style={{flex: 'none'}}><img src='/img/zalupa.png' alt='part of map' /></div>
               </div>
             </div>
           </div>

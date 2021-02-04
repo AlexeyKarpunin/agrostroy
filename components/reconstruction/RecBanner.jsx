@@ -38,7 +38,7 @@ export default function RecBanner({text}) {
         </div>
         <div className='banner__image'>
           <div className='banner__image-inner'>
-            <img src='https://agrostroitel.ru/wp-content/uploads/2019/08/reconstruktciya-header.png' alt='Реконструкция зданий и построек из металлоконструкций' />
+            <img src='/img/2019/08/reconstruktciya-header.png' alt='Реконструкция зданий и построек из металлоконструкций' />
           </div>
           <div className='banner__shape' />
         </div>

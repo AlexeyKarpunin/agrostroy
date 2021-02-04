@@ -39,7 +39,7 @@ export default function Storagebanner({text}) {
         </div>
         <div className='banner__image'>
           <div className='banner__image-inner'>
-            <img src='https://agrostroitel.ru/wp-content/uploads/2019/09/hranilisha_header.png' alt='Строительство хранилищ в Астрахани' />
+            <img src='/img/2019/09/hranilisha_header.png' alt='Строительство хранилищ в Астрахани' />
           </div>
           <div className='banner__shape' />
         </div>

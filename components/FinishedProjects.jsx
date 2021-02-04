@@ -1,4 +1,4 @@
-import StoreSlaider from '../components/storage/StoreSlaider';
+import StoreSlaider from './storage/StoreSlaider';
 
 export default function FinisedProjects () {
 

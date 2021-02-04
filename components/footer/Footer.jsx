@@ -11,7 +11,7 @@ export default function Footer ({city, language}){
           <div className="column__wrapper in-footer is-valign-center">
             <div className="column is-logo">
               <div className="logo__wrapper">
-              <Link href="/"><a className="logo__link"><img className="logo" src="https://agrostroitel.ru/wp-content/themes/timber-starter-theme/assets/images/logo.png" alt="Логотип" /></a></Link>  
+              <Link href="/"><a className="logo__link"><img className="logo" src="/img/logo.png" alt="Логотип" /></a></Link>  
               </div>
               {' '}
               
@@ -74,7 +74,7 @@ export default function Footer ({city, language}){
               </div>
               <div className="column is-bzcekh" style={{marginRight: '150px', marginTop: '20px'}}>
                 <a className="" href="https://bzcekh.ru/" title="Изготовление интернет сайтов в Астрахани">
-                  <img className="is-bzcekh" src="https://agrostroitel.ru/wp-content/themes/timber-starter-theme/assets/images/logo3.svg" alt="Маркетинговое агентство «Бизнес Цех»" title="Заказать разработку интернет сайта в Астрахани" />
+                  <img className="is-bzcekh" src="/img/logo3.svg" alt="Маркетинговое агентство «Бизнес Цех»" title="Заказать разработку интернет сайта в Астрахани" />
                 </a>
               </div>
             </div>

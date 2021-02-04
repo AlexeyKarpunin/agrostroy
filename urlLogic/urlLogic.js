@@ -9,7 +9,6 @@ export default function UrlLogistic () {
   const language = useSelector( (state) => state.language.language)
   const dispatch = useDispatch();
 
-
   const handleRouteChange = (url, { shallow }) => {
     if (url === router.pathname) {
       router.push(router.pathname, `/${language}/${city[language].rout}${router.pathname}`, { shallow: true })

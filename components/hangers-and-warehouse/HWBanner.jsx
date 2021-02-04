@@ -38,7 +38,7 @@ export default function HWBanner ({text}) {
         </div>
         <div className='banner__image'>
           <div className='banner__image-inner'>
-            <img src='https://agrostroitel.ru/wp-content/uploads/2019/08/vector-logistics-warehouse-3-e1566808727770.png' alt='Строительство ангаров и складов в Астрахани' />
+            <img src='/img/2019/08/vector-logistics-warehouse-3-e1566808727770.png' alt='Строительство ангаров и складов в Астрахани' />
           </div>
           <div className='banner__shape' />
         </div>

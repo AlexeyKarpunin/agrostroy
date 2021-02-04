@@ -39,7 +39,7 @@ export default function FHBanner({text}) {
         </div>
         <div className='banner__image'>
           <div className='banner__image-inner'>
-            <img src='https://agrostroitel.ru/wp-content/uploads/2019/08/bezkarkasnik-header.png' alt='Производство и монтаж сборно-разборных ангаров в Астрахани' />
+            <img src='/img/2019/08/bezkarkasnik-header.png' alt='Производство и монтаж сборно-разборных ангаров в Астрахани' />
           </div>
           <div className='banner__shape' />
         </div>

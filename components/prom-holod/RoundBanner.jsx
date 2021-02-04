@@ -105,7 +105,7 @@ export default function RoundBanner ({text}) {
                 </div>
               </div>
               <div className='super-circle__inner2'>
-                <img className='in-super-circle' src='https://agrostroitel.ru/wp-content/uploads/2019/08/f0d5f84124e482d865e7678bae283753.png' alt='Промышленный' холод='' />
+                <img className='in-super-circle' src='/img/2019/08/f0d5f84124e482d865e7678bae283753.png' alt='Промышленный' холод='' />
               </div>
             </div>
           </div>        

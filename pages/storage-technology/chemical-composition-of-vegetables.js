@@ -20,12 +20,12 @@ export default function STpage () {
             <h1 className='is-section'>Химический состав овощей</h1>
           </div>
           <div className='page-section__body'>
-            <div className='other-page-section'>
-              <figure className='wp-block-image'><img src='https://www.infrost-agro.ru/pub/tab1.gif' alt='Химический состав овощей' /></figure>
-              <figure className='wp-block-image'><img src='https://www.infrost-agro.ru/pub/tab2.gif' alt='' /></figure>
-              <figure className='wp-block-image'><img src='https://www.infrost-agro.ru/pub/tab3.gif' alt='химический состав овощей - 2' /></figure>
-              <figure className='wp-block-image'><img src='https://www.infrost-agro.ru/pub/tab4.gif' alt='' /></figure>
-              <figure className='wp-block-image'><img src='https://www.infrost-agro.ru/pub/tab5.gif' alt='химический состав овощей - 3' /></figure>
+            <div className='other-page-section'> 
+              <figure className='wp-block-image'><img src='/img/infrost/tab1.gif' alt='Химический состав овощей' /></figure>
+              <figure className='wp-block-image'><img src='/img/infrost/tab2.gif' alt='' /></figure>
+              <figure className='wp-block-image'><img src='/img/infrost/tab3.gif' alt='химический состав овощей - 2' /></figure>
+              <figure className='wp-block-image'><img src='/img/infrost/tab4.gif' alt='' /></figure>
+              <figure className='wp-block-image'><img src='/img/infrost/tab5.gif' alt='химический состав овощей - 3' /></figure>
 
             </div>
           </div>

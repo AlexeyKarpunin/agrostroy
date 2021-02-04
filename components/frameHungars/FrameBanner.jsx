@@ -40,7 +40,7 @@ export default function FrameBanner({text}) {
         </div>
         <div className='banner__image'>
           <div className='banner__image-inner'>
-            <img src='https://agrostroitel.ru/wp-content/uploads/2019/08/2-1.png' alt='Строительство каркасных ангаров в Астрахани' />
+            <img src='/img/2019/08/2-1.png' alt='Строительство каркасных ангаров в Астрахани' />
           </div>
           <div className='banner__shape' />
         </div>

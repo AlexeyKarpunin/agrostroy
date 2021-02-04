@@ -36,7 +36,7 @@ export default function ProjectBanner ({text}) {
         </div>
         <div className='banner__image'>
           <div className='banner__image-inner'>
-            <img src='https://agrostroitel.ru/wp-content/uploads/2019/08/Инженерный-банер.png' alt='Проектирование объектов Агрокомплекса' />
+            <img src='/img/2019/08/Инженерный-банер.png' alt='Проектирование объектов Агрокомплекса' />
           </div>
           <div className='banner__shape' />
         </div>

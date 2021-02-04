@@ -14,11 +14,6 @@ export default function Call (props) {
           <span className='call__numbers'>8 800 511 5060</span>
           <span className='call__action in-header'>
             {city[language].header.freeCall}
-            {/* {% if globus.language == 'ru' %}
-		Звонок бесплатный
-	{% elseif globus.language == 'en' %}
-		Free call
-	{% endif %} */}
           </span>
         </span>
       </div>

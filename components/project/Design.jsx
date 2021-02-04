@@ -92,7 +92,7 @@ export default function Design ({text}) {
                 </div>
               </div>
               <div className='super-circle__inner2'>
-                <img className='in-super-circle' src='https://agrostroitel.ru/wp-content/uploads/2019/08/sborno-razbornyi-angar-krug.png' alt='Проектирование' объектов='' Агрокомплекса='' />
+                <img className='in-super-circle' src='/img/2019/08/sborno-razbornyi-angar-krug.png' alt='Проектирование' объектов='' Агрокомплекса='' />
               </div>
             </div>
           </div>        

@@ -24,7 +24,7 @@ export default function Advantages ({text}) {
                       <div className='card__circle-inner' />
                     </div>
                     <div className='card__image-inner'>
-                      <img className='card__image' src='https://agrostroitel.ru/wp-content/uploads/2019/08/Завод.png' alt='Собственное производство' />
+                      <img className='card__image' src='/img/2019/08/Завод.png' alt='Собственное производство' />
                     </div>
                   </div>
                 </div>
@@ -46,7 +46,7 @@ export default function Advantages ({text}) {
                       <div className='card__circle-inner' />
                     </div>
                     <div className='card__image-inner'>
-                      <img className='card__image' src='https://agrostroitel.ru/wp-content/uploads/2019/08/zalupa.png' alt='Репутация' />
+                      <img className='card__image' src='/img/2019/08/zalupa.png' alt='Репутация' />
                     </div>
                   </div>
                 </div>
@@ -70,7 +70,7 @@ export default function Advantages ({text}) {
                       <div className='card__circle-inner' />
                     </div>
                     <div className='card__image-inner'>
-                      <img className='card__image' src='https://agrostroitel.ru/wp-content/uploads/2019/08/card-13.png' alt='Срок службы 70 лет' />
+                      <img className='card__image' src='/img/2019/08/card-13.png' alt='Срок службы 70 лет' />
                     </div>
                   </div>
                 </div>
@@ -92,7 +92,7 @@ export default function Advantages ({text}) {
                       <div className='card__circle-inner' />
                     </div>
                     <div className='card__image-inner'>
-                      <img className='card__image' src='https://agrostroitel.ru/wp-content/uploads/2019/08/card-14.png' alt='Экономия' />
+                      <img className='card__image' src='/img/2019/08/card-14.png' alt='Экономия' />
                     </div>
                   </div>
                 </div>
@@ -111,7 +111,7 @@ export default function Advantages ({text}) {
                 <div className='card__header'>
                   <div className='card__image-wrapper'>
                     <div className='card__circle is-relative'>
-                      <div className='card__circle-inner'><img className='card__image' src='https://agrostroitel.ru/wp-content/uploads/2019/08/card-15.png' alt='Обучение и консультация' /></div>
+                      <div className='card__circle-inner'><img className='card__image' src='/img/2019/08/card-15.png' alt='Обучение и консультация' /></div>
                     </div>
                     <div className='card__image-inner' />
                   </div>

@@ -38,7 +38,7 @@ export default function FruitBanner ({text}) {
         </div>
         <div className='banner__image'>
           <div className='banner__image-inner'>
-            <img src='https://agrostroitel.ru/wp-content/uploads/2019/09/Фруктохранилища.png' alt='Строительство Фруктохранилищ «под ключ» в Астрахани' />
+            <img src='/img/2019/09/Фруктохранилища.png' alt='Строительство Фруктохранилищ «под ключ» в Астрахани' />
           </div>
           <div className='banner__shape' />
         </div>

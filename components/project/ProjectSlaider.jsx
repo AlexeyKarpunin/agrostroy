@@ -101,7 +101,7 @@ export default function ProjectSlaider ({text}) {
           <SliderWrraper mystyles={styles}>
             <Slider {...settings}>
               <div className='item image slick-slide'>
-                <img src='https://agrostroitel.ru/wp-content/uploads/2019/08/diel.jpg' alt='' />
+                <img src='/img/2019/08/diel.jpg' alt='' />
                 <div className='fotorama__caption'>
                   <div className='fotorama__caption__wrap'>
                     <div className='fotorama__block-content'>
@@ -112,7 +112,7 @@ export default function ProjectSlaider ({text}) {
                 </div>
               </div>
               <div className='item image slick-slide'>
-                <img src='https://agrostroitel.ru/wp-content/uploads/2019/08/irriko.jpg' alt='' />
+                <img src='/img/2019/08/irriko.jpg' alt='' />
                 <div className='fotorama__caption'>
                   <div className='fotorama__caption__wrap'>
                     <div className='fotorama__block-content'>
@@ -123,7 +123,7 @@ export default function ProjectSlaider ({text}) {
                 </div>
               </div>
               <div className='item image slick-slide'>
-                <img src='https://agrostroitel.ru/wp-content/uploads/2019/08/cvetnoe.jpg' alt='' />
+                <img src='/img/2019/08/cvetnoe.jpg' alt='' />
                 <div className='fotorama__caption'>
                   <div className='fotorama__caption__wrap'>
                     <div className='fotorama__block-content'>
@@ -134,7 +134,7 @@ export default function ProjectSlaider ({text}) {
                 </div>
               </div>
               <div className='item image slick-slide'>
-                <img src='https://agrostroitel.ru/wp-content/uploads/2019/08/jumanov.jpg' alt='' />
+                <img src='/img/2019/08/jumanov.jpg' alt='' />
                 <div className='fotorama__caption'>
                   <div className='fotorama__caption__wrap'>
                     <div className='fotorama__block-content'>
@@ -145,7 +145,7 @@ export default function ProjectSlaider ({text}) {
                 </div>
               </div>
               <div className='item image slick-slide'>
-                <img src='https://agrostroitel.ru/wp-content/uploads/2019/08/слайд-4.jpg' alt='' />
+                <img src='/img/2019/08/слайд-4.jpg' alt='' />
                 <div className='fotorama__caption'>
                   <div className='fotorama__caption__wrap'>
                     <div className='fotorama__block-content'>
@@ -156,7 +156,7 @@ export default function ProjectSlaider ({text}) {
                 </div>
               </div>
               <div className='item image slick-slide'>
-                <img src='https://agrostroitel.ru/wp-content/uploads/2019/08/slide2-1.jpg' alt='' />
+                <img src='/img/2019/08/slide2-1.jpg' alt='' />
                 <div className='fotorama__caption'>
                   <div className='fotorama__caption__wrap'>
                     <div className='fotorama__block-content'>

@@ -83,7 +83,7 @@ export default function RoundBanner({text}) {
                 </div>
               </div>
               <div className='super-circle__inner2'>
-                <img className='in-super-circle' src='https://agrostroitel.ru/wp-content/uploads/2019/08/new-angar-header.png' alt='Реконструкция' зданий='' и='' построек='' из='' металлоконструкций='' />
+                <img className='in-super-circle' src='/img/2019/08/new-angar-header.png' alt='Реконструкция' зданий='' и='' построек='' из='' металлоконструкций='' />
               </div>
             </div>
           </div>        

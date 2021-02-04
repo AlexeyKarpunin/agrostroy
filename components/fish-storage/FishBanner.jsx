@@ -39,7 +39,7 @@ export default function FishBanner ({text}) {
         </div>
         <div className='banner__image'>
           <div className='banner__image-inner'>
-            <img src='https://agrostroitel.ru/wp-content/uploads/2019/09/Рыба.png' alt='Строительство рыбоперерабатывающих комплексов и рыбных цехов. Камеры для заморозки и хранения рыбы' />
+            <img src='/img/2019/09/Рыба.png' alt='Строительство рыбоперерабатывающих комплексов и рыбных цехов. Камеры для заморозки и хранения рыбы' />
           </div>
           <div className='banner__shape' />
         </div>
