@@ -593,7 +593,7 @@ footer.page-section {
 }
 
 .page-section.with-background-image.is-image-1 {
-    background-image: url(/images/section-1-bg.png)
+    background-image: url(/img/section-1-bg.png)
 }
 
 .page-section.with-background-image.is-pointer {
@@ -1420,7 +1420,7 @@ img.is-bzcekh {
     width: 30px;
     height: 60px;
     margin-right: 10px;
-    background-image: url(/wp-content/themes/timber-starter-theme/assets/images/phone.png);
+    background-image: url(/img/phone.png);
     background-repeat: no-repeat;
     background-position: 50%;
     background-size: contain
@@ -1476,19 +1476,19 @@ ul.contact__inner li {
 }
 
 .socials__link[href*=vk] {
-    background-image: url(/wp-content/themes/timber-starter-theme/assets/images/vk.png)
+    background-image: url(/img/images/vk.png)
 }
 
 .socials__link[href*=facebook] {
-    background-image: url(/wp-content/themes/timber-starter-theme/assets/images/facebook.png)
+    background-image: url(/img/images/facebook.png)
 }
 
 .socials__link[href*=twitter] {
-    background-image: url(/wp-content/themes/timber-starter-theme/assets/images/twitter.png)
+    background-image: url(/img/images/twitter.png)
 }
 
 .socials__link[href*=instagram] {
-    background-image: url(/wp-content/themes/timber-starter-theme/assets/images/instagram.png)
+    background-image: url(/img/images/instagram.png)
 }
 
 .banner {
@@ -1905,13 +1905,13 @@ ul.contact__inner li {
 }
 
 .select-lang__link[href*=ru] {
-    background-image: url(/wp-content/themes/timber-starter-theme/assets/newimages/rus.png);
+    background-image: url(/img/newimages/rus.png);
     width: 31px;
     height: 28px
 }
 
 .select-lang__link[href*=en] {
-    background-image: url(/wp-content/themes/timber-starter-theme/assets/newimages/eng.png);
+    background-image: url(/img/newimages/eng.png);
     width: 29px;
     height: 30px
 }
@@ -3814,7 +3814,7 @@ img.in-super-circle {
     }
 
     .page-section.with-background-image.is-pointer {
-        background-image: url(/images/pointer.png);
+        background-image: url(/img/pointer.png);
         background-position-x: 50%;
         background-position-y: 80%
     }
@@ -4665,7 +4665,12 @@ img.in-super-circle {
     margin-left: 25px;
 }
 
-
+@media screen and (max-width: 1260px) {
+    .owl-prev,
+    .owl-next {
+        display: none;
+    }
+}
 
 @media screen and (max-width: 959px) {
     .navigation__btn {

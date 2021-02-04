@@ -2,7 +2,7 @@ export default function ProjectBanner ({text}) {
   return (
     <div className='page-section is-main-banner'>
       <div className='banner'>
-        <div className='banner__substrate' style={{backgroundImage: 'url(https://agrostroitel.ru/wp-content/themes/timber-starter-theme/assets/images/background-banner.png)'}} role='presentation' />
+        <div className='banner__substrate' style={{backgroundImage: 'url(/img/background-banner.png)'}} role='presentation' />
         <div className='banner__notice'>
           <div className='banner__notice-inner'>
             <div className='banner__title'>

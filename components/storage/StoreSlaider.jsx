@@ -1,14 +1,16 @@
+/* eslint-disable react/prop-types */
 import { useState } from 'react';
 import OwlCarousel from 'react-owl-carousel2';
 
-export default function StoreSlaider ({options, events, imges}) {
+export default function StoreSlaider ({options, events, imges, modalImges}) {
 
  const [modalStatus, setModalStatus] = useState('store--modal--close'); // status
  const [modalImg, setModalImg] = useState(''); // link on img
  const [modalImgKey, setModalImgKey] = useState(0); // number in array
 
  function openModal (e) {
-   setModalImg(e.target.getAttribute('src'));
+
+   setModalImg(modalImges[Number(e.target.getAttribute('data-key'))]);
    setModalImgKey(e.target.getAttribute('data-key'));
    setModalStatus('');
   };
@@ -19,10 +21,10 @@ export default function StoreSlaider ({options, events, imges}) {
    const checkNum = modalImgKey - 1;
    if (checkNum <= 0) {
     setModalImgKey(imges.length - 1);
-    setModalImg(imges[modalImgKey]);
+    setModalImg(modalImges[modalImgKey]);
    } else {
     setModalImgKey(modalImgKey - 1);
-    setModalImg(imges[modalImgKey]);
+    setModalImg(modalImges[modalImgKey]);
    }
  }
 
@@ -30,10 +32,10 @@ export default function StoreSlaider ({options, events, imges}) {
   const checkNum = modalImgKey;
   if (checkNum === imges.length - 1) {
    setModalImgKey(0);
-   setModalImg(imges[modalImgKey]);
+   setModalImg(modalImges[modalImgKey]);
   } else {
    setModalImgKey(Number(modalImgKey) + 1);
-   setModalImg(imges[modalImgKey]);
+   setModalImg(modalImges[modalImgKey]);
   }
  }
 
@@ -49,12 +51,11 @@ export default function StoreSlaider ({options, events, imges}) {
             <div className='mfp-figure'>
               <button onClick={closeModal} title='Close (Esc)' type='button' className='mfp-close'>×</button>
               <figure>
-                <img className='mfp-img' data-key={modalImgKey} src={modalImg} alt='' />
-                
+                <img className='mfp-img' data-key={modalImgKey} src={modalImg} alt='' style={{maxWidth: '70%', maxHeight: '20%'}} loading='lazy' />
                 <figcaption>
                   <div className='mfp-bottom-bar'>
                     <div className='mfp-title' />
-                    <div className='mfp-counter'><span className='mfp-counter'>35 из 61</span></div>
+                    {/* <div className='mfp-counter'><span className='mfp-counter'>35 из 61</span></div> */}
                   </div>
                 </figcaption>
               </figure>

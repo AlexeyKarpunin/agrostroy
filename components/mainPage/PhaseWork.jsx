@@ -18,7 +18,7 @@ export default function PhaseWork ({city, language}) {
                 <div className='mini-card'>
                   <div className='mini-card__number'>{index + 1 === 10 ? index + 1 : `0${  index + 1 }`}</div>
                   <div className='mini-card__header'>
-                    <img className='mini-card__image' src={`https://agrostroitel.ru/wp-content/uploads/2019/08/${index + 1}.png`} alt='Консультация с менеджером' />
+                    <img className='mini-card__image' src={`/img/2019/08/${index + 1}.png`} alt='Консультация с менеджером' />
                     <div className='circle is-double in-mini-card' />
                   </div>
                   <div className='mini-card__body'>{text}</div>
