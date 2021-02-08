@@ -3,39 +3,57 @@ import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
 
 export default function Form () {
-
-  const hrefRef = React.createRef();
   
+  const hrefRef = React.createRef();
+  const [userFile, setuserFile] = useState('');
+
+  function readURL(input) {
+    if (input.files && input.files[0]) {
+        const reader = new FileReader();
+        reader.onload = function (e) {
+            setuserFile(e.target.result)
+            console.log(e.target.result)
+        }
+        reader.readAsDataURL(input.files[0]);
+    }
+  }
+
+  useEffect (() => {
+     
+    function changeInput () {readURL(hrefRef.current);}
+    hrefRef.current.addEventListener('change', changeInput);
+  }, [])
+
   function submitForm(e) {
     e.preventDefault();
-    window.URL = window.URL || window.webkitURL;
-    const fileUrl = window.URL.createObjectURL(hrefRef.current.files[0]);
+
 
     const info = {
       name: 'Alex',
       phone: '+79171919744',
       // typeBuild: ,
       // targetBuild: ,
-      file: fileUrl,
+      fileLink: userFile,
     }
+
+      fetch('/api/send-form-file', {
+        method: 'POST', 
+        body: JSON.stringify(info),
+        headers: {
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(( response ) => response.json()).then((data) => {
+
+        // if (data.message === 'success') {setCleaner('clean')}
     
+        // if (data.message === 'server erorr') {}
     
-    fetch('/api/send-form-file', {
-      method: 'POST', 
-      body: JSON.stringify(info),
-      headers: {
-        'Content-Type': 'application/json'
-      }
-    }).then(( response ) => response.json()).then((data) => {
-      // if (data.message === 'success') {setCleaner('clean')}
-  
-      // if (data.message === 'server erorr') {}
-  
-      // if (data.message === 'incorrect name') {setNameStatus('red--border--form')}
-      // if (data.message === 'incorrect phone') {setPhoneStatus('red--border--form')}
-      // if (data.message === 'incorrect type build') {setTypeBuildStatus('red--border--form')}
-      // if (data.message === 'incorrect target build') {setTargetBuildStatus('red--border--form')}
-    })
+        // if (data.message === 'incorrect name') {setNameStatus('red--border--form')}
+        // if (data.message === 'incorrect phone') {setPhoneStatus('red--border--form')}
+        // if (data.message === 'incorrect type build') {setTypeBuildStatus('red--border--form')}
+        // if (data.message === 'incorrect target build') {setTargetBuildStatus('red--border--form')}
+      })
   }
 
   return (
@@ -140,7 +158,6 @@ export default function Form () {
             <div className='wpcf7-response-output wpcf7-validation-errors' role='alert'>Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.</div>
             <div className='wpcf7-response-output wpcf7-display-none' />
           </form>
-          <img src=''></img>
         </div>
 
       </div>
