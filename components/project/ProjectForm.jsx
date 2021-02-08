@@ -1,6 +1,38 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import InputMask from 'react-input-mask';
+import React from 'react';
 
 export default function ProjectForm ({text}) {
+
+const nameRef = React.createRef();
+const phoneRef = React.createRef();
+const typeBuildRef = React.createRef();
+const targetBuildRef = React.createRef();
+
+function submitForm (e) {
+  e.preventDefault();
+
+  const info = {
+    name: nameRef.current.value,
+    phone: phoneRef.current.value,
+    typeBuild: typeBuildRef.current.value,
+    targetBuild: targetBuildRef.current.value,
+  }
+
+  fetch('/api/send-form', {
+    method: 'POST', 
+    body: JSON.stringify(info),
+    headers: {
+      'Content-Type': 'application/json'
+    }
+  }).then(( response ) => response.json()).then((data) => {
+    if (data.message === 'success' || data.message === 'server erorr') {
+      console.log('22');
+    }
+  })
+}
+
   return (
     <div className='page-section is-call' id='call'>
       <div className='page-section__inner'>
@@ -45,6 +77,7 @@ export default function ProjectForm ({text}) {
                         type='text'
                         name='name'
                         placeholder={`${text.name}`}
+                        ref={nameRef}
                       />
                     </label>
                   </div>
@@ -63,20 +96,11 @@ export default function ProjectForm ({text}) {
                           </svg>
                         </span>
                       </span>
-                      {/* <input
-                        className='is-text is-tel'
-                        type='tel'
-                        name='phone'
-                        placeholder='
-
-        		Телефон
-				'
-                        im-insert='true'
-                      /> */}
                       <InputMask
                         className='is-text is-tel'
                         mask='+7 (999) 999-99-99'
                         placeholder={`${text.phone}`}
+                        ref={phoneRef}
                       />
                     </label>
                   </div>
@@ -101,6 +125,7 @@ export default function ProjectForm ({text}) {
                         type='text'
                         name='type_build'
                         placeholder={`${text.structure}`}
+                        ref={typeBuildRef}
                       />
                     </label>
                   </div>
@@ -124,12 +149,13 @@ export default function ProjectForm ({text}) {
                         type='text'
                         name='target_build'
                         placeholder={`${text.appointment}`}
+                        ref={targetBuildRef}
                       />
                     </label>
                   </div>
                 </div>
                 <div className='form__footer'>
-                  <button className='is-primary is-large is-fit' type='submit'>
+                  <button onClick={submitForm} className='is-primary is-large is-fit' type='submit'>
                     {text.btn}
                   </button>
                 </div>

@@ -9,22 +9,24 @@ export default function StoreSlaider ({options, events, imges, modalImges}) {
  const [modalImgKey, setModalImgKey] = useState(0); // number in array
 
  function openModal (e) {
-
    setModalImg(modalImges[Number(e.target.getAttribute('data-key'))]);
-   setModalImgKey(e.target.getAttribute('data-key'));
+   setModalImgKey(Number(e.target.getAttribute('data-key')));
    setModalStatus('');
   };
 
  function closeModal () {setModalStatus('store--modal--close')};
 
- function swaipLeft () {
-   const checkNum = modalImgKey - 1;
+ function  swaipLeft () {
+   const checkNum = modalImgKey;
+
    if (checkNum <= 0) {
     setModalImgKey(imges.length - 1);
-    setModalImg(modalImges[modalImgKey]);
+    setModalImg(modalImges[imges.length - 1]);
    } else {
     setModalImgKey(modalImgKey - 1);
-    setModalImg(modalImges[modalImgKey]);
+    setModalImg(modalImges[modalImgKey - 1]);
+    console.log(modalImgKey)
+
    }
  }
 
@@ -32,10 +34,10 @@ export default function StoreSlaider ({options, events, imges, modalImges}) {
   const checkNum = modalImgKey;
   if (checkNum === imges.length - 1) {
    setModalImgKey(0);
-   setModalImg(modalImges[modalImgKey]);
+   setModalImg(modalImges[0]);
   } else {
    setModalImgKey(Number(modalImgKey) + 1);
-   setModalImg(modalImges[modalImgKey]);
+   setModalImg(modalImges[modalImgKey + 1]);
   }
  }
 
@@ -51,11 +53,10 @@ export default function StoreSlaider ({options, events, imges, modalImges}) {
             <div className='mfp-figure'>
               <button onClick={closeModal} title='Close (Esc)' type='button' className='mfp-close'>×</button>
               <figure>
-                <img className='mfp-img' data-key={modalImgKey} src={modalImg} alt='' style={{maxWidth: '70%', maxHeight: '20%'}} loading='lazy' />
+                <img className='mfp-img' data-key={modalImgKey} src={modalImg} alt='' style={{maxWidth: '1030px'}} loading='lazy' />
                 <figcaption>
                   <div className='mfp-bottom-bar'>
                     <div className='mfp-title' />
-                    {/* <div className='mfp-counter'><span className='mfp-counter'>35 из 61</span></div> */}
                   </div>
                 </figcaption>
               </figure>

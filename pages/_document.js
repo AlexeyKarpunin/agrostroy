@@ -19,7 +19,6 @@ class MyDocument extends Document {
           <script src='https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=e11228c4-a395-4719-b516-0ffa61793a46' type='text/javascript' />
           <script src='https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js' />
           <script src='https://code.jquery.com/jquery-3.2.1.slim.min.js' />
-          {/* <script src='https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js' /> */}
           <script type='text/javascript' src='//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js' />
 
         </Head>

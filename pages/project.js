@@ -10,15 +10,30 @@ import ProjectBanner from '../components/project/ProjectBanner';
 import ProjectForm from '../components/project/ProjectForm';
 import ProjectSlaider from '../components/project/ProjectSlaider';
 import '../styles/style.css';
-import Head from 'next/head';
+import Head from 'next/head'
+
+const giveHeadinfo = (city) => ({
+    ru: {
+      title: `Проектирование Любых строений агрокомплекса в ${city}`,
+      description: `Проектирование объектов Агрокомплекса любой сложности  в ${city} быстро, качественно и в срок.`
+    },
+    eng: {
+      title: '',
+      description: ''
+    }
+  })
 
 export default function project () {
-
   const city = useSelector( (state) => state.city.city);
   const language = useSelector( (state) => state.language.language);
-  
+  const headInfo = giveHeadinfo(city[language].title[1]);
+
   return (
     <>
+      <Head>
+        <title>{headInfo[language].title}</title>
+        <meta name='description' content={headInfo[language].description} />
+      </Head>
       <Header 
         city={city}
         language={language}
