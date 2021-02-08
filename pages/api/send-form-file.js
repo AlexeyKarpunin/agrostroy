@@ -1,4 +1,5 @@
 const nodemailer = require('nodemailer');
+const fs = require('fs');
 
 function validation(name, phone, typeBuild='', targetBuild='') {
 
@@ -18,7 +19,7 @@ function validation(name, phone, typeBuild='', targetBuild='') {
 }
 
 export default async (req, res) => {
-  const {name, phone, typeBuild, targetBuild} = req.body;
+  const {name, phone, typeBuild, targetBuild, file } = req.body;
 
   const massege = `
   <ul style=''>
@@ -40,13 +41,17 @@ export default async (req, res) => {
           pass: 'jgkgsnbsebqskirr'
         }
     });
-
+    console.log('files', file)
     const result = await transporter.sendMail({
       from: '"АгростроительЮг" <АгростроительЮг@example.com>',
       to: 'alexkarpuninaa@gmail.com', // info@bzcekh.ru
       subject: 'Message from АгростроительЮг',
       text: 'This message was sent from АгростроительЮг.',
       html: massege,
+      attachments: [{   // stream as an attachment
+        filename: 'file from user',
+        href: file
+    }]
     });
   
     const status = await result;

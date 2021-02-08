@@ -1,6 +1,43 @@
+/* eslint-disable jsx-a11y/label-has-associated-control */
 import Link from 'next/link';
+import React, { useEffect, useState } from 'react';
 
 export default function Form () {
+
+  const hrefRef = React.createRef();
+  
+  function submitForm(e) {
+    e.preventDefault();
+    window.URL = window.URL || window.webkitURL;
+    const fileUrl = window.URL.createObjectURL(hrefRef.current.files[0]);
+
+    const info = {
+      name: 'Alex',
+      phone: '+79171919744',
+      // typeBuild: ,
+      // targetBuild: ,
+      file: fileUrl,
+    }
+    
+    
+    fetch('/api/send-form-file', {
+      method: 'POST', 
+      body: JSON.stringify(info),
+      headers: {
+        'Content-Type': 'application/json'
+      }
+    }).then(( response ) => response.json()).then((data) => {
+      // if (data.message === 'success') {setCleaner('clean')}
+  
+      // if (data.message === 'server erorr') {}
+  
+      // if (data.message === 'incorrect name') {setNameStatus('red--border--form')}
+      // if (data.message === 'incorrect phone') {setPhoneStatus('red--border--form')}
+      // if (data.message === 'incorrect type build') {setTypeBuildStatus('red--border--form')}
+      // if (data.message === 'incorrect target build') {setTargetBuildStatus('red--border--form')}
+    })
+  }
+
   return (
     <div className='page-section__body'>
       <div className='other-page-section'>
@@ -83,14 +120,14 @@ export default function Form () {
               <br />
               <label>
                 <span className='item fontSizeLitle'>Прикрепите документы </span>
-                <span className='wpcf7-form-control-wrap file-122'><input type='file' name='file-122' size='40' className='wpcf7-form-control wpcf7-file' accept='.jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv' aria-invalid='false' /></span>
+                <span className='wpcf7-form-control-wrap file-122'><input ref={hrefRef} type='file' name='file-122' size='40' className='wpcf7-form-control wpcf7-file' accept='.jpg,.jpeg,.png,.gif,.pdf,.doc,.docx,.ppt,.pptx,.odt,.avi,.ogg,.m4a,.mov,.mp3,.mp4,.mpg,.wav,.wmv' aria-invalid='false' /></span>
               </label>
               <p />
               <p>  
                 {' '}
                 <label className='submitHeight'>
                   <span className='item' />
-                  <input type='submit' value='Отправить' className='wpcf7-form-control wpcf7-submit' />
+                  <input onClick={submitForm} type='submit' value='Отправить' className='wpcf7-form-control wpcf7-submit' />
                 </label>
                 <br />
                 <label className='textPolicy'>
@@ -103,6 +140,7 @@ export default function Form () {
             <div className='wpcf7-response-output wpcf7-validation-errors' role='alert'>Одно или несколько полей содержат ошибочные данные. Пожалуйста, проверьте их и попробуйте ещё раз.</div>
             <div className='wpcf7-response-output wpcf7-display-none' />
           </form>
+          <img src=''></img>
         </div>
 
       </div>

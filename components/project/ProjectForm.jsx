@@ -1,17 +1,39 @@
 /* eslint-disable react/prop-types */
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import InputMask from 'react-input-mask';
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 
 export default function ProjectForm ({text}) {
+
+const [nameStatus, setNameStatus] = useState('');
+const [phoneStatus, setPhoneStatus] = useState('');
+const [typeBuildStatus, setTypeBuildStatus] = useState('');
+const [targetBuildStatus, setTargetBuildStatus] = useState('');
+
+const [cleaner, setCleaner] = useState('');
 
 const nameRef = React.createRef();
 const phoneRef = React.createRef();
 const typeBuildRef = React.createRef();
 const targetBuildRef = React.createRef();
 
+useEffect( () => {
+  if (cleaner === 'clean') {
+    nameRef.current.value = '';
+    phoneRef.current.value = '';
+    typeBuildRef.current.value = '';
+    targetBuildRef.current.value = '';
+    setCleaner('');
+  }
+}, [cleaner])
+
 function submitForm (e) {
   e.preventDefault();
+
+  setNameStatus('');
+  setPhoneStatus('');
+  setTypeBuildStatus('');
+  setTargetBuildStatus('');
 
   const info = {
     name: nameRef.current.value,
@@ -27,9 +49,14 @@ function submitForm (e) {
       'Content-Type': 'application/json'
     }
   }).then(( response ) => response.json()).then((data) => {
-    if (data.message === 'success' || data.message === 'server erorr') {
-      console.log('22');
-    }
+    if (data.message === 'success') {setCleaner('clean')}
+
+    // if (data.message === 'server erorr') {}
+
+    if (data.message === 'incorrect name') {setNameStatus('red--border--form')}
+    if (data.message === 'incorrect phone') {setPhoneStatus('red--border--form')}
+    if (data.message === 'incorrect type build') {setTypeBuildStatus('red--border--form')}
+    if (data.message === 'incorrect target build') {setTargetBuildStatus('red--border--form')}
   })
 }
 
@@ -58,7 +85,7 @@ function submitForm (e) {
                 </div>
                 <div className='form__body'>
                   <div className='form__group'>
-                    <label className='form__field'>
+                    <label className={`form__field ${nameStatus}`}>
                       <span className='form__label'>
                         <span
                           className='icon in-label-form'
@@ -82,7 +109,7 @@ function submitForm (e) {
                     </label>
                   </div>
                   <div className='form__group'>
-                    <label className='form__field'>
+                    <label className={`form__field ${phoneStatus}`}>
                       <span className='form__label'>
                         <span
                           className='icon in-label-form'
@@ -105,7 +132,7 @@ function submitForm (e) {
                     </label>
                   </div>
                   <div className='form__group'>
-                    <label className='form__field'>
+                    <label className={`form__field ${typeBuildStatus}`}>
                       <span className='form__label'>
                         <span
                           className='icon in-label-form'
@@ -130,7 +157,7 @@ function submitForm (e) {
                     </label>
                   </div>
                   <div className='form__group'>
-                    <label className='form__field'>
+                    <label className={`form__field ${targetBuildStatus}`}>
                       <span className='form__label'>
                         <span
                           className='icon in-label-form'
