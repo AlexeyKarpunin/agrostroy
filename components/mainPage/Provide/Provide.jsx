@@ -136,7 +136,7 @@ function MobileAccordion ({text, component, onClick}) {
   const [anime, setAnime] = useState(component);
 
   useEffect( () => {
-    setAnime(component);
+    setTimeout( () => {setAnime(component)}, 10);
   }, [component])
 
   return (
@@ -144,32 +144,57 @@ function MobileAccordion ({text, component, onClick}) {
       <AccContent>
         <AccItem>
           <AccBtn onClick={(e) => onClick(e, cost)} status={component === cost ? 'active' : ''}>{text.linkList[0]}</AccBtn>
-          {component === cost ? 
-            <HiidenWrraper status={anime === cost ? 'active' : ''}><Cost text={text.cost} /></HiidenWrraper> 
+          {component === cost ? (
+            <ControllBlock>
+              <HiidenWrraper status={anime === cost ? 'active' : ''}>
+                <Cost text={text.cost} />
+              </HiidenWrraper>
+            </ControllBlock>
+        ) 
         : null}
         </AccItem>
         <AccItem>
           <AccBtn onClick={(e) => onClick(e, storeTechnology)} status={component === storeTechnology ? 'active' : ''}>{text.linkList[1]}</AccBtn>
-          {component === storeTechnology ?
-            <HiidenWrraper status={anime === storeTechnology ? 'active' : ''}><StoreTechnology text={text.storageTechnology} /></HiidenWrraper>
+          {component === storeTechnology ? (
+            <ControllBlock>
+              <HiidenWrraper status={anime === storeTechnology ? 'active' : ''}>
+                <StoreTechnology text={text.storageTechnology} />
+              </HiidenWrraper>
+            </ControllBlock>
+        )
            : null}
         </AccItem>
         <AccItem>
           <AccBtn onClick={(e) => onClick(e, documents)} status={component === documents ? 'active' : ''}>{text.linkList[2]}</AccBtn>
-          {component === documents ? 
-            <HiidenWrraper status={anime === documents ? 'active' : ''}><Documents text={text.documents} /></HiidenWrraper>
+          {component === documents ? (
+            <ControllBlock>
+              <HiidenWrraper status={anime === documents ? 'active' : ''}>
+                <Documents text={text.documents} />
+              </HiidenWrraper>
+            </ControllBlock>
+        ) 
           : null}
         </AccItem>
         <AccItem>
           <AccBtn onClick={(e) => onClick(e, topProject)} status={component === topProject ? 'active' : ''}>{text.linkList[3]}</AccBtn>
-          {component === topProject ? 
-            <HiidenWrraper status={anime === topProject ? 'active' : ''}><TopProject text={text.standart} /></HiidenWrraper>
+          {component === topProject ? (
+            <ControllBlock>
+              <HiidenWrraper status={anime === topProject ? 'active' : ''}>
+                <TopProject text={text.standart} />
+              </HiidenWrraper>
+            </ControllBlock>
+        )
           : null}
         </AccItem>
         <AccItem>
           <AccBtn onClick={(e) => onClick(e, readyProject)} status={component === readyProject ? 'active' : ''}>{text.linkList[4]}</AccBtn>
-          {component === readyProject ? 
-            <HiidenWrraper status={anime === readyProject ? 'active' : ''}><ReadyProject text={text.ready} /></HiidenWrraper> 
+          {component === readyProject ? (
+            <ControllBlock>
+              <HiidenWrraper status={anime === readyProject ? 'active' : ''}>
+                <ReadyProject text={text.ready} />
+              </HiidenWrraper> 
+            </ControllBlock>
+        )
           : null}
         </AccItem>
       </AccContent>
@@ -179,9 +204,7 @@ function MobileAccordion ({text, component, onClick}) {
 
 const AccSection = styled.div``;
 const AccContent = styled.div``;
-const AccItem = styled.div`
-  overflow: hidden;
-`;
+const AccItem = styled.div``;
 const AccBtn = styled.div`
   text-align: center;
   padding: 10px 0;
@@ -191,6 +214,9 @@ const AccBtn = styled.div`
     cursor: poiner;
     background-color: #f15400;
   }
+`;
+const ControllBlock = styled.div`
+  overflow: hidden;
 `;
 const HiidenWrraper = styled.div`
   transition-duration: .5s;
