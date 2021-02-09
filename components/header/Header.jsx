@@ -1,5 +1,4 @@
 import { useState,  useEffect} from 'react';
-import { useDispatch} from 'react-redux';
 import Logo from './components/Logo';
 import Company from './components/Compony';
 import Geo from './components/Geo';
@@ -7,21 +6,14 @@ import Call from './components/Call';
 import Lang from './components/Lang';
 import ModalChooseCities from './components/ModalCooseCities';
 import Navigation from './components/Navigation';
-import {giveUserCity} from '../../redux/actions';
 
 export default function Header ({city, language}) {
   const [modalCityStatus, setModalCityStatus] = useState(false);
-  const dispatch = useDispatch();
  
   // eslint-disable-next-line no-unused-expressions
   function toggleModalWindowWithCities () {modalCityStatus ? setModalCityStatus(false) : setModalCityStatus(true)};
 
-  useEffect(() => {
-    const city = localStorage.getItem('city');
-    if (city) {
-      dispatch(giveUserCity(city));
-    } 
-  }, [])
+ 
 
   return (
     <>

@@ -3,7 +3,6 @@
 /* eslint-disable no-case-declarations */
 import { combineReducers } from 'redux';
 import {
-  CITY_ACTION,
   GIVE_CITY_FOR_USER,
   ASK_USER_GEO_ACTION,
   LANGUAGE_RUS,

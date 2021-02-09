@@ -1,4 +1,6 @@
 
+import { useSelector } from 'react-redux';
+import Head from 'next/head'
 import Header from '../components/header/Header';
 import VideoBanner from '../components/mainPage/VideoBanner';
 import ExpBilding from '../components/mainPage/ExpBilding';
@@ -8,8 +10,7 @@ import PhaseWork from '../components/mainPage/PhaseWork';
 import Provide from '../components/mainPage/Provide/Provide';
 import Footer from '../components/footer/Footer';
 import '../styles/style.css';
-import { useSelector } from 'react-redux';
-import Head from 'next/head'
+
 
 const giveHeadinfo = (city) => ({
   ru: {
@@ -26,7 +27,6 @@ export default function Home() {
   const city = useSelector( (state) => state.city.city);
   const language = useSelector( (state) => state.language.language);
   const headInfo = giveHeadinfo(city[language].title.in);
-
  
   return (
     <>
