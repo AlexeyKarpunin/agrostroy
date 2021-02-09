@@ -133,29 +133,44 @@ export default function Provide ({city, language}) {
 
 function MobileAccordion ({text, component, onClick}) {
   const {topProject, documents, readyProject, storeTechnology, cost} = NAMES_OF_COMPONENTS;
+  const [anime, setAnime] = useState(component);
+
+  useEffect( () => {
+    setAnime(component);
+  }, [component])
 
   return (
     <AccSection>
       <AccContent>
         <AccItem>
           <AccBtn onClick={(e) => onClick(e, cost)} status={component === cost ? 'active' : ''}>{text.linkList[0]}</AccBtn>
-          {component === cost ? <Cost text={text.cost} /> : null}
+          {component === cost ? 
+            <HiidenWrraper status={anime === cost ? 'active' : ''}><Cost text={text.cost} /></HiidenWrraper> 
+        : null}
         </AccItem>
         <AccItem>
           <AccBtn onClick={(e) => onClick(e, storeTechnology)} status={component === storeTechnology ? 'active' : ''}>{text.linkList[1]}</AccBtn>
-          {component === storeTechnology ? <StoreTechnology text={text.storageTechnology} /> : null}
+          {component === storeTechnology ?
+            <HiidenWrraper status={anime === storeTechnology ? 'active' : ''}><StoreTechnology text={text.storageTechnology} /></HiidenWrraper>
+           : null}
         </AccItem>
         <AccItem>
           <AccBtn onClick={(e) => onClick(e, documents)} status={component === documents ? 'active' : ''}>{text.linkList[2]}</AccBtn>
-          {component === documents ? <Documents text={text.documents} /> : null}
+          {component === documents ? 
+            <HiidenWrraper status={anime === documents ? 'active' : ''}><Documents text={text.documents} /></HiidenWrraper>
+          : null}
         </AccItem>
         <AccItem>
           <AccBtn onClick={(e) => onClick(e, topProject)} status={component === topProject ? 'active' : ''}>{text.linkList[3]}</AccBtn>
-          {component === topProject ? <TopProject text={text.standart} /> : null}
+          {component === topProject ? 
+            <HiidenWrraper status={anime === topProject ? 'active' : ''}><TopProject text={text.standart} /></HiidenWrraper>
+          : null}
         </AccItem>
         <AccItem>
           <AccBtn onClick={(e) => onClick(e, readyProject)} status={component === readyProject ? 'active' : ''}>{text.linkList[4]}</AccBtn>
-          {component === readyProject ? <ReadyProject text={text.ready} /> : null}
+          {component === readyProject ? 
+            <HiidenWrraper status={anime === readyProject ? 'active' : ''}><ReadyProject text={text.ready} /></HiidenWrraper> 
+          : null}
         </AccItem>
       </AccContent>
     </AccSection>
@@ -164,7 +179,9 @@ function MobileAccordion ({text, component, onClick}) {
 
 const AccSection = styled.div``;
 const AccContent = styled.div``;
-const AccItem = styled.div``;
+const AccItem = styled.div`
+  overflow: hidden;
+`;
 const AccBtn = styled.div`
   text-align: center;
   padding: 10px 0;
@@ -174,4 +191,8 @@ const AccBtn = styled.div`
     cursor: poiner;
     background-color: #f15400;
   }
+`;
+const HiidenWrraper = styled.div`
+  transition-duration: .5s;
+  margin-top: ${props => props.status === 'active' ? '0px' : '-300px;'}
 `;
