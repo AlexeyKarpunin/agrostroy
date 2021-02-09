@@ -139,63 +139,96 @@ function MobileAccordion ({text, component, onClick}) {
     setTimeout( () => {setAnime(component)}, 10);
   }, [component])
 
+  // function back (content) {
+    
+  //   switch(content) {
+  //     case content === cost:
+  //       return(
+  //         <ControllBlock>
+  //           <HiidenWrraper status={anime === cost ? 'active' : ''}>
+  //             <Cost text={text.cost} />
+  //           </HiidenWrraper>
+  //         </ControllBlock>
+  //       );
+  //     case content === storeTechnology:
+  //       return(
+  //         <ControllBlock>
+  //           <HiidenWrraper status={anime === storeTechnology ? 'active' : ''}>
+  //             <StoreTechnology text={text.storageTechnology} />
+  //           </HiidenWrraper>
+  //         </ControllBlock>
+  //       );
+  //     case content === readyProject:
+  //       return(
+  //         <ControllBlock>
+  //           <HiidenWrraper status={anime === readyProject ? 'active' : ''}>
+  //             <ReadyProject text={text.ready} />
+  //           </HiidenWrraper> 
+  //         </ControllBlock>
+  //       );
+  //     case content === documents:
+  //       return(
+  //         <ControllBlock>
+  //           <HiidenWrraper status={anime === documents ? 'active' : ''}>
+  //             <Documents text={text.documents} />
+  //           </HiidenWrraper>
+  //         </ControllBlock>
+  //       );
+  //     case content === topProject:
+  //       return(
+  //         <ControllBlock>
+  //           <HiidenWrraper status={anime === topProject ? 'active' : ''}>
+  //             <TopProject text={text.standart} />
+  //           </HiidenWrraper>
+  //         </ControllBlock>   
+  //       );
+  //     default:
+  //       return(<></>);
+  //   }
+  // }
+
   return (
     <AccSection>
       <AccContent>
         <AccItem>
           <AccBtn onClick={(e) => onClick(e, cost)} status={component === cost ? 'active' : ''}>{text.linkList[0]}</AccBtn>
-          {component === cost ? (
-            <ControllBlock>
-              <HiidenWrraper status={anime === cost ? 'active' : ''}>
-                <Cost text={text.cost} />
-              </HiidenWrraper>
-            </ControllBlock>
-        ) 
-        : null}
+          <ControllBlock>
+            <HiidenWrraper status={anime === cost ? 'active' : ''}>
+              <Cost text={text.cost} />
+            </HiidenWrraper>
+          </ControllBlock>
         </AccItem>
         <AccItem>
           <AccBtn onClick={(e) => onClick(e, storeTechnology)} status={component === storeTechnology ? 'active' : ''}>{text.linkList[1]}</AccBtn>
-          {component === storeTechnology ? (
-            <ControllBlock>
-              <HiidenWrraper status={anime === storeTechnology ? 'active' : ''}>
-                <StoreTechnology text={text.storageTechnology} />
-              </HiidenWrraper>
-            </ControllBlock>
-        )
-           : null}
+          <ControllBlock>
+            <HiidenWrraper status={anime === storeTechnology ? 'active' : ''}>
+              <StoreTechnology text={text.storageTechnology} />
+            </HiidenWrraper>
+          </ControllBlock>
         </AccItem>
         <AccItem>
           <AccBtn onClick={(e) => onClick(e, documents)} status={component === documents ? 'active' : ''}>{text.linkList[2]}</AccBtn>
-          {component === documents ? (
-            <ControllBlock>
-              <HiidenWrraper status={anime === documents ? 'active' : ''}>
-                <Documents text={text.documents} />
-              </HiidenWrraper>
-            </ControllBlock>
-        ) 
-          : null}
+          <ControllBlock>
+            <HiidenWrraper status={anime === documents ? 'active' : ''}>
+              <Documents text={text.documents} />
+            </HiidenWrraper>
+          </ControllBlock>
         </AccItem>
         <AccItem>
           <AccBtn onClick={(e) => onClick(e, topProject)} status={component === topProject ? 'active' : ''}>{text.linkList[3]}</AccBtn>
-          {component === topProject ? (
-            <ControllBlock>
-              <HiidenWrraper status={anime === topProject ? 'active' : ''}>
-                <TopProject text={text.standart} />
-              </HiidenWrraper>
-            </ControllBlock>
-        )
-          : null}
+          <ControllBlock>
+            <HiidenWrraper status={anime === topProject ? 'active' : ''}>
+              <TopProject text={text.standart} />
+            </HiidenWrraper>
+          </ControllBlock>
         </AccItem>
         <AccItem>
           <AccBtn onClick={(e) => onClick(e, readyProject)} status={component === readyProject ? 'active' : ''}>{text.linkList[4]}</AccBtn>
-          {component === readyProject ? (
-            <ControllBlock>
-              <HiidenWrraper status={anime === readyProject ? 'active' : ''}>
-                <ReadyProject text={text.ready} />
-              </HiidenWrraper> 
-            </ControllBlock>
-        )
-          : null}
+          <ControllBlock>
+            <HiidenWrraper status={anime === readyProject ? 'active' : ''}>
+              <ReadyProject text={text.ready} />
+            </HiidenWrraper> 
+          </ControllBlock>
         </AccItem>
       </AccContent>
     </AccSection>
@@ -220,5 +253,5 @@ const ControllBlock = styled.div`
 `;
 const HiidenWrraper = styled.div`
   transition-duration: .5s;
-  margin-top: ${props => props.status === 'active' ? '0px' : '-300px;'}
+  margin-top: ${props => props.status === 'active' ? '0px' : '-400px;'}
 `;
