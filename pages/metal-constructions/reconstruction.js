@@ -42,7 +42,7 @@ export default function Reconstruction () {
       <RecBanner text={city[language].reconstraction.banner} />
       <Advantages text={city[language].advantages} />
       <RoundBanner text={city[language].reconstraction.roundBanner} />
-      <RecInfo  />
+      <RecInfo timeSolution={city[language].title.in} />
       <ProjectSlaider text={city[language].projectSlaider} />
       <ProjectForm text={city[language].form} />
       <Map 

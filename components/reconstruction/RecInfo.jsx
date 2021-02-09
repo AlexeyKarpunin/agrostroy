@@ -1,13 +1,13 @@
-export default function RecInfo () {
+export default function RecInfo ({timeSolution}) {
   return (
     <div className='page-section'>
       <div className='page-section__inner'>
         <div className='page-section__title'>
-          <h2 className='is-section'>Реконструкция Зданий в Астрахани</h2>
+          <h2 className='is-section'>Реконструкция Зданий в {timeSolution}</h2>
         </div>
         <div className='page-section__body'>
           <div className='other-page-section'>
-            <p>Реконструкция зданий и построек из металлоконструкций  в Астрахани быстро, качественно и в срок. Гарантия</p>
+            <p>Реконструкция зданий и построек из металлоконструкций  в {timeSolution} быстро, качественно и в срок. Гарантия</p>
             <p>Процесс работы зависит от того, нужно ли демонтировать металлоконструкции, не заботясь об их сохранности, или же демонтаж производится с целью пересобрать здание в первоначальном виде на другой территории для дальнейшего его использования.</p>
             <h2>Виды демонтажа металлоконструкций:</h2>
             <p>

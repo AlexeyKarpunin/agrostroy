@@ -1,6 +1,7 @@
 /* eslint-disable jsx-a11y/label-has-associated-control */
 import Link from 'next/link';
 import React, { useEffect, useState } from 'react';
+import InputMask from 'react-input-mask';
 
 export default function Form () {
   
@@ -129,7 +130,9 @@ export default function Form () {
               <br />
               <label>
                 <span className='item'>Телефон*</span>
-                <span className='wpcf7-form-control-wrap tel-983'><input ref={phone} type='tel' name='tel-983' size='40' className={`wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel tel ${phoneStatus}`} aria-required='true' aria-invalid='false' placeholder='Телефон' /></span>
+                <span className='wpcf7-form-control-wrap tel-983'>
+                  <InputMask mask='+7 (999) 999-99-99' ref={phone} type='tel' name='tel-983' size='40' className={`wpcf7-form-control wpcf7-text wpcf7-tel wpcf7-validates-as-required wpcf7-validates-as-tel tel ${phoneStatus}`} aria-required='true' aria-invalid='false' placeholder='Телефон' />
+                </span>
               </label>
               <br />
               <label>

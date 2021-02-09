@@ -1,14 +1,13 @@
-export default function Manufactuging () {
+export default function Manufactuging ({timeSolution}) {
   return (
     <div className='page-section'>
       <div className='page-section__inner'>
         <div className='page-section__title'>
-          <h2 className='is-section'>Производство металлоконструкций в Астрахани</h2>
+          <h2 className='is-section'>Производство металлоконструкций в {timeSolution}</h2>
         </div>
         <div className='page-section__body'>
           <div className='other-page-section'>
-            <p>Изготовление металлоконструкции в Астрахани быстро, качественно и в срок. Гарантия</p>
-
+            <p>Изготовление металлоконструкции в {timeSolution} быстро, качественно и в срок. Гарантия</p>
           </div>
         </div>
       </div>

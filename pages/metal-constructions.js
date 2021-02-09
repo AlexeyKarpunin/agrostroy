@@ -42,7 +42,7 @@ export default function MetalConstructions () {
       <McBanner text={city[language].metallWork.banner} />
       <Advantages text={city[language].advantages} />
       <CreateMC text={city[language].metallWork.roundBanner} />
-      <Manufactuging />
+      <Manufactuging timeSolution={city[language].title.in} />
       <ProjectSlaider text={city[language].projectSlaider} />
       <ProjectForm text={city[language].form} />
       <Map 

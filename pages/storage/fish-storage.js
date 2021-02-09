@@ -42,7 +42,7 @@ export default function FruitsStorage() {
       <FishBanner text={city[language].fishStorage.banner} />
       <Advantages text={city[language].advantages} />
       <RoundBanner text={city[language].fishStorage.roundBanner} />
-      <FishInfo />
+      <FishInfo timeSolution={city[language].title.in} />
       <ProjectSlaider text={city[language].projectSlaider} />
       <ProjectForm text={city[language].form} />
       <Map

@@ -438,7 +438,7 @@
     },
 
     "project": {
-      "header": ["Design of", "any buildings of the agricultural complex", "in Astrakhan and the region"],
+      "header": ["Design of", "any buildings of the agricultural complex", "in Cherkessk and the region"],
       "btn": "Calculate the cost",
       "bannerContent": ["Turnkey from", "30 days", "design-project", "FOR FREE"],
       "roundBanner": {
@@ -449,19 +449,19 @@
 
     "metallWork": {
       "banner": {
-        "header": ["Production of", "metal structures", "in Astrakhan and the region"],
+        "header": ["Production of", "metal structures", "in Cherkessk and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
       "roundBanner": {
-        "header": ["Manufacturing of industrial buildings from", "metal structures", "in Astrakhan and the region"],
+        "header": ["Manufacturing of industrial buildings from", "metal structures", "in Cherkessk and the region"],
         "content": ["Own production", "Certification By the national Welding Control Agency (NACS)", "Modern high-precision equipment", "Warranty for all products", "Large bending loads", "Any architectural forms", "Spans from 20 to 140 meters", "The smallest slope of the roof — 5%"]
       }
     },
 
     "reconstraction": {
       "banner": {
-        "header": ["Reconstruction of", "Buildings in Astrakhan and the region"],
+        "header": ["Reconstruction of", "Buildings in Cherkessk and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
@@ -473,19 +473,19 @@
 
     "industrialCold": {
       "banner": {
-        "header": ["Building", "industrial refrigeration", "warehouses in Astrakhan and the region"],
+        "header": ["Building", "industrial refrigeration", "warehouses in Cherkessk and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
       "roundBanner": {
-        "header": ["Construction of", "industrial refrigeration warehouses", "in Astrakhan and the region"],
+        "header": ["Construction of", "industrial refrigeration warehouses", "in Cherkessk and the region"],
         "content": ["Storage of frozen poultry and meat", "Storage of dairy products, cheeses and sausages", "Storage of fruits, vegetables and flowers", "The ripening of bananas", "Cooling of meat after slaughter", "Shock freezing", "Warehouse parameters", "Automatic temperature control"]
       }
     },
 
     "climaticEquipment": {
       "banner": {
-        "header": ["Equipment", "Climate control", "in Astrakhan and the", "region"],
+        "header": ["Equipment", "Climate control", "in Cherkessk and the", "region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
@@ -494,104 +494,104 @@
         "content": ["Forced ventilation", "Automatic temperature and humidity control", "Protection against microorganisms, rotting bacteria and mold fungi", "Adjusting the air flow rate", "Climate control"]
       },
       "info": {
-        "header": "Climate control Equipment in Astrakhan",
-        "content": ["Installation of Climate control equipment in hangars, warehouses, warehouses, workshops and other industrial complexes in Astrakhan. Guarantee.", "To increase the shelf life of fruit and vegetable products and cereals in vegetable stores, we offer the installation of climate control systems.", "The «Agrostroitel Ug» company specializes in a complex of equipment with climate control systems of objects of the agro-industrial complex. We provide all clients with a full range of services from consulting and system design to configuration and installation of all necessary equipment. To create a climate-system, we use the advanced peaceful option for automating food and processing of agricultural products, the latest and successful developments. When creating the system, components from leading European and foreign manufacturers are used.", "Automatic control system ensures continuous operation for a long time and performs basic operations to maintain the microclimate: temperature control and humidity outdoor air temperature in the air distribution channels and air within the storage temperature product, humidity in the storage; fan control, inlet valves; the control system for humidification and cooling of air; alarm system; heated greenhouses."]
+        "header": "Climate control Equipment in Cherkessk",
+        "content": ["Installation of Climate control equipment in hangars, warehouses, warehouses, workshops and other industrial complexes in Cherkessk. Guarantee.", "To increase the shelf life of fruit and vegetable products and cereals in vegetable stores, we offer the installation of climate control systems.", "The «Agrostroitel Ug» company specializes in a complex of equipment with climate control systems of objects of the agro-industrial complex. We provide all clients with a full range of services from consulting and system design to configuration and installation of all necessary equipment. To create a climate-system, we use the advanced peaceful option for automating food and processing of agricultural products, the latest and successful developments. When creating the system, components from leading European and foreign manufacturers are used.", "Automatic control system ensures continuous operation for a long time and performs basic operations to maintain the microclimate: temperature control and humidity outdoor air temperature in the air distribution channels and air within the storage temperature product, humidity in the storage; fan control, inlet valves; the control system for humidification and cooling of air; alarm system; heated greenhouses."]
       }
     },
 
     "hangars": {
       "banner": {
-        "header": ["Building", "hangars and warehouses in Astrakhan and the region"],
+        "header": ["Building", "hangars and warehouses in Cherkessk and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
       "roundBanner": {
-        "header": ["Construction of", "hangars and warehouses", "in Astrakhan and the region"],
+        "header": ["Construction of", "hangars and warehouses", "in Cherkessk and the region"],
         "content": ["Protection from intruders", "Protection from the effects of the environment", "Availability of additional rooms and offices", "Fire alarms and fire extinguishing systems", "Automatic gates", "Video surveillance", "Adjustable temperature mode"]
       }
     },
 
     "dismountable": {
       "banner": {
-        "header": ["Production and installation of", "Collapsible hangars", "in Astrakhan and the region"],
+        "header": ["Production and installation of", "Collapsible hangars", "in Cherkessk and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
       "roundBanner": {
-        "header": ["Production and installation of", "collapsible hangars", "in Astrakhan and the region"],
+        "header": ["Production and installation of", "collapsible hangars", "in Cherkessk and the region"],
         "content": ["Ease and speed of installation", "Without capital construction", "The possibility of transporting", "Possibility to complete the construction", "Savings on project work", "Lightweight Foundation", "No heavy machinery required"]
       }
     },
 
     "frameHangars": {
       "banner": {
-        "header": ["Building", "frame hangars", "in Astrakhan and the region"],
+        "header": ["Building", "frame hangars", "in Cherkessk and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
 
       "roundBanner": {
-        "header": ["Construction of", "frame hangars", "in Astrakhan and the region"],
+        "header": ["Construction of", "frame hangars", "in Cherkessk and the region"],
         "content": ["The massive base", "Wide partitions", "Unlimited area", "Resistance to any loads", "The possibility of the production activities", "Installation of any equipment for the manufacturer"]
       },
       "info": {
         "header": "The construction of frame hangars",
-        "content": ["The construction of frame sheds in Astrakhan", "We produce and assemble steel structures hangars LSTC (light steel thin-walled structures), the hangars made of metal, prefabricated frame tent hangars, bead insulated sandwich panels and other types of walling.", "The basis of frame sheds can be beamed, trusses or structural structures. Each design is used for different tasks. Our designers will offer You the most optimal and profitable for your business solution. Lightweight Foundation, comparative speed installation, the ability to create a collapsible structure (to transport the hangar if necessary), a large number of project options – all this makes frame hangars are an attractive universal solution for construction."]
+        "content": ["The construction of frame sheds in Cherkessk", "We produce and assemble steel structures hangars LSTC (light steel thin-walled structures), the hangars made of metal, prefabricated frame tent hangars, bead insulated sandwich panels and other types of walling.", "The basis of frame sheds can be beamed, trusses or structural structures. Each design is used for different tasks. Our designers will offer You the most optimal and profitable for your business solution. Lightweight Foundation, comparative speed installation, the ability to create a collapsible structure (to transport the hangar if necessary), a large number of project options – all this makes frame hangars are an attractive universal solution for construction."]
       }
     },
 
     "framelessHangars": {
       "banner": {
-        "header": ["Building", "fruit storage facilities", "in Astrakhan and the region"],
+        "header": ["Building", "fruit storage facilities", "in Cherkessk and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
       "roundBanner": {
-        "header": ["Construction of", "frameless pre-fabricated hangars", "in Astrakhan and the region"],
+        "header": ["Construction of", "frameless pre-fabricated hangars", "in Cherkessk and the region"],
         "content": ["Low cost", "High speed of construction", "Lightweight Foundation", "Possibility of insulation", "Small mass", "The lack of transportation costs"]
       },
       "info": {
-        "header": "Construction of pre-fabricated hangars in Astrakhan",
+        "header": "Construction of pre-fabricated hangars in Cherkessk",
         "content": ["Hangars from strip – metal prefabricated semicircular structure made of galvanized steel. Their installation is carried out directly on the construction site with the help of special.techniques. Perhaps this is the fastest and relatively inexpensive option for construction of vegetable – granaries, warehouses and mini-farms.","These hangars are built on a lightweight Foundation, they can be insulated if necessary, and equipped with everything you need: ventilation, heating, refrigerators, and other.","Insulation of arched frameless hangars is carried out with polyurethane foam, the material is sprayed directly on the walls. Thus, the maximum tightness of the insulation layer is achieved, excluding micro-cracks at the joints. Polyurethane foam is a lightweight material, its thickness can be controlled up to a millimeter. Service life – over 30 years. Excellent adhesion to the surface of the walls, in addition, no preparation of the walls before application is required. All this allows to reduce the construction time, which is also an undeniable advantage."]
       }
     },
 
     "storage": {
       "banner": {
-        "header": ["Building", "storage", "facilities in Astrakhan and the region"],
+        "header": ["Building", "storage", "facilities in Cherkessk and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
       "roundBanner": {
-        "header": ["Construction of", "storage Facilities", "in Astrakhan and the region"],
+        "header": ["Construction of", "storage Facilities", "in Cherkessk and the region"],
         "content": ["Storage of metal structures", "LSTK prefabricated structures", "Frame and frameless hangars", "Service life up to 75 years", "Variety of forms, designs", "Possibility of insulation", "Installation of refrigeration equipment", "Tightness", "Sanitary and hygienic characteristics that prevent crop spoilage"]
       },
       "info": {
-        "mainHeader": "Construction of storage facilities in Astrakhan",
-        "headers": ["VEGETABLE AND FRUIT STORAGE, Elista, Republic of Kalmykia", "VEGETABLE STORE — 20 x 73.8 m. “IRRICO”, Stavropol Krai, Ipatovsky district, village Vinodelcheskiy", "THE GRANARY “VOLGA-PORT”, line 2, Astrakhan region."],
-        "content": ["Construction of storage facilities in Astrakhan “turnkey”, quickly, efficiently and on time. Guarantee for all works.", "The company “Agrostroitelyug” makes buildings for agriculture, in particular, storage facilities made of metal structures, prefabricated structures of LSTK, frame and frameless hangars in Astrakhan.", "High performance characteristics, a service life of up to 75 years, a variety of shapes and structures, the possibility of insulation, installation of refrigeration equipment, tightness and satisfying sanitary and hygienic characteristics that prevent crop damage-all these qualities make storage of metal structures an ideal option for construction.", "Our designers carefully calculate each element and optimize material costs. The Foundation for this type of building requires a lightweight one. All this leads to a reduction in construction time, which means that you can start running a business in a short time.", "Design and installation is carried out in such a way that unloading, storage of crops and maintenance of agricultural equipment are carried out in the best, convenient way."]
+        "mainHeader": "Construction of storage facilities in Cherkessk",
+        "headers": ["VEGETABLE AND FRUIT STORAGE, Elista, Republic of Kalmykia", "VEGETABLE STORE — 20 x 73.8 m. “IRRICO”, Stavropol Krai, Ipatovsky district, village Vinodelcheskiy", "THE GRANARY “VOLGA-PORT”, line 2, Cherkessk region."],
+        "content": ["Construction of storage facilities in Cherkessk “turnkey”, quickly, efficiently and on time. Guarantee for all works.", "The company “Agrostroitelyug” makes buildings for agriculture, in particular, storage facilities made of metal structures, prefabricated structures of LSTK, frame and frameless hangars in Cherkessk.", "High performance characteristics, a service life of up to 75 years, a variety of shapes and structures, the possibility of insulation, installation of refrigeration equipment, tightness and satisfying sanitary and hygienic characteristics that prevent crop damage-all these qualities make storage of metal structures an ideal option for construction.", "Our designers carefully calculate each element and optimize material costs. The Foundation for this type of building requires a lightweight one. All this leads to a reduction in construction time, which means that you can start running a business in a short time.", "Design and installation is carried out in such a way that unloading, storage of crops and maintenance of agricultural equipment are carried out in the best, convenient way."]
       }
     },
 
     "fruitStorage": {
       "banner": {
-        "header": ["Building", "fruit storage facilities", "in Astrakhan and the region"],
+        "header": ["Building", "fruit storage facilities", "in Cherkessk and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
       "roundBanner": {
-        "header": "Construction of fruit storage facilities in Astrakhan and the region",
+        "header": "Construction of fruit storage facilities in Cherkessk and the region",
         "content": ["Adjustable gas atmosphere", "Maintaining temperature and humidity", "Progressive maturation of stored fruits", "Storage in containers", "Storage on special pallets", "Additional surface treatment of fruit", "Increased gas tightness", "Installation of sealed doors of a special design", "Shock freezing", "Selection of refrigeration equipment"]
       },
       "info": {
-        "header": "The construction of storage facilities «turnkey» in Astrakhan",
-        "content": ["If you are faced with the task of storing the fruit crop in compliance with the temperature and humidity conditions that are comfortable for a particular type in Astrakhan, you will not be mistaken if you choose a fruit storage facility made of metal structures.", "The company “Agrostroitel Yug” in Astrakhan is engaged in the production and installation of modern frame and frameless hangars made of metal, insulated, sealed, with a controlled gas environment, equipped with the necessary refrigeration equipment, a system for creating the necessary microclimate.", "Frame fruit storage made of metal structures is a great option for buildings of any configuration, including if you have a non-standard project. The building is assembled as a constructor from blanks, directly on the site. All details and connections are thought out at the design stage, using the program. So errors and inaccuracies are excluded. A lightweight Foundation is also suitable for frame fruit storage. Insulation and finishing options are used in a wide variety of acceptable price and quality for your project."]
+        "header": "The construction of storage facilities «turnkey» in Cherkessk",
+        "content": ["If you are faced with the task of storing the fruit crop in compliance with the temperature and humidity conditions that are comfortable for a particular type in Cherkessk, you will not be mistaken if you choose a fruit storage facility made of metal structures.", "The company “Agrostroitel Yug” in Cherkessk is engaged in the production and installation of modern frame and frameless hangars made of metal, insulated, sealed, with a controlled gas environment, equipped with the necessary refrigeration equipment, a system for creating the necessary microclimate.", "Frame fruit storage made of metal structures is a great option for buildings of any configuration, including if you have a non-standard project. The building is assembled as a constructor from blanks, directly on the site. All details and connections are thought out at the design stage, using the program. So errors and inaccuracies are excluded. A lightweight Foundation is also suitable for frame fruit storage. Insulation and finishing options are used in a wide variety of acceptable price and quality for your project."]
       }
     },
 
     "fishStorage": {
       "banner": {
-        "header": ["Building", "hangars for storing and processing fish", "in Astrakhan and the region"],
+        "header": ["Building", "hangars for storing and processing fish", "in Cherkessk and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
@@ -603,7 +603,7 @@
 
     "vegetableStorage": {
       "banner": {
-        "header": ["Building", "vegetable stores", "in Astrakhan and the region"],
+        "header": ["Building", "vegetable stores", "in Cherkessk and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
@@ -615,12 +615,12 @@
 
     "grainStorage": {
       "banner": {
-        "header": ["Building", "granaries", "in Astrakhan and the region"],
+        "header": ["Building", "granaries", "in Cherkessk and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
       "roundBanner": {
-        "header": ["Construction of", "Granaries", "in Astrakhan and the region"],
+        "header": ["Construction of", "Granaries", "in Cherkessk and the region"],
         "content": ["Construction in any area", "Strength — storage of a large mass of grain", "Protection of grain from dampness, pests and rodents", "Speed of construction", "Ease of installation", "Low cost", "The possibility of transporting"]
       }
     },

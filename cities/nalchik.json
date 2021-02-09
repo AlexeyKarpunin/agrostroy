@@ -92,7 +92,7 @@
       "address": ["Адрес:", "г. Астрахань, ул. Кирова, 19"]
     },
     "project": {
-      "header": ["Проектирование", "Любых строений агрокомплекса", "в Астрахани и области"],
+      "header": ["Проектирование", "Любых строений агрокомплекса", "в Нальчике и области"],
       "btn": "Расчитать стоимость",
       "bannerContent": ["Строительство", "Под ключ", "дизайн-проект", "бесплатно"],
       "roundBanner": {
@@ -102,12 +102,12 @@
     },
     "metallWork": {
       "banner": {
-        "header": ["Производство", "металлоконструкций", "в Астрахани и области"],
+        "header": ["Производство", "металлоконструкций", "в Нальчике и области"],
         "content": ["Под ключ", "от", "30 дней", "дизайн-проект", "бесплатно"],
         "btn": "Расчитать стоимость"
       },
       "roundBanner": {
-        "header": ["Изготовление промышленных зданий", "из металлоконструкций", "в Астрахани и области" ],
+        "header": ["Изготовление промышленных зданий", "из металлоконструкций", "в Нальчике и области" ],
         "content": ["Собственное производство", "Аттестация Национальным Агентством Контроля Сварки (НАКС)", "Cовременное высокоточное оборудование", "Гарантия на всю продукцию", "Большие изгибающие нагрузки", "Любые архитектурные формы", "Пролеты от 20 до 140 метров", "Наименьший скат кровли — 5%", ""]
       }
     },
@@ -126,25 +126,25 @@
 
     "industrialCold": {
       "banner": {
-        "header": ["Изготавливаем", "холодильные камеры и склады", "в Астрахани"],
+        "header": ["Изготавливаем", "холодильные камеры и склады", "в Нальчике"],
         "content": ["Под ключ", "от", "дизайн-проект", "30 дней", "бесплатно"],
         "btn": "Расчитать стоимость"
       },
       "roundBanner": {
-        "header": ["Строительство", "промышленных холодильных складов", "в Астрахани"],
+        "header": ["Строительство", "промышленных холодильных складов", "в Нальчике"],
         "content": ["Хранение замороженных птицы и мяса","Хранение молочных продуктов, сыров и колбас", "Хранение фруктов, овощей и цветов", "Дозревание бананов", "Охлаждение мяса после убоя", "Шоковая заморозка", "Параметры складского помещения", "Автоматическое управление температурой"]
       }
     },
 
     "climaticEquipment": {
       "banner": {
-        "header": ["Оснащение", "Климатическим", "Оборудованием", "в Астрахани"],
+        "header": ["Оснащение", "Климатическим", "Оборудованием", "в Нальчике"],
         "content": ["Под ключ", "от", "дизайн-проект", "30 дней", "бесплатно"],
         "btn": "Расчитать стоимость"
       },
       "info": {
-        "header": "Установка и оснащение климатическим оборудованием производственных помещений в Астрахани",
-        "content": ["Установка Климатического оборудования в ангарах, складах, хранилищах, цехах и других промышленных комплексах в Астрахани. Гарантия.", "Для увеличения сроков хранения плодово-овощной продукции и зерновых культур в овощехранилищах мы предлагаем установку систем климат-контроля.", "Компания «АгроСтроитель Юг» специализируется на комплексном оснащении системами климат-контроля объектов агропромышленного комплекса. Мы предоставляем своим клиентам весь спектр услуг от консультирования и проектирования систем до поставки и установки всего необходимого оборудования. Для создания климат-систем испoльзуeм пepeдoвoй миpoвoй oпыт пo aвтoмaтизaции хpaнeния и   oбpaбoтке сeльскoхoзяйствeннoй пpoдукции, нoвeйшиe и успeшныe paзpaбoтки. Пpи сoздaнии систeмы примeняются кoмплeктующиe вeдущих eвpoпeйских и oтeчeствeнных изгoтoвитeлeй.", "Автоматическая система управления обеспечивает непрерывный режим работы в течение длительного времени и выполняет основные операции для поддержания микроклимата: контроль температуры и влажности наружного воздуха, температуры в воздушных распределительных каналах и воздуха внутри хранилища, температуры продукта, влажности в хранилище; управление вентиляторами, приточными клапанами; управление системой увлажнения и охлаждения воздуха; сигнализация; обогрев овощехранилища."]
+        "header": "Установка и оснащение климатическим оборудованием производственных помещений в Нальчике",
+        "content": ["Установка Климатического оборудования в ангарах, складах, хранилищах, цехах и других промышленных комплексах в Нальчике. Гарантия.", "Для увеличения сроков хранения плодово-овощной продукции и зерновых культур в овощехранилищах мы предлагаем установку систем климат-контроля.", "Компания «АгроСтроитель Юг» специализируется на комплексном оснащении системами климат-контроля объектов агропромышленного комплекса. Мы предоставляем своим клиентам весь спектр услуг от консультирования и проектирования систем до поставки и установки всего необходимого оборудования. Для создания климат-систем испoльзуeм пepeдoвoй миpoвoй oпыт пo aвтoмaтизaции хpaнeния и   oбpaбoтке сeльскoхoзяйствeннoй пpoдукции, нoвeйшиe и успeшныe paзpaбoтки. Пpи сoздaнии систeмы примeняются кoмплeктующиe вeдущих eвpoпeйских и oтeчeствeнных изгoтoвитeлeй.", "Автоматическая система управления обеспечивает непрерывный режим работы в течение длительного времени и выполняет основные операции для поддержания микроклимата: контроль температуры и влажности наружного воздуха, температуры в воздушных распределительных каналах и воздуха внутри хранилища, температуры продукта, влажности в хранилище; управление вентиляторами, приточными клапанами; управление системой увлажнения и охлаждения воздуха; сигнализация; обогрев овощехранилища."]
       },
       "roundBanner": {
         "header": ["Преимущества наших", "климатических систем"],
@@ -166,83 +166,83 @@
 
     "dismountable": {
       "banner": {
-        "header": ["Изготавливаем", "Сборно-разборные склады и помещения", "в Астрахани"],
+        "header": ["Изготавливаем", "Сборно-разборные склады и помещения", "в Нальчике"],
         "content": ["Под ключ", "от", "дизайн-проект", "30 дней", "бесплатно"],
         "btn": "Расчитать стоимость"
       },
       "roundBanner": {
-        "header": ["Производство и монтаж", "Сборно-разборных ангаров", "в Астрахани"],
+        "header": ["Производство и монтаж", "Сборно-разборных ангаров", "в Нальчике"],
         "content": ["Легкость и быстрота монтажа", "Без капитального строительства", "Возможность транспортировки", "Возможность доукомплектовывать конструкцию", "Экономия на проектных работах", "Облегченный фундамент", "Не требуется тяжелая техника"]
       }
     },
 
     "frameHangars": {
       "banner": {
-        "header": ["Строим", "каркасные ангары", "в Астрахани и области"],
+        "header": ["Строим", "каркасные ангары", "в Нальчике и области"],
         "content": ["Под ключ", "от", "дизайн-проект", "30 дней", "бесплатно"],
         "btn": "Расчитать стоимость"
       },
       "roundBanner": {
-        "header": ["Строительство", "каркасных ангаров", "в Астрахани и области"],
+        "header": ["Строительство", "каркасных ангаров", "в Нальчике и области"],
         "content": ["Массивный фундамент", "Широкие перегородки", "Неограниченная площадь", "Устойчивость к любым нагрузкам", "Возможность производственной деятельности", "Установка любого оборудования для производства"]
       },
       "info": {
-        "header": "Строительство каркасных ангаров в Астрахани «под ключ»",
-        "content": [" Строительство каркасных ангаров в Астрахани быстро, качественно и в срок. Гарантия", "Мы производим металлоконструкции и монтируем ангары ЛСТК (легкие стальные тонкостенные конструкции), ангары из металлоконструкций, быстровозводимые каркасно-тентовые ангары, утепленные наборными сэндвич-панелями, и другие разновидности ограждающих конструкций.", "В основе каркасных ангаров могут быть балочные, ферменные или структурные конструкции. Каждая конструкция используется для разных задач. Наши проектировщики предложат Вам наиболее оптимальное и выгодное для вашего бизнеса решение. Облегченный фундамент, сравнительная быстрота монтажа, возможность создать разборную конструкцию (с целью перевозки ангара при необходимости), большое количество вариантов проектов – все это делает каркасные ангары привлекательным универсальным решением для строительства."]
+        "header": "Строительство каркасных ангаров в Нальчике «под ключ»",
+        "content": [" Строительство каркасных ангаров в Нальчике быстро, качественно и в срок. Гарантия", "Мы производим металлоконструкции и монтируем ангары ЛСТК (легкие стальные тонкостенные конструкции), ангары из металлоконструкций, быстровозводимые каркасно-тентовые ангары, утепленные наборными сэндвич-панелями, и другие разновидности ограждающих конструкций.", "В основе каркасных ангаров могут быть балочные, ферменные или структурные конструкции. Каждая конструкция используется для разных задач. Наши проектировщики предложат Вам наиболее оптимальное и выгодное для вашего бизнеса решение. Облегченный фундамент, сравнительная быстрота монтажа, возможность создать разборную конструкцию (с целью перевозки ангара при необходимости), большое количество вариантов проектов – все это делает каркасные ангары привлекательным универсальным решением для строительства."]
       }
     },
 
     "framelessHangars": {
       "banner": {
-        "header": ["Строим", "бескаркасные ангары", "в Астрахани и области"],
+        "header": ["Строим", "бескаркасные ангары", "в Нальчике и области"],
         "content": ["Под ключ", "от", "дизайн-проект", "30 дней", "бесплатно"],
         "btn": "Расчитать стоимость"
       },
       "roundBanner": {
-        "header": ["Строительство", "бескаркасных быстровозводимых ангаров", "в Астрахани и области"],
+        "header": ["Строительство", "бескаркасных быстровозводимых ангаров", "в Нальчике и области"],
         "content": ["Невысокая стоимость", "Высокая скорость постройки", "Облегченный фундамент", "Возможность утепления", "Малая масса", "Отсутствие расходов на транспортировку"]
       },
       "info": {
-        "header": "Строительство бескаркасных быстровозводимых ангаров в Астрахани",
-        "content": ["Строительство бескаркасных быстровозводимых ангаров в Астрахани быстро, качественно и в срок. ГарантияАнгары из штрипса – быстровозводимыеметаллические полукруглые конструкции из оцинкованной стали. Их монтажпроизводится непосредственно на участке строительства при помощи спец.техники. Пожалуй, это наиболее быстрый и сравнительно недорогой вариант для строительства овоще- зернохранилищ, складов и мини-ферм.", "Такие ангары строятся на облегченном фундаменте, они могут быть утеплены при необходимости, а также оборудованы всем необходимым: вентиляцией, обогревом, холодильными камерами, и прочим.", "Утепление арочных бескаркасных ангаров осуществляется пенополиуретаном, материал распыляется непосредственно на стены. Таким образом достигается максимальная герметичность слоя утеплителя, исключая микро-щели на стыках. Пенополиуретан легкий материал, его толщину можно контролировать до миллиметра. Срок службы — свыше 30 лет. Отличное сцепление с поверхностью стен, кроме того, никакой подготовки стен перед нанесением не требуется. Все это позволяет сократить срок строительства, что тоже является неоспоримым преимуществом."]
+        "header": "Строительство бескаркасных быстровозводимых ангаров в Нальчике",
+        "content": ["Строительство бескаркасных быстровозводимых ангаров в Нальчике быстро, качественно и в срок. ГарантияАнгары из штрипса – быстровозводимыеметаллические полукруглые конструкции из оцинкованной стали. Их монтажпроизводится непосредственно на участке строительства при помощи спец.техники. Пожалуй, это наиболее быстрый и сравнительно недорогой вариант для строительства овоще- зернохранилищ, складов и мини-ферм.", "Такие ангары строятся на облегченном фундаменте, они могут быть утеплены при необходимости, а также оборудованы всем необходимым: вентиляцией, обогревом, холодильными камерами, и прочим.", "Утепление арочных бескаркасных ангаров осуществляется пенополиуретаном, материал распыляется непосредственно на стены. Таким образом достигается максимальная герметичность слоя утеплителя, исключая микро-щели на стыках. Пенополиуретан легкий материал, его толщину можно контролировать до миллиметра. Срок службы — свыше 30 лет. Отличное сцепление с поверхностью стен, кроме того, никакой подготовки стен перед нанесением не требуется. Все это позволяет сократить срок строительства, что тоже является неоспоримым преимуществом."]
       }
     },
     "storage": {
       "banner": {
-        "header": ["Строим", "хранилища", "в Астрахани и области"],
+        "header": ["Строим", "хранилища", "в Нальчике и области"],
         "content": ["Под ключ", "от", "дизайн-проект", "30 дней", "бесплатно"],
         "btn": "Расчитать стоимость"
       },
       "roundBanner": {
-        "header": ["Мы предлагаем", "строительство Хранилищ", "в Астрахани и области"],
+        "header": ["Мы предлагаем", "строительство Хранилищ", "в Нальчике и области"],
         "content": ["Хранилища из металлоконструкций", "Сборные конструкции ЛСТК", "Каркасные и бескаркасные ангары", "Срок службы до 75 лет", "Многообразие форм, конструкций", "Возможность утепления", "Установки холодильного оборудования", "Герметичность", "Санитарно-гигиенические характеристики, предотвращающие порчу урожая"]
       },
       "info": {
-        "mainHeader": "Строительство хранилищ в Астрахани «под ключ»",
+        "mainHeader": "Строительство хранилищ в Нальчике «под ключ»",
         "headers": ["Овоще- и Фрукто- хранилище, Элиста, Республика Калмыкия", "Овощехранилище — 20 x 73.8 м. «ИРРИКО», Ставропольский край, Ипатовский район", "Зернохранилище «Волга-порт», вторая линия, Астраханская область.", ""],
-        "content": ["Строительство хранилищ в Астрахани «под ключ», быстро, качественно и в срок. Гарантия на все работы.", "Компания «АгроСтроительЮг» изготавливает строения для сельского хозяйства, в частности, хранилища из металлоконструкций, сборные конструкции ЛСТК, каркасные и бескаркасные ангары в Астрахани.", "Высокие эксплуатационные характеристики, срок службы до 75 лет, многообразие форм, конструкций, возможность утепления, установки холодильного оборудования, герметичность и удовлетворяющие санитарно-гигиенические характеристики, предотвращающие порчу урожая – все эти качества делают хранилища из металлоконструкций идеальным вариантом для строительства.", "Наши проектировщики тщательно рассчитывают каждый элемент, оптимизируют расходы на материалы. Фундамент для постройки такого типа требуется облегченный. Все это приводит к сокращению времени строительства, а значит, и приступить к ведению бизнеса вы сможете в короткие сроки.", "Проектирование и монтаж осуществляется таким образом, чтобы разгрузка, хранение урожая и обслуживание с/х техники осуществлялись наилучшим, удобным способом. "]
+        "content": ["Строительство хранилищ в Нальчике «под ключ», быстро, качественно и в срок. Гарантия на все работы.", "Компания «АгроСтроительЮг» изготавливает строения для сельского хозяйства, в частности, хранилища из металлоконструкций, сборные конструкции ЛСТК, каркасные и бескаркасные ангары в Нальчике.", "Высокие эксплуатационные характеристики, срок службы до 75 лет, многообразие форм, конструкций, возможность утепления, установки холодильного оборудования, герметичность и удовлетворяющие санитарно-гигиенические характеристики, предотвращающие порчу урожая – все эти качества делают хранилища из металлоконструкций идеальным вариантом для строительства.", "Наши проектировщики тщательно рассчитывают каждый элемент, оптимизируют расходы на материалы. Фундамент для постройки такого типа требуется облегченный. Все это приводит к сокращению времени строительства, а значит, и приступить к ведению бизнеса вы сможете в короткие сроки.", "Проектирование и монтаж осуществляется таким образом, чтобы разгрузка, хранение урожая и обслуживание с/х техники осуществлялись наилучшим, удобным способом. "]
       }
     },
 
     "fruitStorage": {
       "banner": {
-        "header": ["Строим", "фруктохранилища", "в Астрахани и области"],
+        "header": ["Строим", "фруктохранилища", "в Нальчике и области"],
         "content": ["Под ключ", "от", "дизайн-проект", "30 дней", "бесплатно"],
         "btn": "Расчитать стоимость"
       },
       "roundBanner": {
-        "header": "Строительство фруктохранилищ в Астрахани",
+        "header": "Строительство фруктохранилищ в Нальчике",
         "content": ["Регулируемая газовая атмосфера", "Поддержание температуры и влажности", "Поступательное созревание заложенных на хранение фруктов", "Хранение в контейнерах", "Хранение на специальных поддонах", "Дополнительная обработка поверхности фруктов", "Повышенная газонепроницаемость", "Установка герметичных дверей особой конструкции", "Шоковая заморозка", "Подбор холодильного оборудования"]
       },
       "info": {
-        "header": "Строительство Фруктохранилищ «под ключ» в Астрахани",
-        "content": ["Если перед вами стоит задача хранения урожая фруктов с соблюдением комфортных для того или иного вида температурного режима и влажности в Астрахани, вы не ошибетесь, если выберете для этого фруктохранилище из металлоконструкций.","Компания «АгроСтроитель Юг» в Астрахани занимается производством и монтажом современных каркасных и бескаркасных ангаров из металла, утепленных, герметичных, с регулируемой газовой средой, оснащенных необходимым холодильным оборудованием, системой создания нужного микроклимата.","Каркасные фруктохранилища из металлоконструкций — отличный вариант для здания любой конфигурации, в том числе, если у вас нестандартный проект. Здание собирается как конструктор из заготовок, непосредственно на участке. Все детали и соединения продумываются еще на этапе проектирования, с помощью программы. Так что ошибки и неточности исключены. Для каркасных фруктохранилищ также подойдет облегченный фундамент. Утеплители и варианты отделки применяются самые разнообразные, приемлемые по цене и качеству именно для вашего проекта."]
+        "header": "Строительство Фруктохранилищ «под ключ» в Нальчике",
+        "content": ["Если перед вами стоит задача хранения урожая фруктов с соблюдением комфортных для того или иного вида температурного режима и влажности в Нальчике, вы не ошибетесь, если выберете для этого фруктохранилище из металлоконструкций.","Компания «АгроСтроитель Юг» в Нальчике занимается производством и монтажом современных каркасных и бескаркасных ангаров из металла, утепленных, герметичных, с регулируемой газовой средой, оснащенных необходимым холодильным оборудованием, системой создания нужного микроклимата.","Каркасные фруктохранилища из металлоконструкций — отличный вариант для здания любой конфигурации, в том числе, если у вас нестандартный проект. Здание собирается как конструктор из заготовок, непосредственно на участке. Все детали и соединения продумываются еще на этапе проектирования, с помощью программы. Так что ошибки и неточности исключены. Для каркасных фруктохранилищ также подойдет облегченный фундамент. Утеплители и варианты отделки применяются самые разнообразные, приемлемые по цене и качеству именно для вашего проекта."]
       }
     },
 
     "fishStorage": {
       "banner": {
-        "header": ["Строим", "ангары для хранения и переработки рыбы", "в Астрахани и области"],
+        "header": ["Строим", "ангары для хранения и переработки рыбы", "в Нальчике и области"],
         "content": ["Под ключ", "от", "дизайн-проект", "30 дней", "бесплатно"],
         "btn": "Расчитать стоимость"
       },
@@ -254,7 +254,7 @@
 
     "vegetableStorage": {
       "banner": {
-        "header": ["Строим", "овощехранилища", "в Астрахани и области"],
+        "header": ["Строим", "овощехранилища", "в Нальчике и области"],
         "content": ["Под ключ", "от", "дизайн-проект", "30 дней", "бесплатно"],
         "btn": "Расчитать стоимость"
       },
@@ -266,12 +266,12 @@
 
     "grainStorage": {
       "banner": {
-        "header": ["Строим", "зернохранилища", "в Астрахани и области"],
+        "header": ["Строим", "зернохранилища", "в Нальчике и области"],
         "content": ["Под ключ", "от", "дизайн-проект", "30 дней", "бесплатно"],
         "btn": "Расчитать стоимость"
       },
       "roundBanner": {
-        "header": ["Строительство", "зернохранилищ", "в Астрахани"],
+        "header": ["Строительство", "зернохранилищ", "в Нальчике"],
         "content": ["Строительство в любой местности", "Прочность — хранение большой массы зерна", "Защита зерна от сырости, вредителей и грызунов", "Быстрота возведения", "Легкость монтажа", "Невысокая стоимость", "Возможность транспортировки"]
       }
     },
@@ -438,7 +438,7 @@
     },
 
     "project": {
-      "header": ["Design of", "any buildings of the agricultural complex", "in Astrakhan and the region"],
+      "header": ["Design of", "any buildings of the agricultural complex", "in Nalchik and the region"],
       "btn": "Calculate the cost",
       "bannerContent": ["Turnkey from", "30 days", "design-project", "FOR FREE"],
       "roundBanner": {
@@ -449,19 +449,19 @@
 
     "metallWork": {
       "banner": {
-        "header": ["Production of", "metal structures", "in Astrakhan and the region"],
+        "header": ["Production of", "metal structures", "in Nalchik and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
       "roundBanner": {
-        "header": ["Manufacturing of industrial buildings from", "metal structures", "in Astrakhan and the region"],
+        "header": ["Manufacturing of industrial buildings from", "metal structures", "in Nalchik and the region"],
         "content": ["Own production", "Certification By the national Welding Control Agency (NACS)", "Modern high-precision equipment", "Warranty for all products", "Large bending loads", "Any architectural forms", "Spans from 20 to 140 meters", "The smallest slope of the roof — 5%"]
       }
     },
 
     "reconstraction": {
       "banner": {
-        "header": ["Reconstruction of", "Buildings in Astrakhan and the region"],
+        "header": ["Reconstruction of", "Buildings in Nalchik and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
@@ -473,19 +473,19 @@
 
     "industrialCold": {
       "banner": {
-        "header": ["Building", "industrial refrigeration", "warehouses in Astrakhan and the region"],
+        "header": ["Building", "industrial refrigeration", "warehouses in Nalchik and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
       "roundBanner": {
-        "header": ["Construction of", "industrial refrigeration warehouses", "in Astrakhan and the region"],
+        "header": ["Construction of", "industrial refrigeration warehouses", "in Nalchik and the region"],
         "content": ["Storage of frozen poultry and meat", "Storage of dairy products, cheeses and sausages", "Storage of fruits, vegetables and flowers", "The ripening of bananas", "Cooling of meat after slaughter", "Shock freezing", "Warehouse parameters", "Automatic temperature control"]
       }
     },
 
     "climaticEquipment": {
       "banner": {
-        "header": ["Equipment", "Climate control", "in Astrakhan and the", "region"],
+        "header": ["Equipment", "Climate control", "in Nalchik and the", "region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
@@ -494,104 +494,104 @@
         "content": ["Forced ventilation", "Automatic temperature and humidity control", "Protection against microorganisms, rotting bacteria and mold fungi", "Adjusting the air flow rate", "Climate control"]
       },
       "info": {
-        "header": "Climate control Equipment in Astrakhan",
-        "content": ["Installation of Climate control equipment in hangars, warehouses, warehouses, workshops and other industrial complexes in Astrakhan. Guarantee.", "To increase the shelf life of fruit and vegetable products and cereals in vegetable stores, we offer the installation of climate control systems.", "The «Agrostroitel Ug» company specializes in a complex of equipment with climate control systems of objects of the agro-industrial complex. We provide all clients with a full range of services from consulting and system design to configuration and installation of all necessary equipment. To create a climate-system, we use the advanced peaceful option for automating food and processing of agricultural products, the latest and successful developments. When creating the system, components from leading European and foreign manufacturers are used.", "Automatic control system ensures continuous operation for a long time and performs basic operations to maintain the microclimate: temperature control and humidity outdoor air temperature in the air distribution channels and air within the storage temperature product, humidity in the storage; fan control, inlet valves; the control system for humidification and cooling of air; alarm system; heated greenhouses."]
+        "header": "Climate control Equipment in Nalchik",
+        "content": ["Installation of Climate control equipment in hangars, warehouses, warehouses, workshops and other industrial complexes in Nalchik. Guarantee.", "To increase the shelf life of fruit and vegetable products and cereals in vegetable stores, we offer the installation of climate control systems.", "The «Agrostroitel Ug» company specializes in a complex of equipment with climate control systems of objects of the agro-industrial complex. We provide all clients with a full range of services from consulting and system design to configuration and installation of all necessary equipment. To create a climate-system, we use the advanced peaceful option for automating food and processing of agricultural products, the latest and successful developments. When creating the system, components from leading European and foreign manufacturers are used.", "Automatic control system ensures continuous operation for a long time and performs basic operations to maintain the microclimate: temperature control and humidity outdoor air temperature in the air distribution channels and air within the storage temperature product, humidity in the storage; fan control, inlet valves; the control system for humidification and cooling of air; alarm system; heated greenhouses."]
       }
     },
 
     "hangars": {
       "banner": {
-        "header": ["Building", "hangars and warehouses in Astrakhan and the region"],
+        "header": ["Building", "hangars and warehouses in Nalchik and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
       "roundBanner": {
-        "header": ["Construction of", "hangars and warehouses", "in Astrakhan and the region"],
+        "header": ["Construction of", "hangars and warehouses", "in Nalchik and the region"],
         "content": ["Protection from intruders", "Protection from the effects of the environment", "Availability of additional rooms and offices", "Fire alarms and fire extinguishing systems", "Automatic gates", "Video surveillance", "Adjustable temperature mode"]
       }
     },
 
     "dismountable": {
       "banner": {
-        "header": ["Production and installation of", "Collapsible hangars", "in Astrakhan and the region"],
+        "header": ["Production and installation of", "Collapsible hangars", "in Nalchik and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
       "roundBanner": {
-        "header": ["Production and installation of", "collapsible hangars", "in Astrakhan and the region"],
+        "header": ["Production and installation of", "collapsible hangars", "in Nalchik and the region"],
         "content": ["Ease and speed of installation", "Without capital construction", "The possibility of transporting", "Possibility to complete the construction", "Savings on project work", "Lightweight Foundation", "No heavy machinery required"]
       }
     },
 
     "frameHangars": {
       "banner": {
-        "header": ["Building", "frame hangars", "in Astrakhan and the region"],
+        "header": ["Building", "frame hangars", "in Nalchik and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
 
       "roundBanner": {
-        "header": ["Construction of", "frame hangars", "in Astrakhan and the region"],
+        "header": ["Construction of", "frame hangars", "in Nalchik and the region"],
         "content": ["The massive base", "Wide partitions", "Unlimited area", "Resistance to any loads", "The possibility of the production activities", "Installation of any equipment for the manufacturer"]
       },
       "info": {
         "header": "The construction of frame hangars",
-        "content": ["The construction of frame sheds in Astrakhan", "We produce and assemble steel structures hangars LSTC (light steel thin-walled structures), the hangars made of metal, prefabricated frame tent hangars, bead insulated sandwich panels and other types of walling.", "The basis of frame sheds can be beamed, trusses or structural structures. Each design is used for different tasks. Our designers will offer You the most optimal and profitable for your business solution. Lightweight Foundation, comparative speed installation, the ability to create a collapsible structure (to transport the hangar if necessary), a large number of project options – all this makes frame hangars are an attractive universal solution for construction."]
+        "content": ["The construction of frame sheds in Nalchik", "We produce and assemble steel structures hangars LSTC (light steel thin-walled structures), the hangars made of metal, prefabricated frame tent hangars, bead insulated sandwich panels and other types of walling.", "The basis of frame sheds can be beamed, trusses or structural structures. Each design is used for different tasks. Our designers will offer You the most optimal and profitable for your business solution. Lightweight Foundation, comparative speed installation, the ability to create a collapsible structure (to transport the hangar if necessary), a large number of project options – all this makes frame hangars are an attractive universal solution for construction."]
       }
     },
 
     "framelessHangars": {
       "banner": {
-        "header": ["Building", "fruit storage facilities", "in Astrakhan and the region"],
+        "header": ["Building", "fruit storage facilities", "in Nalchik and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
       "roundBanner": {
-        "header": ["Construction of", "frameless pre-fabricated hangars", "in Astrakhan and the region"],
+        "header": ["Construction of", "frameless pre-fabricated hangars", "in Nalchik and the region"],
         "content": ["Low cost", "High speed of construction", "Lightweight Foundation", "Possibility of insulation", "Small mass", "The lack of transportation costs"]
       },
       "info": {
-        "header": "Construction of pre-fabricated hangars in Astrakhan",
+        "header": "Construction of pre-fabricated hangars in Nalchik",
         "content": ["Hangars from strip – metal prefabricated semicircular structure made of galvanized steel. Their installation is carried out directly on the construction site with the help of special.techniques. Perhaps this is the fastest and relatively inexpensive option for construction of vegetable – granaries, warehouses and mini-farms.","These hangars are built on a lightweight Foundation, they can be insulated if necessary, and equipped with everything you need: ventilation, heating, refrigerators, and other.","Insulation of arched frameless hangars is carried out with polyurethane foam, the material is sprayed directly on the walls. Thus, the maximum tightness of the insulation layer is achieved, excluding micro-cracks at the joints. Polyurethane foam is a lightweight material, its thickness can be controlled up to a millimeter. Service life – over 30 years. Excellent adhesion to the surface of the walls, in addition, no preparation of the walls before application is required. All this allows to reduce the construction time, which is also an undeniable advantage."]
       }
     },
 
     "storage": {
       "banner": {
-        "header": ["Building", "storage", "facilities in Astrakhan and the region"],
+        "header": ["Building", "storage", "facilities in Nalchik and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
       "roundBanner": {
-        "header": ["Construction of", "storage Facilities", "in Astrakhan and the region"],
+        "header": ["Construction of", "storage Facilities", "in Nalchik and the region"],
         "content": ["Storage of metal structures", "LSTK prefabricated structures", "Frame and frameless hangars", "Service life up to 75 years", "Variety of forms, designs", "Possibility of insulation", "Installation of refrigeration equipment", "Tightness", "Sanitary and hygienic characteristics that prevent crop spoilage"]
       },
       "info": {
-        "mainHeader": "Construction of storage facilities in Astrakhan",
-        "headers": ["VEGETABLE AND FRUIT STORAGE, Elista, Republic of Kalmykia", "VEGETABLE STORE — 20 x 73.8 m. “IRRICO”, Stavropol Krai, Ipatovsky district, village Vinodelcheskiy", "THE GRANARY “VOLGA-PORT”, line 2, Astrakhan region."],
-        "content": ["Construction of storage facilities in Astrakhan “turnkey”, quickly, efficiently and on time. Guarantee for all works.", "The company “Agrostroitelyug” makes buildings for agriculture, in particular, storage facilities made of metal structures, prefabricated structures of LSTK, frame and frameless hangars in Astrakhan.", "High performance characteristics, a service life of up to 75 years, a variety of shapes and structures, the possibility of insulation, installation of refrigeration equipment, tightness and satisfying sanitary and hygienic characteristics that prevent crop damage-all these qualities make storage of metal structures an ideal option for construction.", "Our designers carefully calculate each element and optimize material costs. The Foundation for this type of building requires a lightweight one. All this leads to a reduction in construction time, which means that you can start running a business in a short time.", "Design and installation is carried out in such a way that unloading, storage of crops and maintenance of agricultural equipment are carried out in the best, convenient way."]
+        "mainHeader": "Construction of storage facilities in Nalchik",
+        "headers": ["VEGETABLE AND FRUIT STORAGE, Elista, Republic of Kalmykia", "VEGETABLE STORE — 20 x 73.8 m. “IRRICO”, Stavropol Krai, Ipatovsky district, village Vinodelcheskiy", "THE GRANARY “VOLGA-PORT”, line 2, Nalchik region."],
+        "content": ["Construction of storage facilities in Nalchik “turnkey”, quickly, efficiently and on time. Guarantee for all works.", "The company “Agrostroitelyug” makes buildings for agriculture, in particular, storage facilities made of metal structures, prefabricated structures of LSTK, frame and frameless hangars in Nalchik.", "High performance characteristics, a service life of up to 75 years, a variety of shapes and structures, the possibility of insulation, installation of refrigeration equipment, tightness and satisfying sanitary and hygienic characteristics that prevent crop damage-all these qualities make storage of metal structures an ideal option for construction.", "Our designers carefully calculate each element and optimize material costs. The Foundation for this type of building requires a lightweight one. All this leads to a reduction in construction time, which means that you can start running a business in a short time.", "Design and installation is carried out in such a way that unloading, storage of crops and maintenance of agricultural equipment are carried out in the best, convenient way."]
       }
     },
 
     "fruitStorage": {
       "banner": {
-        "header": ["Building", "fruit storage facilities", "in Astrakhan and the region"],
+        "header": ["Building", "fruit storage facilities", "in Nalchik and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
       "roundBanner": {
-        "header": "Construction of fruit storage facilities in Astrakhan and the region",
+        "header": "Construction of fruit storage facilities in Nalchik and the region",
         "content": ["Adjustable gas atmosphere", "Maintaining temperature and humidity", "Progressive maturation of stored fruits", "Storage in containers", "Storage on special pallets", "Additional surface treatment of fruit", "Increased gas tightness", "Installation of sealed doors of a special design", "Shock freezing", "Selection of refrigeration equipment"]
       },
       "info": {
-        "header": "The construction of storage facilities «turnkey» in Astrakhan",
-        "content": ["If you are faced with the task of storing the fruit crop in compliance with the temperature and humidity conditions that are comfortable for a particular type in Astrakhan, you will not be mistaken if you choose a fruit storage facility made of metal structures.", "The company “Agrostroitel Yug” in Astrakhan is engaged in the production and installation of modern frame and frameless hangars made of metal, insulated, sealed, with a controlled gas environment, equipped with the necessary refrigeration equipment, a system for creating the necessary microclimate.", "Frame fruit storage made of metal structures is a great option for buildings of any configuration, including if you have a non-standard project. The building is assembled as a constructor from blanks, directly on the site. All details and connections are thought out at the design stage, using the program. So errors and inaccuracies are excluded. A lightweight Foundation is also suitable for frame fruit storage. Insulation and finishing options are used in a wide variety of acceptable price and quality for your project."]
+        "header": "The construction of storage facilities «turnkey» in Nalchik",
+        "content": ["If you are faced with the task of storing the fruit crop in compliance with the temperature and humidity conditions that are comfortable for a particular type in Nalchik, you will not be mistaken if you choose a fruit storage facility made of metal structures.", "The company “Agrostroitel Yug” in Nalchik is engaged in the production and installation of modern frame and frameless hangars made of metal, insulated, sealed, with a controlled gas environment, equipped with the necessary refrigeration equipment, a system for creating the necessary microclimate.", "Frame fruit storage made of metal structures is a great option for buildings of any configuration, including if you have a non-standard project. The building is assembled as a constructor from blanks, directly on the site. All details and connections are thought out at the design stage, using the program. So errors and inaccuracies are excluded. A lightweight Foundation is also suitable for frame fruit storage. Insulation and finishing options are used in a wide variety of acceptable price and quality for your project."]
       }
     },
 
     "fishStorage": {
       "banner": {
-        "header": ["Building", "hangars for storing and processing fish", "in Astrakhan and the region"],
+        "header": ["Building", "hangars for storing and processing fish", "in Nalchik and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
@@ -603,7 +603,7 @@
 
     "vegetableStorage": {
       "banner": {
-        "header": ["Building", "vegetable stores", "in Astrakhan and the region"],
+        "header": ["Building", "vegetable stores", "in Nalchik and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
@@ -615,12 +615,12 @@
 
     "grainStorage": {
       "banner": {
-        "header": ["Building", "granaries", "in Astrakhan and the region"],
+        "header": ["Building", "granaries", "in Nalchik and the region"],
         "content": ["Turnkey", "from", "30 days", "design-project", "FOR FREE"],
         "btn": "Calculate the cost"
       },
       "roundBanner": {
-        "header": ["Construction of", "Granaries", "in Astrakhan and the region"],
+        "header": ["Construction of", "Granaries", "in Nalchik and the region"],
         "content": ["Construction in any area", "Strength — storage of a large mass of grain", "Protection of grain from dampness, pests and rodents", "Speed of construction", "Ease of installation", "Low cost", "The possibility of transporting"]
       }
     },

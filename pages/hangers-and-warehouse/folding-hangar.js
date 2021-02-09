@@ -41,7 +41,7 @@ export default function FoldingHangar() {
       <FHBanner text={city[language].dismountable.banner} />
       <Advantages text={city[language].advantages} />
       <RoundBanner text={city[language].dismountable.roundBanner} />
-      <FHinfo />
+      <FHinfo timeSolution={city[language].title.in} />
       <ProjectSlaider text={city[language].projectSlaider} />
       <ProjectForm text={city[language].form} />
       <Map

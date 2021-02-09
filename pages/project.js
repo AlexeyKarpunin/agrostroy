@@ -41,7 +41,7 @@ export default function project () {
       <ProjectBanner text={city[language].project} />
       <Advantages text={city[language].advantages} />
       <Design text={city[language].project.roundBanner} />
-      <DesignSchema />
+      <DesignSchema timeSolution={city[language].title.in} />
       <ProjectSlaider text={city[language].projectSlaider} />
       <ProjectForm text={city[language].form} />
       <Map

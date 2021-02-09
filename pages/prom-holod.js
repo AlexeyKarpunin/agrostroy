@@ -41,7 +41,7 @@ export default function PromHolod () {
       <ColdBanner text={city[language].industrialCold.banner} />
       <Advantages text={city[language].advantages} /> 
       <RoundBanner text={city[language].industrialCold.roundBanner} />
-      <PromInfo />
+      <PromInfo timeSolution={city[language].title.in} />
       <ProjectSlaider text={city[language].projectSlaider} />
       
       <ProjectForm text={city[language].form} />
