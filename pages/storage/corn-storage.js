@@ -10,13 +10,30 @@ import ProjectSlaider from '../../components/project/ProjectSlaider';
 import RoundBanner from '../../components/corn-storage/RoundBanner';
 import '../../styles/style.css';
 import CornInfo from '../../components/corn-storage/CornInfo';
+import Head from 'next/head';
+
+const giveHeadinfo = (city) => ({
+  ru: {
+    title: `Строительство зернохранилищ в ${city}`,
+    description: `Строительство Зернохранилищ «под ключ»  в ${city} быстро, качественно и в срок. Гарантия`
+  },
+  eng: {
+    title: 'Construction Of Granaries «turnkey»',
+    description: `Строительство Зернохранилищ «под ключ»  в ${city} быстро, качественно и в срок. Гарантия`
+  }
+})
 
 export default function FruitsStorage() {
   const city = useSelector( (state) => state.city.city);
   const language = useSelector( (state) => state.language.language);
+  const headInfo = giveHeadinfo(city[language].title.in);
 
   return (
     <>
+      <Head>
+        <title>{headInfo[language].title}</title>
+        <meta name='description' content={headInfo[language].description} />
+      </Head>
       <Header
         city={city}
         language={language}

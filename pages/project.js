@@ -18,10 +18,10 @@ const giveHeadinfo = (city) => ({
       description: `Проектирование объектов Агрокомплекса любой сложности  в ${city} быстро, качественно и в срок. Гарантия`
     },
     eng: {
-      title: '',
-      description: ''
+      title: `Проектирование Любых строений агрокомплекса в ${city}`,
+      description: `Проектирование объектов Агрокомплекса любой сложности  в ${city} быстро, качественно и в срок. Гарантия`
     }
-  })
+})
 
 export default function project () {
   const city = useSelector( (state) => state.city.city);

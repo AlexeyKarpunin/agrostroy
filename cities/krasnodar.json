@@ -1,5 +1,9 @@
 {
   "ru": {
+    "title": {
+      "default": "Краснодар",
+      "in": "Краснодаре"
+    },
     "rout": "Krasnodar",
     "header": {
       "city": "Краснодар",
@@ -342,7 +346,10 @@
   
   "eng": {
     "rout": "Krasnodar",
-
+    "title": {
+      "default": "Krasnodar",
+      "in": "Krasnodar"
+    },
     "header": {
       "city": "Krasnodar",
       "cityName": "City",

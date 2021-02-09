@@ -10,13 +10,30 @@ import Advantages from '../../components/project/Advantages';
 import ProjectForm from '../../components/project/ProjectForm';
 import ProjectSlaider from '../../components/project/ProjectSlaider';
 import '../../styles/style.css';
+import Head from 'next/head'
+
+const giveHeadinfo = (city) => ({
+  ru: {
+    title: `Строительство Фруктохранилищ «под ключ» в ${city}`,
+    description: `Строительство Фруктохранилищ «под ключ»  в ${city} быстро, качественно и в срок. Гарантия`
+  },
+  eng: {
+    title: `The construction of storage facilities «turnkey» in ${city}`,
+    description: 'Construction of storage facilities'
+  }
+})
 
 export default function FruitsStorage() {
   const city = useSelector( (state) => state.city.city);
   const language = useSelector( (state) => state.language.language);
+  const headInfo = giveHeadinfo(city[language].title.in);
 
   return (
     <>
+      <Head>
+        <title>{headInfo[language].title}</title>
+        <meta name='description' content={headInfo[language].description} />
+      </Head>
       <Header
         city={city}
         language={language}

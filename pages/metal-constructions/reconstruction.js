@@ -10,14 +10,31 @@ import RecBanner from '../../components/reconstruction/RecBanner';
 import RecInfo from '../../components/reconstruction/RecInfo';
 import RoundBanner from '../../components/reconstruction/RoundBanner';
 import '../../styles/style.css';
+import Head from 'next/head'
+
+const giveHeadinfo = (city) => ({
+  ru: {
+    title: `Реконструкция Зданий в  ${city}`,
+    description: `Реконструкция зданий и построек из металлоконструкций  в ${city} быстро, качественно и в срок. Гарантия`
+  },
+  eng: {
+    title: 'Reconstruction of buildings and structures made of metal',
+    description: `Реконструкция зданий и построек из металлоконструкций  в ${city} быстро, качественно и в срок. Гарантия`
+  }
+})
 
 export default function Reconstruction () {
 
   const city = useSelector( (state) => state.city.city);
   const language = useSelector( (state) => state.language.language);
+  const headInfo = giveHeadinfo(city[language].title.in);
 
   return (
     <>
+      <Head>
+        <title>{headInfo[language].title}</title>
+        <meta name='description' content={headInfo[language].description} />
+      </Head>
       <Header 
         city={city}
         language={language}

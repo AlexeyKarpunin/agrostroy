@@ -11,13 +11,30 @@ import ProjectForm from '../components/project/ProjectForm';
 import Map from '../components/mainPage/Map';
 import Provide from '../components/mainPage/Provide/Provide';
 import StorageInfo from '../components/storage/StorageInfo';
+import Head from 'next/head'
+
+const giveHeadinfo = (city) => ({
+  ru: {
+    title: `Строительство каркасных ангаров в ${city} «под ключ»Строительство каркасных ангаров в Астрахани «под ключ»`,
+    description: `Строительство хранилищ в ${city} «под ключ», быстро, качественно и в срок. Гарантия на все работы.`
+  },
+  eng: {
+    title: `Construction of storage facilities in ${city}`,
+    description: 'Construction of storage facilities'
+  }
+})
 
 export default function Storage () {
   const city = useSelector( (state) => state.city.city);
   const language = useSelector( (state) => state.language.language);
-  
+  const headInfo = giveHeadinfo(city[language].title.in);
+
   return (
     <>
+      <Head>
+        <title>{headInfo[language].title}</title>
+        <meta name='description' content={headInfo[language].description} />
+      </Head>
       <Header
         city={city}
         language={language}

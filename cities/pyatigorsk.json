@@ -1,5 +1,9 @@
 {
   "ru": {
+    "title": {
+      "default": "Пятигорск",
+      "in": "Пятигорске"
+    },
     "rout": "Pyatigorsk",
     "header": {
       "city": "Пятигорск",
@@ -342,7 +346,10 @@
   
   "eng": {
     "rout": "Pyatigorsk",
-
+    "title": {
+      "default": "Pyatigorsk",
+      "in": "Pyatigorsk"
+    },
     "header": {
       "city": "Pyatigorsk",
       "cityName": "City",

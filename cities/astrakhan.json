@@ -344,8 +344,11 @@
     },
     
     "eng": {
+      "title": {
+        "default": "Astrakhan",
+        "in": "Astrakhan"
+      },
       "rout": "Astrakhan",
-      "title": ["Astrakhan", "Astrakhan", "Astrakhan", "Astrakhan", "Astrakhan", "Astrakhan", "Astrakhan", "Astrakhan", "Astrakhan"],
       "header": {
         "city": "Astrakhan",
         "cityName": "City",

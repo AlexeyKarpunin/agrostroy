@@ -1,5 +1,9 @@
 {
   "ru": {
+    "title": {
+      "default": "Элиста",
+      "in": "Элисте"
+    },
     "rout": "Elista",
     "header": {
       "city": "Элиста",
@@ -342,7 +346,10 @@
   
   "eng": {
     "rout": "Elista",
-
+    "title": {
+      "default": "Elista",
+      "in": "Elista"
+    },
     "header": {
       "city": "Elista",
       "cityName": "City",

@@ -1,5 +1,9 @@
 {
   "ru": {
+    "title": {
+      "default": "Буденновск",
+      "in": "Буденновске"
+    },
     "rout": "Budennovsk",
     "header": {
       "city": "Буденновск",
@@ -342,7 +346,10 @@
   
   "eng": {
     "rout": "Budennovsk",
-
+    "title": {
+      "default": "Budennovsk",
+      "in": "Budennovsk"
+    },
     "header": {
       "city": "Budennovsk",
       "cityName": "City",

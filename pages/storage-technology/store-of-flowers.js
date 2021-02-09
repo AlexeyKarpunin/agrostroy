@@ -1,15 +1,32 @@
 import { useSelector } from 'react-redux';
+import Head from 'next/head';
 import Footer from '../../components/footer/Footer';
 import Header from '../../components/header/Header';
 import '../../styles/style.css';
 
+const giveHeadinfo = (city) => ({
+  ru: {
+    title: 'Хранение цветов в условиях измененной атмосферы',
+    description: 'Строительство объектов агрокомплекса'
+  },
+  eng: {
+    title: 'Хранение цветов в условиях измененной атмосферы',
+    description: 'The construction of agricultural complex'
+  }
+})
+
 export default function STpage () {
   const city = useSelector( (state) => state.city.city);
   const language = useSelector( (state) => state.language.language);
+  const headInfo = giveHeadinfo(city[language].title.in);
  
   
   return (
     <>
+      <Head>
+        <title>{headInfo[language].title}</title>
+        <meta name='description' content={headInfo[language].description} />
+      </Head>
       <Header
         city={city}
         language={language}

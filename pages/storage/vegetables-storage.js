@@ -10,13 +10,30 @@ import RoundBanner from '../../components/vegetables-storage/RoundBanner';
 import VegetableBanner from '../../components/vegetables-storage/VegetableBanner';
 import VegetablesInfo from '../../components/vegetables-storage/VegetableInfo';
 import '../../styles/style.css';
+import Head from 'next/head';
+
+const giveHeadinfo = (city) => ({
+  ru: {
+    title: `Строительство овощехранилищ в ${city}`,
+    description: `Строительство овощехранилищ  в ${city} быстро, качественно и в срок. Гарантия`
+  },
+  eng: {
+    title: 'Construction of vegetable Stores “turnkey»',
+    description: `Construction of vegetable stores in ${city}`
+  }
+})
 
 export default function FruitsStorage() {
   const city = useSelector( (state) => state.city.city);
   const language = useSelector( (state) => state.language.language);
+  const headInfo = giveHeadinfo(city[language].title.in);
 
   return (
     <>
+      <Head>
+        <title>{headInfo[language].title}</title>
+        <meta name='description' content={headInfo[language].description} />
+      </Head>
       <Header
         city={city}
         language={language}

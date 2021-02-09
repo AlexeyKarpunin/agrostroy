@@ -13,13 +13,31 @@ import Advantages from '../../components/project/Advantages';
 import ProjectForm from '../../components/project/ProjectForm';
 import ProjectSlaider from '../../components/project/ProjectSlaider';
 import '../../styles/style.css';
+import Head from 'next/head'
+
+const giveHeadinfo = (city) => ({
+  ru: {
+    title: `Строительство каркасных ангаров в ${city} «под ключ»`,
+    description: `Строительство каркасных ангаров складов и помещений  в ${city} быстро, качественно и в срок. Гарантия`
+  },
+  eng: {
+    title: 'The construction of frame hangars',
+    description: `Строительство каркасных ангаров складов и помещений  в ${city} быстро, качественно и в срок. Гарантия`
+  }
+})
 
 export default function FoldingHangar() {
   const city = useSelector( (state) => state.city.city);
   const language = useSelector( (state) => state.language.language);
+  const headInfo = giveHeadinfo(city[language].title.in);
 
   return (
     <>
+      <Head>
+        <title>{headInfo[language].title}</title>
+        <meta name='description' content={headInfo[language].description} />
+      </Head>
+      
       <Header
         city={city}
         language={language}

@@ -1,5 +1,9 @@
 {
   "ru": {
+    "title": {
+      "default": "Ставрополь",
+      "in": "Ставрополе"
+    },
     "rout": "Stavropol",
     "header": {
       "city": "Ставрополь",
@@ -342,7 +346,10 @@
   
   "eng": {
     "rout": "Stavropol",
-
+    "title": {
+      "default": "Stavropol",
+      "in": "Stavropol"
+    },
     "header": {
       "city": "Stavropol",
       "cityName": "City",

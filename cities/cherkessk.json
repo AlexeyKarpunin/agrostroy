@@ -1,5 +1,9 @@
 {
   "ru": {
+    "title": {
+      "default": "Черкесск",
+      "in": "Черкесске"
+    },
     "rout": "Cherkessk",
     "header": {
       "city": "Черкесск",
@@ -342,7 +346,10 @@
   
   "eng": {
     "rout": "Cherkessk",
-
+    "title": {
+      "default": "Cherkessk",
+      "in": "Cherkessk"
+    },
     "header": {
       "city": "Cherkessk",
       "cityName": "City",

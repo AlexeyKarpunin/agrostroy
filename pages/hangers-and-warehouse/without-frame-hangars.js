@@ -12,13 +12,31 @@ import ProjectSlaider from '../../components/project/ProjectSlaider';
 import WFHBanner from '../../components/without-frame-hangars/WFHBanner';
 import '../../styles/style.css';
 import WFHInfo from '../../components/without-frame-hangars/WFHInfo';
+import Head from 'next/head'
+
+const giveHeadinfo = (city) => ({
+  ru: {
+    title: `Строительство бескаркасных быстровозводимых ангаров в ${city}`,
+    description: 'Строительство бескаркасных быстровозводимых ангаров'
+  },
+  eng: {
+    title: 'Construction of pre-fabricated hangars in Astrakhan',
+    description: `Строительство бескаркасных быстровозводимых ангаров  в ${city} быстро, качественно и в срок. Гарантия`
+  }
+})
 
 export default function FoldingHangar() {
   const city = useSelector( (state) => state.city.city);
   const language = useSelector( (state) => state.language.language);
+  const headInfo = giveHeadinfo(city[language].title.in);
 
   return (
     <>
+      <Head>
+        <title>{headInfo[language].title}</title>
+        <meta name='description' content={headInfo[language].description} />
+      </Head>
+      
       <Header
         city={city}
         language={language}

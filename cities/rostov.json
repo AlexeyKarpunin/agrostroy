@@ -1,5 +1,9 @@
 {
   "ru": {
+    "title": {
+      "default": "Ростов",
+      "in": "Ростове"
+    },
     "rout": "Rostov",
     "header": {
       "city": "Ростов",
@@ -342,7 +346,10 @@
   
   "eng": {
     "rout": "Rostov",
-
+    "title": {
+      "default": "Rostov",
+      "in": "Rostov"
+    },
     "header": {
       "city": "Rostov",
       "cityName": "City",

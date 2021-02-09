@@ -1,5 +1,9 @@
 {
   "ru": {
+    "title": {
+      "default": "Москва",
+      "in": "Москве"
+    },
     "rout": "Moscow",
     "header": {
       "city": "Москва",
@@ -342,7 +346,10 @@
   
   "eng": {
     "rout": "Moscow",
-
+    "title": {
+      "default": "Moscow",
+      "in": "Moscow"
+    },
     "header": {
       "city": "Moscow",
       "cityName": "City",
