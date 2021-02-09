@@ -14,12 +14,12 @@ const Headinfo = (city) => ({
       title: `Contacts of the company «Agrostroitel Ug» ${city}`,
       description: 'The construction of agricultural complex'
     }
-  })
+})
 
 export default function Contacts () {
   const city = useSelector( (state) => state.city.city);
   const language = useSelector( (state) => state.language.language);
-  const headInfo = Headinfo(city[language].title[1]);
+  const headInfo = Headinfo(city[language].title.in);
 
   return (
     <>

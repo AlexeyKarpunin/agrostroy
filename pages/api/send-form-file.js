@@ -1,7 +1,6 @@
 const nodemailer = require('nodemailer');
-const fs = require('fs');
 
-function validation(name, phone, typeBuild='', targetBuild='') {
+function validation(name, phone, typeBuild='', targetBuild='', info='') {
 
   if (name.length < 2) {return 'incorrect name';}
   if (typeof name !== 'string') {return 'incorrect name';}
@@ -15,11 +14,14 @@ function validation(name, phone, typeBuild='', targetBuild='') {
   if(typeof targetBuild !== 'string') {return 'incorrect target build'}
   if(targetBuild.length > 120) {return 'incorrect type build'}
 
+  if (typeof info !== 'string') {return 'incorrect information'}
+  if (info.length > 600) {return 'incorrect information'}
+
   return 'success';
 }
 
 export default async (req, res) => {
-  const {name, phone, typeBuild, targetBuild, fileLink } = req.body;
+  const {name, phone, typeBuild, targetBuild, fileLink, information } = req.body;
 
   const massege = `
   <ul style=''>
@@ -27,13 +29,23 @@ export default async (req, res) => {
     <li>phone:  ${phone} </li>
     <li>type build:  ${typeBuild} </li>
     <li>target build:  ${targetBuild} </li>
+    <li>information:  ${information} </li>
   </ul>
   `;
 
-  const validationStatus = validation(name, phone, typeBuild, targetBuild);
+  const options = {
+    from: '"АгростроительЮг" <АгростроительЮг@example.com>',
+    to: 'alexkarpuninaa@gmail.com', // info@bzcekh.ru
+    subject: 'Message from АгростроительЮг',
+    text: 'This message was sent from АгростроительЮг.',
+    html: massege,
+  }
+
+  const validationStatus = validation(name, phone, typeBuild, targetBuild, information);
+  
+  if(fileLink){options.attachments = [{ path: fileLink }]}
 
   if (validationStatus === 'success') {
-
     const transporter = nodemailer.createTransport({
       service: 'gmail',
       auth: {
@@ -42,16 +54,7 @@ export default async (req, res) => {
         }
     });
 
-    const result = await transporter.sendMail({
-      from: '"АгростроительЮг" <АгростроительЮг@example.com>',
-      to: 'alexkarpuninaa@gmail.com', // info@bzcekh.ru
-      subject: 'Message from АгростроительЮг',
-      text: 'This message was sent from АгростроительЮг.',
-      html: massege,
-      attachments: [
-        { path: fileLink }
-    ]
-    });
+    const result = await transporter.sendMail(options);
   
     const status = await result;
   
@@ -66,4 +69,11 @@ export default async (req, res) => {
  
 }
 
+export const config = {
+  api: {
+    bodyParser: {
+      sizeLimit: '10mb',
+    },
+  },
+}
 

@@ -15,7 +15,7 @@ import Head from 'next/head'
 const giveHeadinfo = (city) => ({
     ru: {
       title: `Проектирование Любых строений агрокомплекса в ${city}`,
-      description: `Проектирование объектов Агрокомплекса любой сложности  в ${city} быстро, качественно и в срок.`
+      description: `Проектирование объектов Агрокомплекса любой сложности  в ${city} быстро, качественно и в срок. Гарантия`
     },
     eng: {
       title: '',
@@ -26,7 +26,7 @@ const giveHeadinfo = (city) => ({
 export default function project () {
   const city = useSelector( (state) => state.city.city);
   const language = useSelector( (state) => state.language.language);
-  const headInfo = giveHeadinfo(city[language].title[1]);
+  const headInfo = giveHeadinfo(city[language].title.in);
 
   return (
     <>
