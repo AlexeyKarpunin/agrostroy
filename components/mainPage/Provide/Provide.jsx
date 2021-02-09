@@ -1,4 +1,6 @@
-import { useState } from 'react';
+/* eslint-disable react/prop-types */
+import { useEffect, useState } from 'react';
+import styled from 'styled-components';
 import Cost from './Cost';
 import Documents from './Documents';
 import ReadyProject from './ReadyProjects';
@@ -17,8 +19,21 @@ const NAMES_OF_COMPONENTS = {
 export default function Provide ({city, language}) {
   const {topProject, documents, readyProject, storeTechnology, cost} = NAMES_OF_COMPONENTS;
   const [component, setComponent] = useState(cost);
+  const [width, setWidth] = useState(1920);
   const  text = city[language].mainPage.provide;
   
+  useEffect( () => {
+
+    function widthLisner () {
+      const widthWindow = window.innerWidth
+      setWidth(widthWindow)
+    }
+  
+    widthLisner();
+    window.addEventListener('resize', widthLisner);
+    return () => window.removeEventListener('resize', widthLisner);
+  }, [])
+
   function ComponentRender () {
     switch(component) {
       case topProject:
@@ -53,64 +68,110 @@ export default function Provide ({city, language}) {
         </div>
         <div className='page-section__body'>
           <div className='tabs__wrapper'>
-            <div className='tabs'>
-              <div className='tabs__bar-wrapper'>
-                <ul className='tabs__bar'>
-                  <li className='tabs__item'>
-                    <a 
-                      className={`btn is-fit is-tab js-tabs__link ${component === cost ? 'is-active' : null }`}
-                      onClick={(e) => changeContent(e, cost)}
-                      href='/'
-                    >
-                      {text.linkList[0]}
-                    </a>
-                  </li>
-                  <li className='tabs__item'>
-                    <a 
-                      className={`btn is-fit is-tab js-tabs__link ${component === storeTechnology ? 'is-active' : null }`} 
-                      onClick={(e) => changeContent(e, storeTechnology)}
-                      href='/'
-                    >
-                      {text.linkList[1]}
-                    </a>
-                  </li>
-                  <li className='tabs__item'>
-                    <a
-                      className={`btn is-fit is-tab js-tabs__link ${component === documents ? 'is-active' : null }`} 
-                      onClick={(e) => changeContent(e, documents)}
-
-                      href='/'
-                    >
-                      {text.linkList[2]}
-                    </a>
-                  </li>
-                  <li className='tabs__item'>
-                    <a 
-                      className={`btn is-fit is-tab js-tabs__link ${component === topProject ? 'is-active' : null }`} 
-                      onClick={(e) => changeContent(e, topProject)}
-                      href='/'
-                    >
-                      {text.linkList[3]}
-                    </a>
-                  </li>
-                  <li className='tabs__item'>
-                    <a 
-                      className={`btn is-fit is-tab js-tabs__link ${component === readyProject ? 'is-active' : null }`} 
-                      onClick={(e) => changeContent(e, readyProject)}
-                      href='/'
-                    >
-                      {text.linkList[4]}
-                    </a>
-                  </li>
-                </ul>
+            { width > 969 ? (
+              <div className='tabs'>
+                <div className='tabs__bar-wrapper'>
+                  <ul className='tabs__bar'>
+                    <li className='tabs__item'>
+                      <a 
+                        className={`btn is-fit is-tab js-tabs__link ${component === cost ? 'is-active' : null }`}
+                        onClick={(e) => changeContent(e, cost)}
+                        href='/'
+                      >
+                        {text.linkList[0]}
+                      </a>
+                    </li>
+                    <li className='tabs__item'>
+                      <a 
+                        className={`btn is-fit is-tab js-tabs__link ${component === storeTechnology ? 'is-active' : null }`} 
+                        onClick={(e) => changeContent(e, storeTechnology)}
+                        href='/'
+                      >
+                        {text.linkList[1]}
+                      </a>
+                    </li>
+                    <li className='tabs__item'>
+                      <a
+                        className={`btn is-fit is-tab js-tabs__link ${component === documents ? 'is-active' : null }`} 
+                        onClick={(e) => changeContent(e, documents)}
+                        href='/'
+                      >
+                        {text.linkList[2]}
+                      </a>
+                    </li>
+                    <li className='tabs__item'>
+                      <a 
+                        className={`btn is-fit is-tab js-tabs__link ${component === topProject ? 'is-active' : null }`} 
+                        onClick={(e) => changeContent(e, topProject)}
+                        href='/'
+                      >
+                        {text.linkList[3]}
+                      </a>
+                    </li>
+                    <li className='tabs__item'>
+                      <a 
+                        className={`btn is-fit is-tab js-tabs__link ${component === readyProject ? 'is-active' : null }`} 
+                        onClick={(e) => changeContent(e, readyProject)}
+                        href='/'
+                      >
+                        {text.linkList[4]}
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+                <div className='tabs__sections'>
+                  {ComponentRender()}
+                </div>
               </div>
-              <div className='tabs__sections'>
-                {ComponentRender()}
-              </div>
-            </div>
+            ) : <MobileAccordion text={text} component={component} onClick={changeContent} />}
           </div>
         </div>
       </div>
     </div>
   )
 }
+
+function MobileAccordion ({text, component, onClick}) {
+  const {topProject, documents, readyProject, storeTechnology, cost} = NAMES_OF_COMPONENTS;
+
+  return (
+    <AccSection>
+      <AccContent>
+        <AccItem>
+          <AccBtn onClick={(e) => onClick(e, cost)} status={component === cost ? 'active' : ''}>{text.linkList[0]}</AccBtn>
+          {component === cost ? <Cost text={text.cost} /> : null}
+        </AccItem>
+        <AccItem>
+          <AccBtn onClick={(e) => onClick(e, storeTechnology)} status={component === storeTechnology ? 'active' : ''}>{text.linkList[1]}</AccBtn>
+          {component === storeTechnology ? <StoreTechnology text={text.storageTechnology} /> : null}
+        </AccItem>
+        <AccItem>
+          <AccBtn onClick={(e) => onClick(e, documents)} status={component === documents ? 'active' : ''}>{text.linkList[2]}</AccBtn>
+          {component === documents ? <Documents text={text.documents} /> : null}
+        </AccItem>
+        <AccItem>
+          <AccBtn onClick={(e) => onClick(e, topProject)} status={component === topProject ? 'active' : ''}>{text.linkList[3]}</AccBtn>
+          {component === topProject ? <TopProject text={text.standart} /> : null}
+        </AccItem>
+        <AccItem>
+          <AccBtn onClick={(e) => onClick(e, readyProject)} status={component === readyProject ? 'active' : ''}>{text.linkList[4]}</AccBtn>
+          {component === readyProject ? <ReadyProject text={text.ready} /> : null}
+        </AccItem>
+      </AccContent>
+    </AccSection>
+  );
+}
+
+const AccSection = styled.div``;
+const AccContent = styled.div``;
+const AccItem = styled.div``;
+const AccBtn = styled.div`
+  text-align: center;
+  padding: 10px 0;
+  border: 1px solid #d5d5d5;
+  background-color: ${props => props.status === 'active' ? '#f15400': '#efeff1'};
+  &:hover {
+    cursor: poiner;
+    background-color: #f15400;
+  }
+`;
