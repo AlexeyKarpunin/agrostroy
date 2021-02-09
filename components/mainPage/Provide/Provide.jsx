@@ -252,6 +252,6 @@ const ControllBlock = styled.div`
   overflow: hidden;
 `;
 const HiidenWrraper = styled.div`
-  transition-duration: .5s;
+  transition-duration: 1s;
   margin-top: ${props => props.status === 'active' ? '0px' : '-400px;'}
 `;
