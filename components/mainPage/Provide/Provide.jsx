@@ -242,6 +242,8 @@ const AccBtn = styled.div`
   text-align: center;
   padding: 10px 0;
   border: 1px solid #d5d5d5;
+  color: ${props => props.status === 'active' ? '#fff': ''};
+  font-weight: ${props => props.status === 'active' ? 'bold': ''};
   background-color: ${props => props.status === 'active' ? '#f15400': '#efeff1'};
   &:hover {
     cursor: poiner;
