@@ -6,13 +6,17 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "go": "next build && next start"
+    "go": "next build && next start",
+    "dev-s": "node server.js",
+    "build-s": "next build",
+    "start-s": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "@babel/core": "^7.12.9",
     "@babel/preset-env": "^7.12.7",
     "@babel/preset-react": "^7.12.7",
     "@zeit/next-css": "^1.0.1",
+    "express": "^4.17.1",
     "fotorama-react-wrapper": "^1.0.7",
     "jquery": "^3.5.1",
     "next": "10.0.5",
@@ -30,7 +34,8 @@
     "react-slick": "^0.28.0",
     "redux": "^4.0.5",
     "redux-thunk": "^2.3.0",
-    "styled-components": "^5.2.1"
+    "styled-components": "^5.2.1",
+    "vhost": "^3.0.2"
   },
   "devDependencies": {
     "babel-eslint": "^10.1.0",
