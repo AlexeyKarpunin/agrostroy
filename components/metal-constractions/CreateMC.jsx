@@ -3,7 +3,7 @@ export default function CreateMC({text}) {
     <div className='page-section'>
       <div className='page-section__inner'>
         <div className='page-section__title'>
-          <h2 className='is-section'>
+          <h2 className='is-section is-section-fix'>
             {text.header[0]} 
             {' '}
             <span className='text is-primary'>{text.header[1]}</span>

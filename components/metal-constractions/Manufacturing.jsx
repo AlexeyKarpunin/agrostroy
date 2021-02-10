@@ -3,7 +3,7 @@ export default function Manufactuging ({timeSolution}) {
     <div className='page-section'>
       <div className='page-section__inner'>
         <div className='page-section__title'>
-          <h2 className='is-section'>Производство металлоконструкций в {timeSolution}</h2>
+          <h2 className='is-section is-section-fix'>Производство металлоконструкций в {timeSolution}</h2>
         </div>
         <div className='page-section__body'>
           <div className='other-page-section'>

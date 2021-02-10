@@ -3,7 +3,7 @@ export default function CEInfo ({text}) {
     <div className='page-section'>
       <div className='page-section__inner'>
         <div className='page-section__title'>
-          <h2 className='is-section'>{text.header}</h2>
+          <h2 className='is-section is-section-fix'>{text.header}</h2>
         </div>
         <div className='page-section__body'>
           <div className='other-page-section'>

@@ -4,7 +4,7 @@ export default function RoundBanner ({text}) {
     <div className='page-section'>
       <div className='page-section__inner'>
         <div className='page-section__title'>
-          <h2 className='is-section'>
+          <h2 className='is-section is-section-fix'>
             {text.header[0]} 
             {' '}
             <em className='text is-primary is-secondary'>{text.header[1]}</em>

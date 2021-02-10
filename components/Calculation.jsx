@@ -6,7 +6,7 @@ export default function Calculation () {
     <article className='page-section is-article'>
       <div className='page-section__inner'>
         <div className='page-section__title'>
-          <h1 className='is-section'>Предварительный расчет стоимости</h1>
+          <h1 className='is-section is-section-fix'>Предварительный расчет стоимости</h1>
         </div>
         <Form />
       </div>

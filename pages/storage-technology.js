@@ -36,7 +36,7 @@ export default function StorageTechnology () {
       <article className='page-section is-article'>
         <div className='page-section__inner'>
           <div className='page-section__title'>
-            <h1 className='is-section'>Технологии хранения</h1>
+            <h1 className='is-section is-section-fix'>Технологии хранения</h1>
           </div>
           <div className='page-section__body'>
             <div className='other-page-section'>

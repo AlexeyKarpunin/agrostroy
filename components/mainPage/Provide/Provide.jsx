@@ -139,54 +139,6 @@ function MobileAccordion ({text, component, onClick}) {
     setTimeout( () => {setAnime(component)}, 10);
   }, [component])
 
-  // function back (content) {
-    
-  //   switch(content) {
-  //     case content === cost:
-  //       return(
-  //         <ControllBlock>
-  //           <HiidenWrraper status={anime === cost ? 'active' : ''}>
-  //             <Cost text={text.cost} />
-  //           </HiidenWrraper>
-  //         </ControllBlock>
-  //       );
-  //     case content === storeTechnology:
-  //       return(
-  //         <ControllBlock>
-  //           <HiidenWrraper status={anime === storeTechnology ? 'active' : ''}>
-  //             <StoreTechnology text={text.storageTechnology} />
-  //           </HiidenWrraper>
-  //         </ControllBlock>
-  //       );
-  //     case content === readyProject:
-  //       return(
-  //         <ControllBlock>
-  //           <HiidenWrraper status={anime === readyProject ? 'active' : ''}>
-  //             <ReadyProject text={text.ready} />
-  //           </HiidenWrraper> 
-  //         </ControllBlock>
-  //       );
-  //     case content === documents:
-  //       return(
-  //         <ControllBlock>
-  //           <HiidenWrraper status={anime === documents ? 'active' : ''}>
-  //             <Documents text={text.documents} />
-  //           </HiidenWrraper>
-  //         </ControllBlock>
-  //       );
-  //     case content === topProject:
-  //       return(
-  //         <ControllBlock>
-  //           <HiidenWrraper status={anime === topProject ? 'active' : ''}>
-  //             <TopProject text={text.standart} />
-  //           </HiidenWrraper>
-  //         </ControllBlock>   
-  //       );
-  //     default:
-  //       return(<></>);
-  //   }
-  // }
-
   return (
     <AccSection>
       <AccContent>

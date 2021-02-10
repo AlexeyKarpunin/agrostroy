@@ -119,6 +119,10 @@ body {
 .red--border--form {
     border: 1px solid red!important;
 }
+/* 
+.strange--picture {
+    min-width: 200px;
+} */
 
 .owl-prev,
 .owl-next {
@@ -1656,12 +1660,14 @@ ul.contact__inner li {
     border-top: 0
 }
 
-.navigation__item:hover  ul {
-    display: block;
-    background-color: white;
-    z-index: 100;
-    position: absolute;
-    top: 150px;
+@media screen and (min-width: 959px) {
+    .navigation__item:hover  ul {
+        display: block;
+        background-color: white;
+        z-index: 100;
+        position: absolute;
+        top: 150px;
+    }
 }
 
 .in-footer .navigation__item {
@@ -4156,9 +4162,9 @@ img.in-super-circle {
     .column.md-4 {
         -ms-flex: none;
         flex: none;
-        width: calc(33.33333% - 20px)
+        width: calc(33.33333% - 20px);
     }
-
+    
     .column.md-5 {
         -ms-flex: none;
         flex: none;
@@ -4689,6 +4695,19 @@ img.in-super-circle {
     .tabs__bar {
         flex-direction: column;
     }
+
+    .column__wrapper--about {
+        flex-direction: column;
+    }
+
+    .column__wrapper--about--reverse {
+        flex-direction: column-reverse;
+    }
+
+    .about--componi--img {
+        max-width: 260px;
+        padding: 15px 0;
+    }
 }
 
 .navigation__list_show {
@@ -4741,6 +4760,15 @@ img.in-super-circle {
         text-align: inherit;
         width: auto;
     }
+    .callBackForm label.textPolicy a {
+        white-space: pre-wrap;
+    }
+    .callBackForm label {
+        display: block;
+    }
+    .is-section-fix {
+        font-size: 1em!important;
+    }
 }
 
 @media screen and (max-width: 425px) {
@@ -4757,6 +4785,23 @@ img.in-super-circle {
     
     h3.is-slide {
         font-size: 0.8em;
+    }
+ 
+
+    h2.is-section {
+        font-size: 2em;
+    }
+
+    .text.is-big {
+        font-size: 1em;
+    }
+
+    .is-section-fix {
+        font-size: 1em!important;
+    }
+
+    .size-1-5 {
+        font-size: 1.5em!important;
     }
 }
 

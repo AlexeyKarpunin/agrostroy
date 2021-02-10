@@ -1,3 +1,5 @@
+/* eslint-disable react/prop-types */
+/* eslint-disable jsx-a11y/anchor-is-valid */
 import Link from 'next/link';
 import { useState } from 'react';
 
@@ -6,6 +8,7 @@ export default function Navigation ({city, language}) {
   const [menuStatus, setMenuStatus] = useState(false);
 
   function toggleMobileMenu () {
+    // eslint-disable-next-line no-unused-expressions
     menuStatus ? setMenuStatus(false) : setMenuStatus(true);
   }
 

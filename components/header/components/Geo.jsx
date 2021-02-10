@@ -20,7 +20,7 @@ export default function Geo (props) {
 
   return (
     <a className='geo popup-city'>
-      <span className='icon is-primary is-geo'>
+      <span onClick={openModal} className='icon is-primary is-geo'>
         <svg>
           <use xlinkHref='/img/iconsprites.svg#geo' />
         </svg>

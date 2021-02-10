@@ -10,7 +10,7 @@ export default function TakeUs({text}) {
           </h2>
         </div>
         <div className='page-section__body'>
-          <div className='column__wrapper'>
+          <div className='column__wrapper column__wrapper--about--reverse'>
             <div className='column'>
               <h3 className='text is-bold is-big'>{text.reasonOne[0]}</h3>
               <p>

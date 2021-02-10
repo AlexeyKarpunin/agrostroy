@@ -12,9 +12,9 @@ export default function InfoAboutComponi ({text}) {
           </h2>
         </div>
         <div className='page-section__body'>
-          <div className='column__wrapper'>
+          <div className='column__wrapper column__wrapper--about'>
             <div className='column'>
-              <iframe width='560' height='315' src='https://www.youtube.com/embed/JxgzUyb_oDY' frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen='' />
+              <iframe MaxWidth='560' height='315' src='https://www.youtube.com/embed/JxgzUyb_oDY' frameBorder='0' allow='accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture' allowFullScreen='' />
             </div>
             <div className='column'>
 
@@ -44,14 +44,14 @@ export default function InfoAboutComponi ({text}) {
                   </p>
                 </li>
               </ul>
-              <div className='column__wrapper' style={{marginTop: '5rem'}}>
+              <div className='column__wrapper column__wrapper--about' style={{marginTop: '5rem'}}>
                 <div className='column'>
                   <p>
                   {text.content[6]}
 
                   </p>
                 </div>
-                <div className='column' style={{flex: 'none'}}><img src='/img/zalupa.png' alt='part of map' /></div>
+                <div className='column' style={{flex: 'none'}}><img className='about--componi--img' src='/img/zalupa.png' alt='part of map' /></div>
               </div>
             </div>
           </div>
@@ -71,8 +71,7 @@ export default function InfoAboutComponi ({text}) {
               <li>
                 {text.servises[0]}
               </li>
-            </ol>
-	                
+            </ol>      
           </div>
         </div>
       </div>
