@@ -31,30 +31,3 @@ app.prepare().then(() => {
     console.log(`> Ready on http://lvh.me:${port}`)
   })
 })
-
-// app.prepare().then(() => {
-//   const mainServer = express()
-//   const adminServer = express()
-//   const memberServer = express()
-
-//   adminServer.get('/', (req, res) => app.render(req, res, '/', req.query))
-
-//   adminServer.get('/*', (req, res) => app.render(req, res, `/${req.path}`, req.query))
-
-//   adminServer.all('*', (req, res) => handle(req, res))
-
-//   memberServer.get('/', (req, res) => app.render(req, res, '/', req.query))
-
-//   memberServer.get('/*', (req, res) => app.render(req, res, `/${req.path}`, req.query))
-
-//   memberServer.all('*', (req, res) => handle(req, res))
-
-//   mainServer.use(vhost('admin.lvh.me', adminServer))
-//   mainServer.use(vhost('lvh.me', memberServer))
-//   mainServer.use(vhost('www.lvh.me', memberServer))
-//   mainServer.listen(port, (err) => {
-//     if (err) throw err
-
-//     console.log(`> Ready on http://lvh.me:${port}`)
-//   })
-// })

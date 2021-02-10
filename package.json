@@ -3,13 +3,10 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start",
     "go": "next build && next start",
-    "dev-s": "node server.js",
-    "build-s": "next build",
-    "start-s": "NODE_ENV=production node server.js"
+    "dev": "node server.js",
+    "build": "next build",
+    "start": "NODE_ENV=production node server.js"
   },
   "dependencies": {
     "@babel/core": "^7.12.9",
